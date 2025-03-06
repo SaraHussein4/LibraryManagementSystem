@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\entity framework\\tasks\\librarymanagementsystem\\librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\entity framework\\tasks\\librarymanagementsystem\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -54,27 +58,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Login.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\Login.cs",
-              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Login.cs [Design]",
-              "RelativeToolTip": "LibraryPresentationLayer\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T14:48:57.055Z",
-              "EditorCaption": " [Design]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
+              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs [Design]",
+              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T17:26:27.585Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Login.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\Login.cs",
+              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Login.cs [Design]",
+              "RelativeToolTip": "LibraryPresentationLayer\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:48:57.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LibraryDBContext.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\Models\\LibraryDBContext.cs",
               "RelativeDocumentMoniker": "Models\\LibraryDBContext.cs",
@@ -86,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BorrowingRecord.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\Models\\BorrowingRecord.cs",
               "RelativeDocumentMoniker": "Models\\BorrowingRecord.cs",
@@ -98,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Book.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
@@ -110,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "LibraryManagementSystem.csproj",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
               "RelativeDocumentMoniker": "LibraryManagementSystem.csproj",
@@ -122,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -134,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Member.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\Models\\Member.cs",
               "RelativeDocumentMoniker": "Models\\Member.cs",
@@ -146,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Welcome.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Welcome.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\Welcome.cs",
@@ -159,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "20250302230400_initialMigration.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\Migrations\\20250302230400_initialMigration.cs",
               "RelativeDocumentMoniker": "Migrations\\20250302230400_initialMigration.cs",
@@ -171,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Welcome.cs [Design]",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Welcome.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\Welcome.cs",
@@ -182,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
