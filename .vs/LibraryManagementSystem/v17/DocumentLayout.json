@@ -69,6 +69,10 @@
               "EditorCaption": " [Design]"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "LibraryDBContext.cs",
@@ -102,8 +106,7 @@
               "RelativeToolTip": "Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T22:03:17.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T22:03:17.028Z"
             },
             {
               "$type": "Document",
@@ -151,7 +154,8 @@
               "RelativeToolTip": "LibraryPresentationLayer\\Welcome.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T11:06:35.286Z"
+              "WhenOpened": "2025-03-04T11:06:35.286Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -164,10 +168,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T23:04:00.924Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
