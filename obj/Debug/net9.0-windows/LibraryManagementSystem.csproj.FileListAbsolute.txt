@@ -141,3 +141,4 @@ D:\Iti\Entity Framework\TASKS\LibraryManagementSystem\obj\Debug\net9.0-windows\L
 D:\Iti\Entity Framework\TASKS\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Login.resources
 D:\Iti\Entity Framework\TASKS\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.sourcelink.json
 D:\Iti\Entity Framework\TASKS\LibraryManagementSystem\bin\Debug\net9.0-windows\LibraryManagementSystem.dll.config
+D:\Iti\Entity Framework\TASKS\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.SignUp.resources

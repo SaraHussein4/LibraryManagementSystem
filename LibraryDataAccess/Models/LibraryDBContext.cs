@@ -18,10 +18,20 @@ namespace LibraryManagementSystem.LibraryDataAccess.Models
         {
             //optionsBuilder.UseSqlServer("Server=.;Database=LibrarySystem;Integrated Security=True;Encrypt=False;Trust Server Certificate=True");
             string con = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            optionsBuilder.UseSqlServer(con);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+        .Property(u => u.Role)
+        .HasConversion<string>();
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.MemberShipType)
+                .HasConversion<string>();
+
+            base.OnModelCreating(modelBuilder);
 
         }
     }
