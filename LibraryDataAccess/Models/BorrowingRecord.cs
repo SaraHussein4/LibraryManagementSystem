@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Models
+namespace LibraryManagementSystem.LibraryDataAccess.Models
 {
     public class BorrowingRecord
     {
@@ -17,13 +17,13 @@ namespace LibraryManagementSystem.Models
         public int MemberId { get; set; }
 
         [ForeignKey("MemberId")]
-        public Member Member { get; set; }
+        public virtual User Member { get; set; }
 
         [Required]
         public int BookId { get; set; }
 
         [ForeignKey("BookId")]
-        public Book Book { get; set; }
+        public virtual Book Book { get; set; }
 
         [Required]
         public DateTime BorrowDate { get; set; }
@@ -31,7 +31,7 @@ namespace LibraryManagementSystem.Models
         [Required]
         public DateTime DueDate { get; set; }
 
-        public DateTime? ReturnDate { get; set; } 
+        public DateTime? ReturnDate { get; set; }
 
         [Required]
         public bool IsReturned { get; set; } = false;
