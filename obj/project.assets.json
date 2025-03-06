@@ -4717,11 +4717,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Iti\\Entity Framework\\TASKS\\Clone\\LibraryManagementSystem.csproj",
+      "projectUniqueName": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
       "projectName": "LibraryManagementSystem",
-      "projectPath": "D:\\Iti\\Entity Framework\\TASKS\\Clone\\LibraryManagementSystem.csproj",
+      "projectPath": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
       "packagesPath": "C:\\Users\\CM\\.nuget\\packages\\",
-      "outputPath": "D:\\Iti\\Entity Framework\\TASKS\\Clone\\obj\\",
+      "outputPath": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Models
+namespace LibraryManagementSystem.LibraryDataAccess.Models
 {
     public class Book
     {
@@ -25,9 +25,13 @@ namespace LibraryManagementSystem.Models
         public string Category { get; set; }
 
         [Required]
+        [Range(0, 100)]
         public int Quantity { get; set; }
 
         [Required]
         public int PublishedYear { get; set; }
+        public virtual List<BorrowingRecord> BorrowingRecords { get; set; }
+        public virtual List<Log> Logs { get; set; }
+
     }
 }
