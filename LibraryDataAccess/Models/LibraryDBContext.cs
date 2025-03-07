@@ -23,15 +23,18 @@ namespace LibraryManagementSystem.LibraryDataAccess.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>()
-        .Property(u => u.Role)
-        .HasConversion<string>();
+            modelBuilder.Entity<User>().Property(u => u.Role).HasConversion<string>();
 
-            modelBuilder.Entity<User>()
-                .Property(u => u.MemberShipType)
-                .HasConversion<string>();
+            modelBuilder.Entity<User>().Property(u => u.MemberShipType).HasConversion<string>();
 
             base.OnModelCreating(modelBuilder);
+
+
+
+
+
+
+
 
         }
     }

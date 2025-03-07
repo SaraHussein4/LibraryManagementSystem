@@ -4,6 +4,7 @@ using LibraryManagementSystem.LibraryDataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryManagementSystem.Migrations
 {
     [DbContext(typeof(LibraryDBContext))]
-    partial class LibraryDBContextModelSnapshot : ModelSnapshot
+    [Migration("20250307080305_IntialSignUp")]
+    partial class IntialSignUp
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,7 +61,7 @@ namespace LibraryManagementSystem.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Books", (string)null);
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("LibraryManagementSystem.LibraryDataAccess.Models.BorrowingRecord", b =>
@@ -93,7 +96,7 @@ namespace LibraryManagementSystem.Migrations
 
                     b.HasIndex("MemberId");
 
-                    b.ToTable("BorrowingRecords", (string)null);
+                    b.ToTable("BorrowingRecords");
                 });
 
             modelBuilder.Entity("LibraryManagementSystem.LibraryDataAccess.Models.Log", b =>
@@ -124,7 +127,7 @@ namespace LibraryManagementSystem.Migrations
 
                     b.HasIndex("MemberId");
 
-                    b.ToTable("Logs", (string)null);
+                    b.ToTable("Logs");
                 });
 
             modelBuilder.Entity("LibraryManagementSystem.LibraryDataAccess.Models.User", b =>
@@ -170,7 +173,7 @@ namespace LibraryManagementSystem.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("LibraryManagementSystem.LibraryDataAccess.Models.BorrowingRecord", b =>
