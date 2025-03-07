@@ -18,7 +18,8 @@ namespace LibraryManagementSystem.LibraryDataAccess.Models
     {
     Student ,
     Faculty,
-    Other
+    Other,
+    None
     }
     public class User
     {
