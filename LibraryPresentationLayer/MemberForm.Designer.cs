@@ -28,12 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MemberForm";
+            menuStrip1 = new MenuStrip();
+            viewAvailableBookToolStripMenuItem = new ToolStripMenuItem();
+            borrowBookToolStripMenuItem = new ToolStripMenuItem();
+            returnBookToolStripMenuItem = new ToolStripMenuItem();
+            updateProfileToolStripMenuItem = new ToolStripMenuItem();
+            logOutToolStripMenuItem = new ToolStripMenuItem();
+            flowLayoutPanelBooks = new FlowLayoutPanel();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { viewAvailableBookToolStripMenuItem, borrowBookToolStripMenuItem, returnBookToolStripMenuItem, updateProfileToolStripMenuItem, logOutToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // viewAvailableBookToolStripMenuItem
+            // 
+            viewAvailableBookToolStripMenuItem.Name = "viewAvailableBookToolStripMenuItem";
+            viewAvailableBookToolStripMenuItem.Size = new Size(159, 24);
+            viewAvailableBookToolStripMenuItem.Text = "View Available Book";
+            viewAvailableBookToolStripMenuItem.Click += viewAvailableBookToolStripMenuItem_Click_1;
+            // 
+            // borrowBookToolStripMenuItem
+            // 
+            borrowBookToolStripMenuItem.Name = "borrowBookToolStripMenuItem";
+            borrowBookToolStripMenuItem.Size = new Size(109, 24);
+            borrowBookToolStripMenuItem.Text = "Borrow Book";
+            // 
+            // returnBookToolStripMenuItem
+            // 
+            returnBookToolStripMenuItem.Name = "returnBookToolStripMenuItem";
+            returnBookToolStripMenuItem.Size = new Size(104, 24);
+            returnBookToolStripMenuItem.Text = "Return Book";
+            // 
+            // updateProfileToolStripMenuItem
+            // 
+            updateProfileToolStripMenuItem.Name = "updateProfileToolStripMenuItem";
+            updateProfileToolStripMenuItem.Size = new Size(119, 24);
+            updateProfileToolStripMenuItem.Text = "Update Profile";
+            // 
+            // logOutToolStripMenuItem
+            // 
+            logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            logOutToolStripMenuItem.Size = new Size(72, 24);
+            logOutToolStripMenuItem.Text = "LogOut";
+            // 
+            // flowLayoutPanelBooks
+            // 
+            flowLayoutPanelBooks.AutoScroll = true;
+            flowLayoutPanelBooks.Dock = DockStyle.Fill;
+            flowLayoutPanelBooks.Location = new Point(0, 28);
+            flowLayoutPanelBooks.Name = "flowLayoutPanelBooks";
+            flowLayoutPanelBooks.Size = new Size(800, 422);
+            flowLayoutPanelBooks.TabIndex = 1;
+            // 
+            // MemberForm
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(flowLayoutPanelBooks);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "MemberForm";
+            Text = "MemberForm";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem viewAvailableBookToolStripMenuItem;
+        private ToolStripMenuItem borrowBookToolStripMenuItem;
+        private ToolStripMenuItem returnBookToolStripMenuItem;
+        private ToolStripMenuItem updateProfileToolStripMenuItem;
+        private ToolStripMenuItem logOutToolStripMenuItem;
+        private FlowLayoutPanel flowLayoutPanelBooks;
     }
 }

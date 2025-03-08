@@ -1,42 +1,94 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\",
+  "WorkspaceRootPath": "D:\\Iti\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|c:\\users\\ascom\\desktop\\iti\\adoshafie\\adodaytwosh\\test\\sara\\librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|c:\\users\\ascom\\desktop\\iti\\adoshafie\\adodaytwosh\\test\\sara\\librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|c:\\users\\ascom\\desktop\\iti\\adoshafie\\adodaytwosh\\test\\sara\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|c:\\users\\ascom\\desktop\\iti\\adoshafie\\adodaytwosh\\test\\sara\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\memberform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\memberform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\models\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\models\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\adminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|c:\\users\\ascom\\desktop\\iti\\adoshafie\\adodaytwosh\\test\\sara\\librarydataaccess\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\migrations\\20250306225733_convert role and membertype to str.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\migrations\\20250306225733_convert role and membertype to str.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\models\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\models\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\migrations\\20250306225704_convert role and membertype to string.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\migrations\\20250306225704_convert role and membertype to string.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\migrations\\20250306225433_membership type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\migrations\\20250306225433_membership type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\migrations\\20250308183628_add photo property to book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\migrations\\20250308183628_add photo property to book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,127 +98,276 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T21:57:15.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Welcome.cs",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\Welcome.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\Welcome.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\Welcome.cs",
-              "RelativeToolTip": "LibraryPresentationLayer\\Welcome.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T21:37:36.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SignUp.cs",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\SignUp.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\SignUp.cs",
-              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAJAAAAAAAAAA==",
+              "Title": "MemberForm.Designer.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.Designer.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\MemberForm.Designer.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.Designer.cs",
+              "RelativeToolTip": "LibraryPresentationLayer\\MemberForm.Designer.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:25:10.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:50:15.836Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\Login.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\Login.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\Login.cs",
-              "RelativeToolTip": "LibraryPresentationLayer\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Title": "MemberForm.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\MemberForm.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.cs",
+              "RelativeToolTip": "LibraryPresentationLayer\\MemberForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T18:35:20.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryDataAccess\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "LibraryDataAccess\\Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryDataAccess\\Service\\UserService.cs",
-              "RelativeToolTip": "LibraryDataAccess\\Service\\UserService.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAIwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T20:44:15.748Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\Login.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\Login.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\Login.cs [Design]",
-              "RelativeToolTip": "LibraryPresentationLayer\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T23:37:18.016Z"
+              "WhenOpened": "2025-03-08T18:50:11.765Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Welcome.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\Welcome.cs",
+              "Title": "AddBook.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\AddBook.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
+              "RelativeToolTip": "LibraryPresentationLayer\\AddBook.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvzcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T18:12:33.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\Book.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\Book.cs",
+              "RelativeToolTip": "LibraryDataAccess\\Models\\Book.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwCEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T18:23:36.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Iti\\Project\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T18:19:37.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250308183628_add photo property to book.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250308183628_add photo property to book.cs",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250308183628_add photo property to book.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250308183628_add photo property to book.cs",
+              "RelativeToolTip": "LibraryDataAccess\\Migrations\\20250308183628_add photo property to book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T18:36:29.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\App.config",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\App.config",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\App.config",
+              "RelativeToolTip": "LibraryDataAccess\\Models\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-06T18:20:05.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\SignUp.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\SignUp.cs",
+              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:50:49.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250306225733_convert role and membertype to str.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225733_convert role and membertype to str.cs",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250306225733_convert role and membertype to str.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225733_convert role and membertype to str.cs",
+              "RelativeToolTip": "LibraryDataAccess\\Migrations\\20250306225733_convert role and membertype to str.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T22:57:33.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20250306225704_convert role and membertype to string.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225704_convert role and membertype to string.cs",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250306225704_convert role and membertype to string.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225704_convert role and membertype to string.cs",
+              "RelativeToolTip": "LibraryDataAccess\\Migrations\\20250306225704_convert role and membertype to string.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T22:57:04.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250306225433_membership type.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225433_membership type.cs",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250306225433_membership type.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225433_membership type.cs",
+              "RelativeToolTip": "LibraryDataAccess\\Migrations\\20250306225433_membership type.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T22:54:34.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LibraryDBContext.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\LibraryDBContext.cs",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\LibraryDBContext.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\LibraryDBContext.cs",
+              "RelativeToolTip": "LibraryDataAccess\\Models\\LibraryDBContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T22:54:07.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\User.cs",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\User.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\User.cs",
+              "RelativeToolTip": "LibraryDataAccess\\Models\\User.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:38:22.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Log.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\Log.cs",
+              "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\Log.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\Log.cs",
+              "RelativeToolTip": "LibraryDataAccess\\Models\\Log.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T18:05:46.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Welcome.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\Welcome.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\Welcome.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\Welcome.cs [Design]",
-              "RelativeToolTip": "LibraryPresentationLayer\\Welcome.cs [Design]",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\Welcome.cs",
+              "RelativeToolTip": "LibraryPresentationLayer\\Welcome.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T11:06:35.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MemberForm.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\MemberForm.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.cs [Design]",
+              "RelativeToolTip": "LibraryPresentationLayer\\MemberForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T19:00:48.842Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddBook.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\AddBook.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs [Design]",
+              "RelativeToolTip": "LibraryPresentationLayer\\AddBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T17:56:03.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminForm.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\AdminForm.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\AdminForm.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\AdminForm.cs [Design]",
+              "RelativeToolTip": "LibraryPresentationLayer\\AdminForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T17:55:29.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\SignUp.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\SignUp.cs [Design]",
+              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:36:40.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Welcome.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\Welcome.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\Welcome.cs",
+              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Welcome.cs [Design]",
+              "RelativeToolTip": "..\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Welcome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T00:28:40.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SignUp.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\SignUp.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryPresentationLayer\\SignUp.cs [Design]",
-              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs [Design]",
+              "DocumentIndex": 16,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\Login.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\Login.cs",
+              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Login.cs [Design]",
+              "RelativeToolTip": "..\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T18:56:03.392Z"
+              "WhenOpened": "2025-03-06T14:48:57.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\Form1.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\Entity Framework\\TASKS\\LibraryManagementSystem\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T22:00:53.233Z"
             }
