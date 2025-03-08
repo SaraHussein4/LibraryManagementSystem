@@ -106,6 +106,13 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         {
 
         }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            Login loginForm = new Login();
+            loginForm.Show();
+            this.Hide();
+        }
     }
 
 }

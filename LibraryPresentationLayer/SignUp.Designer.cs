@@ -35,10 +35,11 @@
             tb_confpass = new TextBox();
             btn_signUp = new Button();
             label1 = new Label();
-            label2 = new Label();
             checkbxShowPass = new CheckBox();
             tb_email = new TextBox();
             cb_membershipType = new ComboBox();
+            label2 = new Label();
+            btn_login = new Button();
             SuspendLayout();
             // 
             // tb_name
@@ -115,18 +116,6 @@
             label1.TabIndex = 8;
             label1.Text = "Already have an account ?";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.Tan;
-            label2.Location = new Point(267, 512);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(62, 25);
-            label2.TabIndex = 9;
-            label2.Text = "Log In";
-            // 
             // checkbxShowPass
             // 
             checkbxShowPass.AutoSize = true;
@@ -159,12 +148,39 @@
             cb_membershipType.TabIndex = 12;
             cb_membershipType.SelectedIndexChanged += cb_membershipType_SelectedIndexChanged;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.ForeColor = Color.Tan;
+            label2.Location = new Point(267, 512);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 25);
+            label2.TabIndex = 9;
+            // 
+            // btn_login
+            // 
+            btn_login.BackColor = Color.Ivory;
+            btn_login.Cursor = Cursors.Hand;
+            btn_login.FlatAppearance.BorderSize = 0;
+            btn_login.FlatStyle = FlatStyle.Flat;
+            btn_login.ForeColor = Color.Tan;
+            btn_login.Location = new Point(254, 513);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(112, 34);
+            btn_login.TabIndex = 13;
+            btn_login.Text = "LOGIN";
+            btn_login.UseVisualStyleBackColor = false;
+            btn_login.Click += btn_login_Click;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Welcome__1_;
             ClientSize = new Size(915, 572);
+            Controls.Add(btn_login);
             Controls.Add(cb_membershipType);
             Controls.Add(tb_email);
             Controls.Add(checkbxShowPass);
@@ -195,9 +211,10 @@
         private TextBox tb_confpass;
         private Button btn_signUp;
         private Label label1;
-        private Label label2;
         private CheckBox checkbxShowPass;
         private TextBox tb_email;
         private ComboBox cb_membershipType;
+        private Label label2;
+        private Button btn_login;
     }
 }

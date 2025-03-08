@@ -19,6 +19,21 @@ namespace LibraryManagementSystem.LibraryDataAccess.Service
             this.cxt = cxt;
         }
 
+
+        // check presence of user
+        public User AuthenticateUser(string username, string password)
+        {
+            var user = cxt.Users.FirstOrDefault(u => u.Username == username);
+
+            if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Password))
+            {
+                return user; 
+            }
+
+            return null;
+        }
+
+
         // Get all users from the database
         public List<User> GetUsers() => cxt.Users.ToList();
 
@@ -78,7 +93,7 @@ namespace LibraryManagementSystem.LibraryDataAccess.Service
                 Email = email,
                 Phone = phone,
                 Password = hashedPassword,
-                Role = Role.Member, // Default role is Member
+                Role = Role.Member, 
                 MemberShipType = membershipType
             };
 
@@ -86,6 +101,9 @@ namespace LibraryManagementSystem.LibraryDataAccess.Service
             cxt.Users.Add(newUser);
             cxt.SaveChanges();
             return true;
+
+
+
         }
     }
 }

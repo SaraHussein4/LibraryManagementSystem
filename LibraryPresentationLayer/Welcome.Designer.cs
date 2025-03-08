@@ -30,6 +30,7 @@
         {
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -39,12 +40,13 @@
             button1.Font = new Font("Maiandra GD", 13.8F);
             button1.ForeColor = SystemColors.Control;
             button1.Location = new Point(35, 439);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(165, 59);
             button1.TabIndex = 0;
             button1.Text = "Sign Up";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -53,12 +55,28 @@
             button2.Font = new Font("Maiandra GD", 13.8F);
             button2.ForeColor = SystemColors.Control;
             button2.Location = new Point(220, 439);
-            button2.Margin = new Padding(4, 4, 4, 4);
+            button2.Margin = new Padding(4);
             button2.Name = "button2";
             button2.Size = new Size(165, 59);
             button2.TabIndex = 1;
             button2.Text = "Log In";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.White;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatAppearance.MouseOverBackColor = Color.Red;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button3.Location = new Point(867, 12);
+            button3.Name = "button3";
+            button3.Size = new Size(51, 34);
+            button3.TabIndex = 2;
+            button3.Text = "X";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // Welcome
             // 
@@ -67,9 +85,11 @@
             BackColor = Color.Snow;
             BackgroundImage = Properties.Resources.Welcome;
             ClientSize = new Size(930, 519);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Margin = new Padding(4, 4, 4, 4);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(4);
             Name = "Welcome";
             Text = "Welcome";
             ResumeLayout(false);
@@ -79,5 +99,6 @@
 
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }
