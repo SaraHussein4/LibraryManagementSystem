@@ -10,9 +10,6 @@
     <Compile Update="LibraryPresentationLayer\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LibraryPresentationLayer\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="LibraryPresentationLayer\LibrarianForm.cs">
       <SubType>Form</SubType>
     </Compile>
