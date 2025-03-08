@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\entity framework\\tasks\\librarymanagementsystem\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\entity framework\\tasks\\librarymanagementsystem\\librarydataaccess\\migrations\\20250306225733_convert role and membertype to str.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\migrations\\20250306225733_convert role and membertype to str.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\entity framework\\tasks\\librarymanagementsystem\\librarydataaccess\\models\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\models\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\entity framework\\tasks\\librarymanagementsystem\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\librarypresentationlayer\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -62,19 +62,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "20250306225733_convert role and membertype to str.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryDataAccess\\Migrations\\20250306225733_convert role and membertype to str.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250306225733_convert role and membertype to str.cs",
@@ -99,6 +95,35 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
+              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs [Design]",
+              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:36:40.458Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
+              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs",
+              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T19:50:49.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 12,
               "Title": "20250306225433_membership type.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryDataAccess\\Migrations\\20250306225433_membership type.cs",
@@ -111,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LibraryDBContext.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryDataAccess\\Models\\LibraryDBContext.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\LibraryDBContext.cs",
@@ -123,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryDataAccess\\Models\\User.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\User.cs",
@@ -136,30 +161,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SignUp.cs",
-              "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
-              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs",
-              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T19:50:49.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SignUp.cs [Design]",
-              "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
-              "ToolTip": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryPresentationLayer\\SignUp.cs [Design]",
-              "RelativeToolTip": "LibraryPresentationLayer\\SignUp.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T19:36:40.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Log.cs",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryDataAccess\\Models\\Log.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\Log.cs",
@@ -193,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "App.config",
               "DocumentMoniker": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryDataAccess\\Models\\App.config",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\App.config",
