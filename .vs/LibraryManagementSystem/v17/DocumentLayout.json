@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\Iti\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\migrations\\20250308183628_add photo property to book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\migrations\\20250308183628_add photo property to book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\memberform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\memberform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|D:\\Iti\\Project\\librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarypresentationlayer\\addbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\migrations\\20250306225433_membership type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\migrations\\20250306225433_membership type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|d:\\iti\\project\\librarydataaccess\\migrations\\20250308183628_add photo property to book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA909036-A978-4BE3-A871-1E93FD0F1DAF}|LibraryManagementSystem.csproj|solutionrelative:librarydataaccess\\migrations\\20250308183628_add photo property to book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,7 +102,7 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MemberForm.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\MemberForm.cs",
@@ -131,20 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddBook.cs",
-              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\AddBook.cs",
-              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
-              "RelativeToolTip": "LibraryPresentationLayer\\AddBook.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAADwvzcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:12:33.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Book.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\Book.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\Book.cs",
@@ -156,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -164,12 +151,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:19:37.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T18:19:37.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 0,
               "Title": "20250308183628_add photo property to book.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250308183628_add photo property to book.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250308183628_add photo property to book.cs",
@@ -177,11 +163,12 @@
               "RelativeToolTip": "LibraryDataAccess\\Migrations\\20250308183628_add photo property to book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T18:36:29.161Z"
+              "WhenOpened": "2025-03-08T18:36:29.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "App.config",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\App.config",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\App.config",
@@ -193,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "SignUp.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\SignUp.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
@@ -206,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "20250306225733_convert role and membertype to str.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225733_convert role and membertype to str.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250306225733_convert role and membertype to str.cs",
@@ -218,7 +205,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 1,
+              "Title": "AddBook.cs [Design]",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\AddBook.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs [Design]",
+              "RelativeToolTip": "LibraryPresentationLayer\\AddBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T17:56:03.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddBook.cs",
+              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
+              "RelativeDocumentMoniker": "LibraryPresentationLayer\\AddBook.cs",
+              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
+              "RelativeToolTip": "LibraryPresentationLayer\\AddBook.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvzcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T18:12:33.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "20250306225704_convert role and membertype to string.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225704_convert role and membertype to string.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250306225704_convert role and membertype to string.cs",
@@ -230,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "20250306225433_membership type.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Migrations\\20250306225433_membership type.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Migrations\\20250306225433_membership type.cs",
@@ -242,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "LibraryDBContext.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\LibraryDBContext.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\LibraryDBContext.cs",
@@ -254,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\User.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\User.cs",
@@ -266,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Log.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryDataAccess\\Models\\Log.cs",
               "RelativeDocumentMoniker": "LibraryDataAccess\\Models\\Log.cs",
@@ -278,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Welcome.cs",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\Welcome.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\Welcome.cs",
@@ -290,35 +300,19 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MemberForm.cs [Design]",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\MemberForm.cs",
               "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\MemberForm.cs [Design]",
               "RelativeToolTip": "LibraryPresentationLayer\\MemberForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T19:00:48.842Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-08T19:00:48.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddBook.cs [Design]",
-              "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs",
-              "RelativeDocumentMoniker": "LibraryPresentationLayer\\AddBook.cs",
-              "ToolTip": "D:\\Iti\\Project\\LibraryPresentationLayer\\AddBook.cs [Design]",
-              "RelativeToolTip": "LibraryPresentationLayer\\AddBook.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T17:56:03.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AdminForm.cs [Design]",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\AdminForm.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\AdminForm.cs",
@@ -329,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "SignUp.cs [Design]",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\SignUp.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\SignUp.cs",
@@ -340,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Welcome.cs [Design]",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\Welcome.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\Welcome.cs",
@@ -351,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "D:\\Iti\\Project\\LibraryPresentationLayer\\Login.cs",
               "RelativeDocumentMoniker": "LibraryPresentationLayer\\Login.cs",
@@ -362,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Iti\\Project\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
