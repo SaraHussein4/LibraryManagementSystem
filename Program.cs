@@ -14,8 +14,9 @@ namespace LibraryManagementSystem
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
-            Application.Run(new Welcome());
+            //    Application.Run(new Welcome());
             //Application.Run(new SignUp());
+            Application.Run(new AddBook());
 
 
 
