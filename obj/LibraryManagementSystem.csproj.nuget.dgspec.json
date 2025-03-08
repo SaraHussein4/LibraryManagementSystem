@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {}
+    "D:\\Iti\\Project\\LibraryManagementSystem.csproj": {}
   },
   "projects": {
-    "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
+    "D:\\Iti\\Project\\LibraryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+        "projectUniqueName": "D:\\Iti\\Project\\LibraryManagementSystem.csproj",
         "projectName": "LibraryManagementSystem",
-        "projectPath": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+        "projectPath": "D:\\Iti\\Project\\LibraryManagementSystem.csproj",
         "packagesPath": "C:\\Users\\CM\\.nuget\\packages\\",
-        "outputPath": "D:\\Iti\\Entity Framework\\TASKS\\LibraryManagementSystem\\obj\\",
+        "outputPath": "D:\\Iti\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

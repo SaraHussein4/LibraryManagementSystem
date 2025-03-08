@@ -30,6 +30,8 @@ namespace LibraryManagementSystem.LibraryDataAccess.Models
 
         [Required]
         public int PublishedYear { get; set; }
+
+        public byte[] Image { get; set; }
         public virtual List<BorrowingRecord> BorrowingRecords { get; set; }
         public virtual List<Log> Logs { get; set; }
 
