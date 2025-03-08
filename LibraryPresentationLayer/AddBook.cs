@@ -55,7 +55,12 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 LibraryDBContext context = new LibraryDBContext();
                 Book book = new Book()
                 {
-
+                    Title = txtTitle.Text,
+                    Author = txtAuthor.Text,
+                    ISBN = txtISBN.Text,
+                    Category = txtCategory.Text,
+                    Quantity = int.Parse(txtQuantity.Text),
+                    PublishedYear = int.Parse(txtPublishedYear.Text),
                     Image = ConvertFileToByte(imagePath)
                 };
                 context.Books.Add(book);
