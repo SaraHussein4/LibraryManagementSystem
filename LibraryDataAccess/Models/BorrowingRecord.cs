@@ -35,5 +35,7 @@ namespace LibraryManagementSystem.LibraryDataAccess.Models
 
         [Required]
         public bool IsReturned { get; set; } = false;
+
+        public string Status { get; set; } = "Pending";
     }
 }

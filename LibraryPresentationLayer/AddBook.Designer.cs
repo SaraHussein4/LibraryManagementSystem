@@ -56,14 +56,14 @@
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Location = new Point(276, 284);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(194, 105);
+            pictureBox1.Size = new Size(121, 144);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // btn_add
             // 
-            btn_add.Location = new Point(276, 395);
+            btn_add.Location = new Point(272, 448);
             btn_add.Name = "btn_add";
             btn_add.Size = new Size(94, 29);
             btn_add.TabIndex = 2;
@@ -117,7 +117,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 521);
             Controls.Add(txtQuantity);
             Controls.Add(txtPublishedYear);
             Controls.Add(txtCategory);
@@ -129,6 +129,7 @@
             Controls.Add(button1);
             Name = "AddBook";
             Text = "AddBook";
+            Load += AddBook_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -17,6 +17,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
     {
         private readonly LibraryDBContext cxt;
         private readonly UserService userService;
+        public static User LoggedInUser;
+
         public Login()
         {
             InitializeComponent();
@@ -56,6 +58,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
             if (user != null)
             {
+                LoggedInUser = user;
                 MessageBox.Show($"Welcome, {user.Name}!", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 OpenFormBasedOnRole(user.Role);
@@ -112,6 +115,10 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+        private void Logout()
+        {
+            LoggedInUser = null;
         }
     }
 }

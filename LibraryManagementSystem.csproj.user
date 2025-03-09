@@ -10,13 +10,22 @@
     <Compile Update="LibraryPresentationLayer\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LibraryPresentationLayer\AdminRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LibraryPresentationLayer\LibrarianForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LibraryPresentationLayer\Login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LibraryPresentationLayer\ManageReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LibraryPresentationLayer\MemberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LibraryPresentationLayer\ProfileUpdateForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LibraryPresentationLayer\SignUp.cs">

@@ -34,7 +34,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         }
 
 
-        private byte[]  ConvertFileToByte(string sPath)
+        private byte[] ConvertFileToByte(string sPath)
         {
             byte[] data = null;
             if (!string.IsNullOrEmpty(sPath))
@@ -72,6 +72,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void AddBook_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
