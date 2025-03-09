@@ -22,10 +22,7 @@
     <Compile Update="LibraryPresentationLayer\ManageReturn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LibraryPresentationLayer\MemberForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="LibraryPresentationLayer\ProfileUpdateForm.cs">
+    <Compile Update="LibraryPresentationLayer\Member.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LibraryPresentationLayer\SignUp.cs">

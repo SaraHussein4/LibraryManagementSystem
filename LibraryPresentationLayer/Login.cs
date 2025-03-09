@@ -84,7 +84,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
             else if (userRole == Role.Member)
             {
-                nextForm = new MemberForm();
+                nextForm = new Member();
             }
 
             if (nextForm != null)
