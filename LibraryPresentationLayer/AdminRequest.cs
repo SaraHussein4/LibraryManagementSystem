@@ -26,13 +26,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             dgvRequests.Rows.Clear();
             dgvRequests.Columns.Clear();
 
-            // Add columns
             dgvRequests.Columns.Add("ID", "Request ID");
             dgvRequests.Columns.Add("MemberID", "Member ID");
             dgvRequests.Columns.Add("Title", "Book Title");
             dgvRequests.Columns.Add("RequestDate", "Request Date");
 
-            // Add action buttons
             dgvRequests.Columns.Add(new DataGridViewButtonColumn { Name = "Accept", Text = "Accept", UseColumnTextForButtonValue = true });
             dgvRequests.Columns.Add(new DataGridViewButtonColumn { Name = "Reject", Text = "Reject", UseColumnTextForButtonValue = true });
 
@@ -48,7 +46,6 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         RequestDate = r.BorrowDate
                     }).ToList();
 
-                // Add each request to DataGridView
                 foreach (var request in requests)
                 {
                     dgvRequests.Rows.Add(request.Id, request.MemberId, request.Title, request.RequestDate);

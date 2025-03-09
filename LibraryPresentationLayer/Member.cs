@@ -142,9 +142,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
         private void LoadBorrowedBooks()
         {
-            dgvBorrowedBooks.Rows.Clear(); // Clear existing rows
+            dgvBorrowedBooks.Rows.Clear(); 
 
-            // ✅ Ensure columns are added only once
             if (dgvBorrowedBooks.Columns.Count == 0)
             {
                 dgvBorrowedBooks.Columns.Add("ID", "ID");

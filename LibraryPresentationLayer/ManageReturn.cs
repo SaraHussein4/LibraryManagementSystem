@@ -23,7 +23,6 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             dgvBorrowedBooks.Rows.Clear();
             dgvBorrowedBooks.Columns.Clear();
 
-            // Add columns
             dgvBorrowedBooks.Columns.Add("ID", "Borrow ID");
             dgvBorrowedBooks.Columns.Add("MemberID", "Member ID");
             dgvBorrowedBooks.Columns.Add("Title", "Book Title");
@@ -31,7 +30,6 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             dgvBorrowedBooks.Columns.Add("DueDate", "Due Date");
             dgvBorrowedBooks.Columns.Add("Is Returned ?", "Is Returned ?");
 
-            // Add "Return" button column
             dgvBorrowedBooks.Columns.Add(new DataGridViewButtonColumn
             {
                 Name = "ReturnBook",
@@ -76,11 +74,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     var record = context.BorrowingRecords.FirstOrDefault(r => r.Id == borrowId);
                     if (record != null)
                     {
-                        record.IsReturned = true; // Update IsReturned property
+                        record.IsReturned = true; 
                         context.SaveChanges();
 
                         MessageBox.Show("Book marked as returned successfully.");
-                        LoadBorrowedBooks(); // Refresh the grid
+                        LoadBorrowedBooks(); 
                     }
                 }
             }
