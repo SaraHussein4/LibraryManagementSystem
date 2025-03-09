@@ -293,7 +293,6 @@ D:\Iti\Project\obj\Debug\net9.0-windows\refint\LibraryManagementSystem.dll
 D:\Iti\Project\obj\Debug\net9.0-windows\LibraryManagementSystem.pdb
 D:\Iti\Project\obj\Debug\net9.0-windows\LibraryManagementSystem.genruntimeconfig.cache
 D:\Iti\Project\obj\Debug\net9.0-windows\ref\LibraryManagementSystem.dll
-D:\Iti\Project\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.ViewBooks.resources
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AddBook.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\LibraryManagementSystem.exe
 C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\LibraryManagementSystem.dll.config

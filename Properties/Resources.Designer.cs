@@ -63,6 +63,16 @@ namespace LibraryManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0b54e106ca533b44d972e4f1cf52fb0c_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("0b54e106ca533b44d972e4f1cf52fb0c-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap de69627fb0fba8b26db7dda3837ccb26 {
             get {
                 object obj = ResourceManager.GetObject("de69627fb0fba8b26db7dda3837ccb26", resourceCulture);
