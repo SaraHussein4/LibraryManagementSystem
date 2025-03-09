@@ -297,3 +297,8 @@ C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-wind
 D:\Iti\Project\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.ProfileUpdateForm.resources
 D:\Iti\Project\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AdminRequest.resources
 D:\Iti\Project\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.ManageReturn.resources
+D:\Iti\Project\bin\Debug\net9.0-windows\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Iti\Project\bin\Debug\net9.0-windows\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Iti\Project\bin\Debug\net9.0-windows\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Iti\Project\bin\Debug\net9.0-windows\Microsoft.Extensions.Identity.Core.dll
+D:\Iti\Project\bin\Debug\net9.0-windows\Microsoft.Extensions.Identity.Stores.dll

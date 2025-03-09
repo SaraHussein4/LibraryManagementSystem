@@ -39,7 +39,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             using (var context = new LibraryDBContext())
             {
                 var requests = context.BorrowingRecords
-                    .Where(r => r.Status == "Pending")  // Fetch only pending requests
+                    .Where(r => r.Status == "Pending") 
                     .Select(r => new
                     {
                         r.Id,
@@ -70,12 +70,12 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         if (e.ColumnIndex == dgvRequests.Columns["Accept"].Index)
                         {
                             request.Status = "Approved";
-                            request.DueDate = DateTime.Now.AddDays(14); // Set due date 2 weeks later
+                            request.DueDate = DateTime.Now.AddDays(14); 
 
                             var book = context.Books.FirstOrDefault(b => b.Id == request.BookId);
                             if (book != null && book.Quantity > 0)
                             {
-                                book.Quantity -= 1; // Reduce book stock
+                                book.Quantity -= 1; 
                                 MessageBox.Show("Request approved.");
                             }
                             else
@@ -91,7 +91,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         }
 
                         context.SaveChanges();
-                        LoadPendingRequests(); // Refresh list
+                        LoadPendingRequests(); 
                     }
                 }
             }
