@@ -19,11 +19,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             viewAvailableBookToolStripMenuItem.Click += viewAvailableBookToolStripMenuItem_Click_1;
         }
 
-     
+
 
         private void LoadBooks()
         {
-            flowLayoutPanelBooks.Controls.Clear(); 
+            flowLayoutPanelBooks.Controls.Clear();
 
             using (LibraryDBContext context = new LibraryDBContext())
             {
@@ -87,6 +87,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         private void viewAvailableBookToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             LoadBooks();
+        }
+
+        private void borrowBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -44,58 +44,62 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { viewAvailableBookToolStripMenuItem, borrowBookToolStripMenuItem, returnBookToolStripMenuItem, updateProfileToolStripMenuItem, logOutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(700, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
             // viewAvailableBookToolStripMenuItem
             // 
             viewAvailableBookToolStripMenuItem.Name = "viewAvailableBookToolStripMenuItem";
-            viewAvailableBookToolStripMenuItem.Size = new Size(159, 24);
+            viewAvailableBookToolStripMenuItem.Size = new Size(125, 20);
             viewAvailableBookToolStripMenuItem.Text = "View Available Book";
             viewAvailableBookToolStripMenuItem.Click += viewAvailableBookToolStripMenuItem_Click_1;
             // 
             // borrowBookToolStripMenuItem
             // 
             borrowBookToolStripMenuItem.Name = "borrowBookToolStripMenuItem";
-            borrowBookToolStripMenuItem.Size = new Size(109, 24);
+            borrowBookToolStripMenuItem.Size = new Size(87, 20);
             borrowBookToolStripMenuItem.Text = "Borrow Book";
+            borrowBookToolStripMenuItem.Click += borrowBookToolStripMenuItem_Click;
             // 
             // returnBookToolStripMenuItem
             // 
             returnBookToolStripMenuItem.Name = "returnBookToolStripMenuItem";
-            returnBookToolStripMenuItem.Size = new Size(104, 24);
+            returnBookToolStripMenuItem.Size = new Size(84, 20);
             returnBookToolStripMenuItem.Text = "Return Book";
             // 
             // updateProfileToolStripMenuItem
             // 
             updateProfileToolStripMenuItem.Name = "updateProfileToolStripMenuItem";
-            updateProfileToolStripMenuItem.Size = new Size(119, 24);
+            updateProfileToolStripMenuItem.Size = new Size(94, 20);
             updateProfileToolStripMenuItem.Text = "Update Profile";
             // 
             // logOutToolStripMenuItem
             // 
             logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            logOutToolStripMenuItem.Size = new Size(72, 24);
+            logOutToolStripMenuItem.Size = new Size(59, 20);
             logOutToolStripMenuItem.Text = "LogOut";
             // 
             // flowLayoutPanelBooks
             // 
             flowLayoutPanelBooks.AutoScroll = true;
             flowLayoutPanelBooks.Dock = DockStyle.Fill;
-            flowLayoutPanelBooks.Location = new Point(0, 28);
+            flowLayoutPanelBooks.Location = new Point(0, 24);
+            flowLayoutPanelBooks.Margin = new Padding(3, 2, 3, 2);
             flowLayoutPanelBooks.Name = "flowLayoutPanelBooks";
-            flowLayoutPanelBooks.Size = new Size(800, 422);
+            flowLayoutPanelBooks.Size = new Size(700, 314);
             flowLayoutPanelBooks.TabIndex = 1;
             // 
             // MemberForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(flowLayoutPanelBooks);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "MemberForm";
             Text = "MemberForm";
             menuStrip1.ResumeLayout(false);

@@ -426,7 +426,6 @@ C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\Librar
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.Form1.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AddBook.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AdminForm.resources
-C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Form1.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.LibrarianForm.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Login.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.MemberForm.resources
