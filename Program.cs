@@ -16,11 +16,10 @@ namespace LibraryManagementSystem
             //Application.Run(new Form1());
             //Application.Run(new Welcome());
             //Application.Run(new AddBook());
-            Application.Run(new MemberForm());
+            //Application.Run(new MemberForm());
 
             //Application.Run(new SignUp());
-            //Application.Run(new ManageReturn());
-
+            Application.Run(new AdminForm());
 
 
 

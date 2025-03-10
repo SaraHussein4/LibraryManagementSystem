@@ -124,16 +124,19 @@
   <data name="DeWatermark.ai_1741085488178" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DeWatermark.ai_1741085488178.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="online-library-app-for-reading-banner-website-template-electronic-book-store-application-on-background-with-bookshelves-digital-technologies-in-education-graphic-vector-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\online-library-app-for-reading-banner-website-template-electronic-book-store-application-on-background-with-bookshelves-digital-technologies-in-education-graphic-vector-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Welcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Welcome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Welcome (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Welcome (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="de69627fb0fba8b26db7dda3837ccb26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\de69627fb0fba8b26db7dda3837ccb26.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Welcome (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Welcome (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Welcome" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Welcome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="online-library-app-for-reading-banner-website-template-electronic-book-store-application-on-background-with-bookshelves-digital-technologies-in-education-graphic-vector-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\online-library-app-for-reading-banner-website-template-electronic-book-store-application-on-background-with-bookshelves-digital-technologies-in-education-graphic-vector-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0b54e106ca533b44d972e4f1cf52fb0c-removebg-preview (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0b54e106ca533b44d972e4f1cf52fb0c-removebg-preview (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
