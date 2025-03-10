@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {}
+    "D:\\Iti\\LibraryProject\\LibraryManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
+    "D:\\Iti\\LibraryProject\\LibraryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+        "projectUniqueName": "D:\\Iti\\LibraryProject\\LibraryManagementSystem.csproj",
         "projectName": "LibraryManagementSystem",
-        "projectPath": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\mr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\obj\\",
+        "projectPath": "D:\\Iti\\LibraryProject\\LibraryManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\CM\\.nuget\\packages\\",
+        "outputPath": "D:\\Iti\\LibraryProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.6.1, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -71,6 +75,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.4, )"
             }
           },
           "imports": [

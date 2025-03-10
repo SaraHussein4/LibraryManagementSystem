@@ -6,6 +6,9 @@ using System.Windows.Forms;
 using BCrypt.Net;
 using Microsoft.VisualBasic.ApplicationServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using OfficeOpenXml;
 
 namespace LibraryManagementSystem.LibraryPresentationLayer
 {
@@ -17,6 +20,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         {
             InitializeComponent();
             context = new LibraryDBContext();
+            GenerateBorrowedBooksReport();
         }
 
         private void AdminForm_Load(object sender, EventArgs e)
@@ -36,7 +40,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             MemberShipType_cbox.DataSource = Enum.GetValues(typeof(MemberShipType));
             MemberRole_cbox.DataSource = Enum.GetValues(typeof(Role));
             MemberRole_cbox.Visible = false;
-           MemberRolev2Lbl.Visible = false;
+            MemberRolev2Lbl.Visible = false;
             //Librian
             dgv_Librian.DataSource = context.Users
      .Select(u => new
@@ -155,7 +159,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             MemberEmail_txt.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
             MemberPhone_txt.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
             MemberPassword_txt.Visible = false;
-           MemberPasswordv2Lbl.Visible = false;
+            MemberPasswordv2Lbl.Visible = false;
             MemberUserName_txt.Enabled = false;
             AddMemberBtn.Enabled = false;
             if (Enum.TryParse(dataGridView1.SelectedRows[0].Cells[2].Value.ToString(), out Role userRole))
@@ -168,7 +172,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 MemberShipType_cbox.SelectedItem = membershipType;
             }
             MemberRole_cbox.Visible = true;
-           MemberRolev2Lbl.Visible = true;
+            MemberRolev2Lbl.Visible = true;
         }
 
         private void UpdateMemberBtn_Click(object sender, EventArgs e)
@@ -334,7 +338,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                  MemberShipType_cbox.SelectedItem = membershipType;
              }*/
             MemberRole_cbox.Visible = true;
-           MemberRolev2Lbl.Visible = true;
+            MemberRolev2Lbl.Visible = true;
 
         }
 
@@ -390,6 +394,349 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
                 MessageBox.Show("deleted");
             }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void ExportToExcel(DataGridView dgv, string fileName)
+        {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            using (ExcelPackage excel = new ExcelPackage())
+            {
+                ExcelWorksheet worksheet = excel.Workbook.Worksheets.Add("Report");
+
+                // Header
+                for (int i = 1; i <= dgv.Columns.Count; i++)
+                {
+                    worksheet.Cells[1, i].Value = dgv.Columns[i - 1].HeaderText;
+                }
+
+                // Data
+                for (int i = 0; i < dgv.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dgv.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1].Value = dgv.Rows[i].Cells[j].Value?.ToString();
+                    }
+                }
+
+                // Save to file
+                SaveFileDialog saveFileDialog = new SaveFileDialog
+                {
+                    Filter = "Excel Files|*.xlsx",
+                    FileName = fileName
+                };
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllBytes(saveFileDialog.FileName, excel.GetAsByteArray());
+                    MessageBox.Show("Excel Report Generated Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+        private void ExportToPDF(DataGridView dgv, string fileName)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog
+            {
+                Filter = "PDF Files|*.pdf",
+                FileName = fileName
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                Document document = new Document(PageSize.A4);
+                PdfWriter.GetInstance(document, new FileStream(saveFileDialog.FileName, FileMode.Create));
+                document.Open();
+
+                PdfPTable table = new PdfPTable(dgv.Columns.Count);
+                table.WidthPercentage = 100;
+
+                // Header
+                foreach (DataGridViewColumn column in dgv.Columns)
+                {
+                    PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                    cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                    table.AddCell(cell);
+                }
+
+                // Data
+                foreach (DataGridViewRow row in dgv.Rows)
+                {
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        table.AddCell(cell.Value?.ToString() ?? "");
+                    }
+                }
+
+                document.Add(table);
+                document.Close();
+                MessageBox.Show("PDF Report Generated Successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+
+
+
+
+        private void GenerateBorrowedBooksReport()
+        {
+            var borrowedBooks = context.BorrowingRecords
+                .Where(b => b.ReturnDate == null) // Books not returned yet
+                .Select(b => new
+                {
+                    b.Id,
+                    b.Book.Title,
+                    b.Member.Name,
+                    b.BorrowDate,
+                    b.DueDate
+                }).ToList();
+
+            dgv_Report.DataSource = borrowedBooks;
+        }
+
+        private void GenerateAvailableBooksReport()
+        {
+            var availableBooks = context.Books
+                .Where(b => b.Quantity > 0) // Books in stock
+                .Select(b => new
+                {
+                    b.Id,
+                    b.Title,
+                    b.Author,
+                    b.ISBN,
+                    b.PublishedYear,
+                    b.Quantity
+                }).ToList();
+
+            dgv_Report.DataSource = availableBooks;
+        }
+
+
+
+        private void GenerateOverdueBooksReport()
+        {
+            var overdueBooks = context.BorrowingRecords
+                .Where(b => b.DueDate < DateTime.Now && b.ReturnDate == null) // Overdue and not returned
+                .Select(b => new
+                {
+                    b.Id,
+                    b.Book.Title,
+                    b.Member.Name,
+                    b.BorrowDate,
+                    b.DueDate
+                }).ToList();
+
+            dgv_Report.DataSource = overdueBooks;
+        }
+
+        private void ExcelExport_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(dgv_Report, "Library_Report.xlsx");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ExportToPDF(dgv_Report, "Library_Report.pdf");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GenerateOverdueBooksReport();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            GenerateBorrowedBooksReport();
+        }
+
+        private void ReportsPage_Click(object sender, EventArgs e)
+        {
+            GenerateAvailableBooksReport();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
