@@ -34,6 +34,12 @@
             SignoutPage = new TabPage();
             EditProfilePage = new TabPage();
             ReportsPage = new TabPage();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            ExcelExport = new Button();
+            dgv_Report = new DataGridView();
             RequestsPage = new TabPage();
             ReturnSTimePage = new TabPage();
             BorrowsBookPage = new TabPage();
@@ -84,6 +90,8 @@
             MemberShipTypeLbl = new Label();
             MemberNameLbl = new Label();
             dataGridView1 = new DataGridView();
+            ReportsPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgv_Report).BeginInit();
             StaffPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Librian).BeginInit();
             Members.SuspendLayout();
@@ -93,63 +101,136 @@
             // 
             // SignoutPage
             // 
-            SignoutPage.Location = new Point(4, 24);
+            SignoutPage.Location = new Point(4, 29);
+            SignoutPage.Margin = new Padding(3, 4, 3, 4);
             SignoutPage.Name = "SignoutPage";
-            SignoutPage.Size = new Size(793, 419);
+            SignoutPage.Size = new Size(907, 563);
             SignoutPage.TabIndex = 9;
             SignoutPage.Text = "Sign out";
             SignoutPage.UseVisualStyleBackColor = true;
             // 
             // EditProfilePage
             // 
-            EditProfilePage.Location = new Point(4, 24);
+            EditProfilePage.Location = new Point(4, 29);
+            EditProfilePage.Margin = new Padding(3, 4, 3, 4);
             EditProfilePage.Name = "EditProfilePage";
-            EditProfilePage.Size = new Size(793, 419);
+            EditProfilePage.Size = new Size(907, 563);
             EditProfilePage.TabIndex = 8;
             EditProfilePage.Text = "Edit Profile";
             EditProfilePage.UseVisualStyleBackColor = true;
             // 
             // ReportsPage
             // 
-            ReportsPage.Location = new Point(4, 24);
+            ReportsPage.Controls.Add(button4);
+            ReportsPage.Controls.Add(button3);
+            ReportsPage.Controls.Add(button2);
+            ReportsPage.Controls.Add(button1);
+            ReportsPage.Controls.Add(ExcelExport);
+            ReportsPage.Controls.Add(dgv_Report);
+            ReportsPage.Location = new Point(4, 29);
+            ReportsPage.Margin = new Padding(3, 4, 3, 4);
             ReportsPage.Name = "ReportsPage";
-            ReportsPage.Size = new Size(793, 419);
+            ReportsPage.Size = new Size(907, 563);
             ReportsPage.TabIndex = 7;
             ReportsPage.Text = "Reports";
             ReportsPage.UseVisualStyleBackColor = true;
+            ReportsPage.Click += ReportsPage_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(600, 23);
+            button4.Name = "button4";
+            button4.Size = new Size(175, 29);
+            button4.TabIndex = 5;
+            button4.Text = "View Available Book";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(295, 23);
+            button3.Name = "button3";
+            button3.Size = new Size(247, 29);
+            button3.TabIndex = 4;
+            button3.Text = "View Borrowed Books";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(41, 23);
+            button2.Name = "button2";
+            button2.Size = new Size(228, 29);
+            button2.TabIndex = 3;
+            button2.Text = "View Overdue Books ";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(276, 78);
+            button1.Name = "button1";
+            button1.Size = new Size(161, 29);
+            button1.TabIndex = 2;
+            button1.Text = "Export To PDF";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // ExcelExport
+            // 
+            ExcelExport.Location = new Point(41, 78);
+            ExcelExport.Name = "ExcelExport";
+            ExcelExport.Size = new Size(161, 29);
+            ExcelExport.TabIndex = 1;
+            ExcelExport.Text = "Export To Excel";
+            ExcelExport.UseVisualStyleBackColor = true;
+            ExcelExport.Click += ExcelExport_Click;
+            // 
+            // dgv_Report
+            // 
+            dgv_Report.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_Report.Location = new Point(0, 124);
+            dgv_Report.Name = "dgv_Report";
+            dgv_Report.RowHeadersWidth = 51;
+            dgv_Report.Size = new Size(944, 439);
+            dgv_Report.TabIndex = 0;
             // 
             // RequestsPage
             // 
-            RequestsPage.Location = new Point(4, 24);
+            RequestsPage.Location = new Point(4, 29);
+            RequestsPage.Margin = new Padding(3, 4, 3, 4);
             RequestsPage.Name = "RequestsPage";
-            RequestsPage.Size = new Size(793, 419);
+            RequestsPage.Size = new Size(907, 563);
             RequestsPage.TabIndex = 6;
             RequestsPage.Text = "Requests";
             RequestsPage.UseVisualStyleBackColor = true;
             // 
             // ReturnSTimePage
             // 
-            ReturnSTimePage.Location = new Point(4, 24);
+            ReturnSTimePage.Location = new Point(4, 29);
+            ReturnSTimePage.Margin = new Padding(3, 4, 3, 4);
             ReturnSTimePage.Name = "ReturnSTimePage";
-            ReturnSTimePage.Size = new Size(793, 419);
+            ReturnSTimePage.Size = new Size(907, 563);
             ReturnSTimePage.TabIndex = 5;
             ReturnSTimePage.Text = "Confirm Return Books";
             ReturnSTimePage.UseVisualStyleBackColor = true;
             // 
             // BorrowsBookPage
             // 
-            BorrowsBookPage.Location = new Point(4, 24);
+            BorrowsBookPage.Location = new Point(4, 29);
+            BorrowsBookPage.Margin = new Padding(3, 4, 3, 4);
             BorrowsBookPage.Name = "BorrowsBookPage";
-            BorrowsBookPage.Size = new Size(793, 419);
+            BorrowsBookPage.Size = new Size(907, 563);
             BorrowsBookPage.TabIndex = 3;
             BorrowsBookPage.Text = "Borrows Book";
             BorrowsBookPage.UseVisualStyleBackColor = true;
             // 
             // AllBooksPage
             // 
-            AllBooksPage.Location = new Point(4, 24);
+            AllBooksPage.Location = new Point(4, 29);
+            AllBooksPage.Margin = new Padding(3, 4, 3, 4);
             AllBooksPage.Name = "AllBooksPage";
-            AllBooksPage.Size = new Size(793, 419);
+            AllBooksPage.Size = new Size(907, 563);
             AllBooksPage.TabIndex = 2;
             AllBooksPage.Text = "All Books";
             AllBooksPage.UseVisualStyleBackColor = true;
@@ -175,19 +256,21 @@
             StaffPage.Controls.Add(LibrianRole_cbox);
             StaffPage.Controls.Add(LibrianShipType_cbox);
             StaffPage.Font = new Font("Segoe UI", 13F);
-            StaffPage.Location = new Point(4, 24);
+            StaffPage.Location = new Point(4, 29);
+            StaffPage.Margin = new Padding(3, 4, 3, 4);
             StaffPage.Name = "StaffPage";
-            StaffPage.Padding = new Padding(3);
-            StaffPage.Size = new Size(793, 419);
+            StaffPage.Padding = new Padding(3, 4, 3, 4);
+            StaffPage.Size = new Size(907, 563);
             StaffPage.TabIndex = 1;
             StaffPage.Text = "Staff";
             StaffPage.UseVisualStyleBackColor = true;
             // 
             // LibrianDeleteBtn
             // 
-            LibrianDeleteBtn.Location = new Point(350, 196);
+            LibrianDeleteBtn.Location = new Point(400, 261);
+            LibrianDeleteBtn.Margin = new Padding(3, 4, 3, 4);
             LibrianDeleteBtn.Name = "LibrianDeleteBtn";
-            LibrianDeleteBtn.Size = new Size(115, 36);
+            LibrianDeleteBtn.Size = new Size(131, 48);
             LibrianDeleteBtn.TabIndex = 18;
             LibrianDeleteBtn.Text = "delete";
             LibrianDeleteBtn.UseVisualStyleBackColor = true;
@@ -195,9 +278,10 @@
             // 
             // LibrianUpdateBtn
             // 
-            LibrianUpdateBtn.Location = new Point(229, 196);
+            LibrianUpdateBtn.Location = new Point(262, 261);
+            LibrianUpdateBtn.Margin = new Padding(3, 4, 3, 4);
             LibrianUpdateBtn.Name = "LibrianUpdateBtn";
-            LibrianUpdateBtn.Size = new Size(115, 36);
+            LibrianUpdateBtn.Size = new Size(131, 48);
             LibrianUpdateBtn.TabIndex = 17;
             LibrianUpdateBtn.Text = "Update";
             LibrianUpdateBtn.UseVisualStyleBackColor = true;
@@ -205,9 +289,10 @@
             // 
             // LibrianAddBtn
             // 
-            LibrianAddBtn.Location = new Point(98, 196);
+            LibrianAddBtn.Location = new Point(112, 261);
+            LibrianAddBtn.Margin = new Padding(3, 4, 3, 4);
             LibrianAddBtn.Name = "LibrianAddBtn";
-            LibrianAddBtn.Size = new Size(115, 36);
+            LibrianAddBtn.Size = new Size(131, 48);
             LibrianAddBtn.TabIndex = 16;
             LibrianAddBtn.Text = "Add";
             LibrianAddBtn.UseVisualStyleBackColor = true;
@@ -218,124 +303,133 @@
             dgv_Librian.BackgroundColor = Color.White;
             dgv_Librian.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgv_Librian.GridColor = Color.Gray;
-            dgv_Librian.Location = new Point(32, 238);
+            dgv_Librian.Location = new Point(37, 317);
+            dgv_Librian.Margin = new Padding(3, 4, 3, 4);
             dgv_Librian.Name = "dgv_Librian";
-            dgv_Librian.Size = new Size(735, 173);
+            dgv_Librian.RowHeadersWidth = 51;
+            dgv_Librian.Size = new Size(840, 231);
             dgv_Librian.TabIndex = 15;
             dgv_Librian.RowHeaderMouseDoubleClick += dgv_Librian_RowHeaderMouseDoubleClick;
             // 
             // LibrianPhoneLbl
             // 
             LibrianPhoneLbl.AutoSize = true;
-            LibrianPhoneLbl.Location = new Point(48, 62);
+            LibrianPhoneLbl.Location = new Point(55, 83);
             LibrianPhoneLbl.Name = "LibrianPhoneLbl";
-            LibrianPhoneLbl.Size = new Size(62, 25);
+            LibrianPhoneLbl.Size = new Size(74, 30);
             LibrianPhoneLbl.TabIndex = 14;
             LibrianPhoneLbl.Text = "Phone";
             // 
             // LibrianEmailLbl
             // 
             LibrianEmailLbl.AutoSize = true;
-            LibrianEmailLbl.Location = new Point(48, 104);
+            LibrianEmailLbl.Location = new Point(55, 139);
             LibrianEmailLbl.Name = "LibrianEmailLbl";
-            LibrianEmailLbl.Size = new Size(54, 25);
+            LibrianEmailLbl.Size = new Size(64, 30);
             LibrianEmailLbl.TabIndex = 13;
             LibrianEmailLbl.Text = "Email";
             // 
             // LibrianUserNameLbl
             // 
             LibrianUserNameLbl.AutoSize = true;
-            LibrianUserNameLbl.Location = new Point(218, 29);
+            LibrianUserNameLbl.Location = new Point(249, 39);
             LibrianUserNameLbl.Name = "LibrianUserNameLbl";
-            LibrianUserNameLbl.Size = new Size(99, 25);
+            LibrianUserNameLbl.Size = new Size(121, 30);
             LibrianUserNameLbl.TabIndex = 12;
             LibrianUserNameLbl.Text = "User Name";
             // 
             // LibrianPasswordLbl
             // 
             LibrianPasswordLbl.AutoSize = true;
-            LibrianPasswordLbl.Location = new Point(20, 152);
+            LibrianPasswordLbl.Location = new Point(23, 203);
             LibrianPasswordLbl.Name = "LibrianPasswordLbl";
-            LibrianPasswordLbl.Size = new Size(87, 25);
+            LibrianPasswordLbl.Size = new Size(103, 30);
             LibrianPasswordLbl.TabIndex = 11;
             LibrianPasswordLbl.Text = "Password";
             // 
             // LibrianShipTypeLbl
             // 
             LibrianShipTypeLbl.AutoSize = true;
-            LibrianShipTypeLbl.Location = new Point(229, 82);
+            LibrianShipTypeLbl.Location = new Point(262, 109);
             LibrianShipTypeLbl.Name = "LibrianShipTypeLbl";
-            LibrianShipTypeLbl.Size = new Size(84, 25);
+            LibrianShipTypeLbl.Size = new Size(102, 30);
             LibrianShipTypeLbl.TabIndex = 10;
             LibrianShipTypeLbl.Text = "ShipType";
             // 
             // LibrianRoleLbl
             // 
             LibrianRoleLbl.AutoSize = true;
-            LibrianRoleLbl.Location = new Point(254, 122);
+            LibrianRoleLbl.Location = new Point(290, 163);
             LibrianRoleLbl.Name = "LibrianRoleLbl";
-            LibrianRoleLbl.Size = new Size(46, 25);
+            LibrianRoleLbl.Size = new Size(55, 30);
             LibrianRoleLbl.TabIndex = 9;
             LibrianRoleLbl.Text = "Role";
             // 
             // LibrianNameLbl
             // 
             LibrianNameLbl.AutoSize = true;
-            LibrianNameLbl.Location = new Point(48, 23);
+            LibrianNameLbl.Location = new Point(55, 31);
             LibrianNameLbl.Name = "LibrianNameLbl";
-            LibrianNameLbl.Size = new Size(59, 25);
+            LibrianNameLbl.Size = new Size(71, 30);
             LibrianNameLbl.TabIndex = 8;
             LibrianNameLbl.Text = "Name";
             // 
             // LibrianUserName_txt
             // 
-            LibrianUserName_txt.Location = new Point(321, 29);
+            LibrianUserName_txt.Location = new Point(367, 39);
+            LibrianUserName_txt.Margin = new Padding(3, 4, 3, 4);
             LibrianUserName_txt.Name = "LibrianUserName_txt";
-            LibrianUserName_txt.Size = new Size(121, 31);
+            LibrianUserName_txt.Size = new Size(138, 36);
             LibrianUserName_txt.TabIndex = 7;
             // 
             // LibrianPhone_txt
             // 
-            LibrianPhone_txt.Location = new Point(113, 62);
+            LibrianPhone_txt.Location = new Point(129, 83);
+            LibrianPhone_txt.Margin = new Padding(3, 4, 3, 4);
             LibrianPhone_txt.Name = "LibrianPhone_txt";
-            LibrianPhone_txt.Size = new Size(100, 31);
+            LibrianPhone_txt.Size = new Size(114, 36);
             LibrianPhone_txt.TabIndex = 6;
             // 
             // LibrianEmail_txt
             // 
-            LibrianEmail_txt.Location = new Point(113, 101);
+            LibrianEmail_txt.Location = new Point(129, 135);
+            LibrianEmail_txt.Margin = new Padding(3, 4, 3, 4);
             LibrianEmail_txt.Name = "LibrianEmail_txt";
-            LibrianEmail_txt.Size = new Size(100, 31);
+            LibrianEmail_txt.Size = new Size(114, 36);
             LibrianEmail_txt.TabIndex = 5;
             // 
             // LibrianPassword_txt
             // 
-            LibrianPassword_txt.Location = new Point(113, 150);
+            LibrianPassword_txt.Location = new Point(129, 200);
+            LibrianPassword_txt.Margin = new Padding(3, 4, 3, 4);
             LibrianPassword_txt.Name = "LibrianPassword_txt";
-            LibrianPassword_txt.Size = new Size(100, 31);
+            LibrianPassword_txt.Size = new Size(114, 36);
             LibrianPassword_txt.TabIndex = 4;
             // 
             // LibrianName_txt
             // 
-            LibrianName_txt.Location = new Point(113, 23);
+            LibrianName_txt.Location = new Point(129, 31);
+            LibrianName_txt.Margin = new Padding(3, 4, 3, 4);
             LibrianName_txt.Name = "LibrianName_txt";
-            LibrianName_txt.Size = new Size(100, 31);
+            LibrianName_txt.Size = new Size(114, 36);
             LibrianName_txt.TabIndex = 2;
             // 
             // LibrianRole_cbox
             // 
             LibrianRole_cbox.FormattingEnabled = true;
-            LibrianRole_cbox.Location = new Point(321, 119);
+            LibrianRole_cbox.Location = new Point(367, 159);
+            LibrianRole_cbox.Margin = new Padding(3, 4, 3, 4);
             LibrianRole_cbox.Name = "LibrianRole_cbox";
-            LibrianRole_cbox.Size = new Size(121, 31);
+            LibrianRole_cbox.Size = new Size(138, 38);
             LibrianRole_cbox.TabIndex = 1;
             // 
             // LibrianShipType_cbox
             // 
             LibrianShipType_cbox.FormattingEnabled = true;
-            LibrianShipType_cbox.Location = new Point(321, 79);
+            LibrianShipType_cbox.Location = new Point(367, 105);
+            LibrianShipType_cbox.Margin = new Padding(3, 4, 3, 4);
             LibrianShipType_cbox.Name = "LibrianShipType_cbox";
-            LibrianShipType_cbox.Size = new Size(121, 31);
+            LibrianShipType_cbox.Size = new Size(138, 38);
             LibrianShipType_cbox.TabIndex = 0;
             // 
             // Members
@@ -350,10 +444,11 @@
             Members.Controls.Add(ReportsPage);
             Members.Controls.Add(EditProfilePage);
             Members.Controls.Add(SignoutPage);
-            Members.Location = new Point(-1, 3);
+            Members.Location = new Point(-1, 4);
+            Members.Margin = new Padding(3, 4, 3, 4);
             Members.Name = "Members";
             Members.SelectedIndex = 0;
-            Members.Size = new Size(801, 447);
+            Members.Size = new Size(915, 596);
             Members.TabIndex = 0;
             // 
             // MembersPage
@@ -384,10 +479,11 @@
             MembersPage.Controls.Add(MemberNameLbl);
             MembersPage.Controls.Add(dataGridView1);
             MembersPage.Font = new Font("Segoe UI", 11F);
-            MembersPage.Location = new Point(4, 24);
+            MembersPage.Location = new Point(4, 29);
+            MembersPage.Margin = new Padding(3, 4, 3, 4);
             MembersPage.Name = "MembersPage";
-            MembersPage.Padding = new Padding(3);
-            MembersPage.Size = new Size(793, 419);
+            MembersPage.Padding = new Padding(3, 4, 3, 4);
+            MembersPage.Size = new Size(907, 563);
             MembersPage.TabIndex = 0;
             MembersPage.Text = "Members";
             MembersPage.UseVisualStyleBackColor = true;
@@ -395,71 +491,72 @@
             // MemberRolev2Lbl
             // 
             MemberRolev2Lbl.AutoSize = true;
-            MemberRolev2Lbl.Location = new Point(231, 69);
+            MemberRolev2Lbl.Location = new Point(264, 92);
             MemberRolev2Lbl.Name = "MemberRolev2Lbl";
-            MemberRolev2Lbl.Size = new Size(39, 20);
+            MemberRolev2Lbl.Size = new Size(48, 25);
             MemberRolev2Lbl.TabIndex = 24;
             MemberRolev2Lbl.Text = "Role";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(205, 29);
+            label6.Location = new Point(234, 39);
             label6.Name = "label6";
-            label6.Size = new Size(73, 20);
+            label6.Size = new Size(93, 25);
             label6.TabIndex = 23;
             label6.Text = "Ship Type";
             // 
             // MemberPasswordv2Lbl
             // 
             MemberPasswordv2Lbl.AutoSize = true;
-            MemberPasswordv2Lbl.Location = new Point(9, 168);
+            MemberPasswordv2Lbl.Location = new Point(10, 224);
             MemberPasswordv2Lbl.Name = "MemberPasswordv2Lbl";
-            MemberPasswordv2Lbl.Size = new Size(70, 20);
+            MemberPasswordv2Lbl.Size = new Size(91, 25);
             MemberPasswordv2Lbl.TabIndex = 22;
             MemberPasswordv2Lbl.Text = "Password";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(6, 132);
+            label4.Location = new Point(7, 176);
             label4.Name = "label4";
-            label4.Size = new Size(82, 20);
+            label4.Size = new Size(105, 25);
             label4.TabIndex = 21;
             label4.Text = "User Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(26, 98);
+            label3.Location = new Point(30, 131);
             label3.Name = "label3";
-            label3.Size = new Size(46, 20);
+            label3.Size = new Size(58, 25);
             label3.TabIndex = 20;
             label3.Text = "Email";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(26, 65);
+            label2.Location = new Point(30, 87);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(66, 25);
             label2.TabIndex = 19;
             label2.Text = "Phone";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(27, 28);
+            label1.Location = new Point(31, 37);
             label1.Name = "label1";
-            label1.Size = new Size(49, 20);
+            label1.Size = new Size(62, 25);
             label1.TabIndex = 18;
             label1.Text = "Name";
             // 
             // UpdateMemberBtn
             // 
-            UpdateMemberBtn.Location = new Point(319, 203);
+            UpdateMemberBtn.Location = new Point(365, 271);
+            UpdateMemberBtn.Margin = new Padding(3, 4, 3, 4);
             UpdateMemberBtn.Name = "UpdateMemberBtn";
-            UpdateMemberBtn.Size = new Size(75, 29);
+            UpdateMemberBtn.Size = new Size(86, 39);
             UpdateMemberBtn.TabIndex = 17;
             UpdateMemberBtn.Text = "Update";
             UpdateMemberBtn.UseVisualStyleBackColor = true;
@@ -467,9 +564,10 @@
             // 
             // DeleteMemberBtn
             // 
-            DeleteMemberBtn.Location = new Point(424, 203);
+            DeleteMemberBtn.Location = new Point(485, 271);
+            DeleteMemberBtn.Margin = new Padding(3, 4, 3, 4);
             DeleteMemberBtn.Name = "DeleteMemberBtn";
-            DeleteMemberBtn.Size = new Size(94, 29);
+            DeleteMemberBtn.Size = new Size(107, 39);
             DeleteMemberBtn.TabIndex = 16;
             DeleteMemberBtn.Text = "Delete";
             DeleteMemberBtn.UseVisualStyleBackColor = true;
@@ -477,9 +575,10 @@
             // 
             // AddMemberBtn
             // 
-            AddMemberBtn.Location = new Point(217, 203);
+            AddMemberBtn.Location = new Point(248, 271);
+            AddMemberBtn.Margin = new Padding(3, 4, 3, 4);
             AddMemberBtn.Name = "AddMemberBtn";
-            AddMemberBtn.Size = new Size(75, 29);
+            AddMemberBtn.Size = new Size(86, 39);
             AddMemberBtn.TabIndex = 15;
             AddMemberBtn.Text = "Add";
             AddMemberBtn.UseVisualStyleBackColor = true;
@@ -487,109 +586,116 @@
             // 
             // MemberPhone_txt
             // 
-            MemberPhone_txt.Location = new Point(92, 58);
+            MemberPhone_txt.Location = new Point(105, 77);
+            MemberPhone_txt.Margin = new Padding(3, 4, 3, 4);
             MemberPhone_txt.Name = "MemberPhone_txt";
-            MemberPhone_txt.Size = new Size(100, 27);
+            MemberPhone_txt.Size = new Size(114, 32);
             MemberPhone_txt.TabIndex = 14;
             // 
             // MemberEmail_txt
             // 
-            MemberEmail_txt.Location = new Point(92, 91);
+            MemberEmail_txt.Location = new Point(105, 121);
+            MemberEmail_txt.Margin = new Padding(3, 4, 3, 4);
             MemberEmail_txt.Name = "MemberEmail_txt";
-            MemberEmail_txt.Size = new Size(100, 27);
+            MemberEmail_txt.Size = new Size(114, 32);
             MemberEmail_txt.TabIndex = 13;
             // 
             // MemberPassword_txt
             // 
-            MemberPassword_txt.Location = new Point(92, 168);
+            MemberPassword_txt.Location = new Point(105, 224);
+            MemberPassword_txt.Margin = new Padding(3, 4, 3, 4);
             MemberPassword_txt.Name = "MemberPassword_txt";
-            MemberPassword_txt.Size = new Size(100, 27);
+            MemberPassword_txt.Size = new Size(114, 32);
             MemberPassword_txt.TabIndex = 12;
             // 
             // MemberUserName_txt
             // 
-            MemberUserName_txt.Location = new Point(92, 129);
+            MemberUserName_txt.Location = new Point(105, 172);
+            MemberUserName_txt.Margin = new Padding(3, 4, 3, 4);
             MemberUserName_txt.Name = "MemberUserName_txt";
-            MemberUserName_txt.Size = new Size(100, 27);
+            MemberUserName_txt.Size = new Size(114, 32);
             MemberUserName_txt.TabIndex = 11;
             // 
             // MemberName_txt
             // 
-            MemberName_txt.Location = new Point(92, 22);
+            MemberName_txt.Location = new Point(105, 29);
+            MemberName_txt.Margin = new Padding(3, 4, 3, 4);
             MemberName_txt.Name = "MemberName_txt";
-            MemberName_txt.Size = new Size(100, 27);
+            MemberName_txt.Size = new Size(114, 32);
             MemberName_txt.TabIndex = 10;
             // 
             // MemberShipType_cbox
             // 
             MemberShipType_cbox.FormattingEnabled = true;
-            MemberShipType_cbox.Location = new Point(285, 25);
+            MemberShipType_cbox.Location = new Point(326, 33);
+            MemberShipType_cbox.Margin = new Padding(3, 4, 3, 4);
             MemberShipType_cbox.Name = "MemberShipType_cbox";
-            MemberShipType_cbox.Size = new Size(121, 28);
+            MemberShipType_cbox.Size = new Size(138, 33);
             MemberShipType_cbox.TabIndex = 9;
             // 
             // MemberRole_cbox
             // 
             MemberRole_cbox.FormattingEnabled = true;
-            MemberRole_cbox.Location = new Point(285, 65);
+            MemberRole_cbox.Location = new Point(326, 87);
+            MemberRole_cbox.Margin = new Padding(3, 4, 3, 4);
             MemberRole_cbox.Name = "MemberRole_cbox";
-            MemberRole_cbox.Size = new Size(121, 28);
+            MemberRole_cbox.Size = new Size(138, 33);
             MemberRole_cbox.TabIndex = 8;
             // 
             // MemberEmailLbl
             // 
             MemberEmailLbl.AutoSize = true;
-            MemberEmailLbl.Location = new Point(27, 94);
+            MemberEmailLbl.Location = new Point(31, 125);
             MemberEmailLbl.Name = "MemberEmailLbl";
-            MemberEmailLbl.Size = new Size(0, 20);
+            MemberEmailLbl.Size = new Size(0, 25);
             MemberEmailLbl.TabIndex = 7;
             // 
             // MemberPasswordLbl
             // 
             MemberPasswordLbl.AutoSize = true;
-            MemberPasswordLbl.Location = new Point(16, 175);
+            MemberPasswordLbl.Location = new Point(18, 233);
             MemberPasswordLbl.Name = "MemberPasswordLbl";
-            MemberPasswordLbl.Size = new Size(0, 20);
+            MemberPasswordLbl.Size = new Size(0, 25);
             MemberPasswordLbl.TabIndex = 6;
             // 
             // MemberUserNameLbl
             // 
             MemberUserNameLbl.AutoSize = true;
-            MemberUserNameLbl.Location = new Point(6, 133);
+            MemberUserNameLbl.Location = new Point(7, 177);
             MemberUserNameLbl.Name = "MemberUserNameLbl";
-            MemberUserNameLbl.Size = new Size(0, 20);
+            MemberUserNameLbl.Size = new Size(0, 25);
             MemberUserNameLbl.TabIndex = 5;
             // 
             // MemberPhoneLbl
             // 
             MemberPhoneLbl.AutoSize = true;
-            MemberPhoneLbl.Location = new Point(27, 58);
+            MemberPhoneLbl.Location = new Point(31, 77);
             MemberPhoneLbl.Name = "MemberPhoneLbl";
-            MemberPhoneLbl.Size = new Size(0, 20);
+            MemberPhoneLbl.Size = new Size(0, 25);
             MemberPhoneLbl.TabIndex = 4;
             // 
             // MemberRoleLbl
             // 
             MemberRoleLbl.AutoSize = true;
-            MemberRoleLbl.Location = new Point(217, 69);
+            MemberRoleLbl.Location = new Point(248, 92);
             MemberRoleLbl.Name = "MemberRoleLbl";
-            MemberRoleLbl.Size = new Size(0, 20);
+            MemberRoleLbl.Size = new Size(0, 25);
             MemberRoleLbl.TabIndex = 3;
             // 
             // MemberShipTypeLbl
             // 
             MemberShipTypeLbl.AutoSize = true;
-            MemberShipTypeLbl.Location = new Point(206, 25);
+            MemberShipTypeLbl.Location = new Point(235, 33);
             MemberShipTypeLbl.Name = "MemberShipTypeLbl";
-            MemberShipTypeLbl.Size = new Size(0, 20);
+            MemberShipTypeLbl.Size = new Size(0, 25);
             MemberShipTypeLbl.TabIndex = 2;
             // 
             // MemberNameLbl
             // 
             MemberNameLbl.AutoSize = true;
-            MemberNameLbl.Location = new Point(27, 22);
+            MemberNameLbl.Location = new Point(31, 29);
             MemberNameLbl.Name = "MemberNameLbl";
-            MemberNameLbl.Size = new Size(0, 20);
+            MemberNameLbl.Size = new Size(0, 25);
             MemberNameLbl.TabIndex = 1;
             // 
             // dataGridView1
@@ -612,7 +718,8 @@
             dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
             dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            dataGridView1.Location = new Point(3, 238);
+            dataGridView1.Location = new Point(3, 317);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = SystemColors.Control;
@@ -622,19 +729,23 @@
             dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
             dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            dataGridView1.Size = new Size(785, 173);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(897, 231);
             dataGridView1.TabIndex = 0;
             dataGridView1.RowHeaderMouseDoubleClick += dataGridView1_RowHeaderMouseDoubleClick;
             // 
             // AdminForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(812, 450);
+            ClientSize = new Size(928, 600);
             Controls.Add(Members);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "AdminForm";
             Text = "AdminForm";
             Load += AdminForm_Load;
+            ReportsPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgv_Report).EndInit();
             StaffPage.ResumeLayout(false);
             StaffPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Librian).EndInit();
@@ -700,5 +811,12 @@
         private Label label1;
         private Label MemberRolev2Lbl;
         private Label label6;
+        private DataGridView dgv_Report;
+        private Button ExcelExport;
+        private Button button1;
+        private Button button4;
+        private Button button3;
+        private Button button2;
+        //private Button ExportToExcel;
     }
 }
