@@ -15,20 +15,15 @@ namespace LibraryManagementSystem
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
             //Application.Run(new Welcome());
-            Application.Run(new AddBook());
+            //Application.Run(new AddBook());
             //Application.Run(new MemberForm());
             Application.Run(new Login());
 
             //Application.Run(new SignUp());
-<<<<<<< HEAD
+
             //Application.Run(new AdminForm());
             //Application.Run(new LibrarianForm(Login.LoggedInUser.Id));
 
-
-
-=======
-            //Application.Run(new AdminRequest());
->>>>>>> b905392e2a4da25f8ec379b4c2f43baf206df7d9
 
 
 
