@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             tabControl1 = new TabControl();
             ViewBooks = new TabPage();
             flowLayoutPanelBooks = new FlowLayoutPanel();
             MyBorrowingBooks = new TabPage();
+            label4 = new Label();
             dgvBorrowedBooks = new DataGridView();
             UpdateProfile = new TabPage();
             btnSave = new Button();
@@ -77,7 +81,7 @@
             ViewBooks.Padding = new Padding(3);
             ViewBooks.Size = new Size(794, 412);
             ViewBooks.TabIndex = 0;
-            ViewBooks.Text = "ViewBooks";
+            ViewBooks.Text = "Available Books";
             ViewBooks.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanelBooks
@@ -92,27 +96,59 @@
             // 
             // MyBorrowingBooks
             // 
+            MyBorrowingBooks.Controls.Add(label4);
             MyBorrowingBooks.Controls.Add(dgvBorrowedBooks);
             MyBorrowingBooks.Location = new Point(4, 32);
             MyBorrowingBooks.Name = "MyBorrowingBooks";
             MyBorrowingBooks.Padding = new Padding(3);
             MyBorrowingBooks.Size = new Size(794, 412);
             MyBorrowingBooks.TabIndex = 1;
-            MyBorrowingBooks.Text = "MyBorrowingBooks";
+            MyBorrowingBooks.Text = "Borrowed Books";
             MyBorrowingBooks.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Poor Richard", 16.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(3, 3);
+            label4.Name = "label4";
+            label4.Size = new Size(186, 31);
+            label4.TabIndex = 1;
+            label4.Text = "Borrowed Books";
             // 
             // dgvBorrowedBooks
             // 
+            dataGridViewCellStyle1.BackColor = Color.AntiqueWhite;
+            dgvBorrowedBooks.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dgvBorrowedBooks.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvBorrowedBooks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvBorrowedBooks.BackgroundColor = Color.Tan;
+            dgvBorrowedBooks.BorderStyle = BorderStyle.None;
+            dgvBorrowedBooks.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(20, 25, 70);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI Historic", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvBorrowedBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvBorrowedBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBorrowedBooks.Dock = DockStyle.Fill;
-            dgvBorrowedBooks.Location = new Point(3, 3);
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Window;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI Historic", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = Color.PeachPuff;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
+            dgvBorrowedBooks.DefaultCellStyle = dataGridViewCellStyle3;
+            dgvBorrowedBooks.GridColor = Color.OldLace;
+            dgvBorrowedBooks.Location = new Point(3, 43);
             dgvBorrowedBooks.Name = "dgvBorrowedBooks";
             dgvBorrowedBooks.ReadOnly = true;
             dgvBorrowedBooks.RowHeadersWidth = 51;
             dgvBorrowedBooks.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvBorrowedBooks.Size = new Size(788, 406);
+            dgvBorrowedBooks.Size = new Size(788, 366);
             dgvBorrowedBooks.TabIndex = 0;
             // 
             // UpdateProfile
@@ -133,7 +169,7 @@
             UpdateProfile.Padding = new Padding(3);
             UpdateProfile.Size = new Size(794, 412);
             UpdateProfile.TabIndex = 2;
-            UpdateProfile.Text = "UpdateProfile";
+            UpdateProfile.Text = "Update Profile";
             UpdateProfile.UseVisualStyleBackColor = true;
             // 
             // btnSave
@@ -250,6 +286,7 @@
             tabControl1.ResumeLayout(false);
             ViewBooks.ResumeLayout(false);
             MyBorrowingBooks.ResumeLayout(false);
+            MyBorrowingBooks.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvBorrowedBooks).EndInit();
             UpdateProfile.ResumeLayout(false);
             UpdateProfile.PerformLayout();
@@ -276,5 +313,6 @@
         private Label txtEma;
         private Button btnSave;
         private Label label3;
+        private Label label4;
     }
 }
