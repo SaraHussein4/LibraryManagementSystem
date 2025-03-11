@@ -643,3 +643,6 @@ C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\bin\Debug\net9.0-wind
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AdminRequest.resources
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.ManageReturn.resources
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Member.resources
+C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.LibrarianForm.resources
+C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.MemberForm.resources
+C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.UC_ManageBooks.resources
