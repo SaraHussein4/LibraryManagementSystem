@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0o23xXN0g8g=",
+  "dgSpecHash": "MJVXy5H+0jw=",
   "success": true,
   "projectFilePath": "D:\\Iti\\LibraryProject\\LibraryManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -102,7 +102,9 @@
     "C:\\Users\\CM\\.nuget\\packages\\system.text.json\\9.0.2\\system.text.json.9.0.2.nupkg.sha512",
     "C:\\Users\\CM\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\CM\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\CM\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\CM\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\CM\\.nuget\\packages\\zxing.net\\0.16.10\\zxing.net.0.16.10.nupkg.sha512",
+    "C:\\Users\\CM\\.nuget\\packages\\zxing.net.bindings.windows.compatibility\\0.16.13\\zxing.net.bindings.windows.compatibility.0.16.13.nupkg.sha512"
   ],
   "logs": [
     {

@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using ZXing;
 using LibraryManagementSystem.LibraryDataAccess.Models;
+using ZXing.QrCode;
+using ZXing.Windows.Compatibility; 
 
 namespace LibraryManagementSystem.LibraryPresentationLayer
 {
@@ -20,6 +23,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             InitializeComponent();
         }
 
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -30,6 +35,35 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             {
                 this.pictureBox1.ImageLocation = ofd.FileName;
                 imagePath = ofd.FileName;
+            }
+        }
+
+
+      
+
+        private void PopulateFieldsFromQR(string qrData)
+        {
+            try
+            {
+                string[] bookDetails = qrData.Split('|'); // Assuming QR data is "Title|Author|ISBN|Category|Quantity|Year"
+
+                if (bookDetails.Length == 6)
+                {
+                    txtTitle.Text = bookDetails[0];
+                    txtAuthor.Text = bookDetails[1];
+                    txtISBN.Text = bookDetails[2];
+                    txtCategory.Text = bookDetails[3];
+                    txtQuantity.Text = bookDetails[4];
+                    txtPublishedYear.Text = bookDetails[5];
+                }
+                else
+                {
+                    MessageBox.Show("Invalid QR format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error processing QR data: " + ex.Message);
             }
         }
 
@@ -78,5 +112,54 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         {
 
         }
+
+        private void btnScanQR_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Select QR Code Image";
+            ofd.Filter = "Image Files|*.jpg;*.png;*.bmp";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                imagePath = ofd.FileName;
+                pictureBox1.ImageLocation = imagePath;
+                DecodeQRCode(imagePath);
+            }
+        }
+
+        private void DecodeQRCode(string filePath)
+        {
+            try
+            {
+                Bitmap bitmap = new Bitmap(filePath);
+                BarcodeReader reader = new BarcodeReader();
+                var result = reader.Decode(bitmap);
+                if (result != null)
+                {
+                    string[] bookDetails = result.Text.Split(';');
+                    if (bookDetails.Length == 6)
+                    {
+                        txtTitle.Text = bookDetails[0];
+                        txtAuthor.Text = bookDetails[1];
+                        txtISBN.Text = bookDetails[2];
+                        txtCategory.Text = bookDetails[3];
+                        txtQuantity.Text = bookDetails[4];
+                        txtPublishedYear.Text = bookDetails[5];
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid QR Code Format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("QR Code could not be read.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
     }
 }

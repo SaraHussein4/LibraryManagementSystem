@@ -39,10 +39,9 @@
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Maiandra GD", 13.8F);
             button1.ForeColor = SystemColors.Control;
-            button1.Location = new Point(35, 439);
-            button1.Margin = new Padding(4);
+            button1.Location = new Point(25, 413);
             button1.Name = "button1";
-            button1.Size = new Size(165, 59);
+            button1.Size = new Size(132, 47);
             button1.TabIndex = 0;
             button1.Text = "Sign Up";
             button1.UseVisualStyleBackColor = false;
@@ -54,10 +53,9 @@
             button2.Cursor = Cursors.Hand;
             button2.Font = new Font("Maiandra GD", 13.8F);
             button2.ForeColor = SystemColors.Control;
-            button2.Location = new Point(220, 439);
-            button2.Margin = new Padding(4);
+            button2.Location = new Point(188, 413);
             button2.Name = "button2";
-            button2.Size = new Size(165, 59);
+            button2.Size = new Size(132, 47);
             button2.TabIndex = 1;
             button2.Text = "Log In";
             button2.UseVisualStyleBackColor = false;
@@ -70,9 +68,10 @@
             button3.FlatAppearance.MouseOverBackColor = Color.Red;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            button3.Location = new Point(867, 12);
+            button3.Location = new Point(877, 11);
+            button3.Margin = new Padding(2);
             button3.Name = "button3";
-            button3.Size = new Size(51, 34);
+            button3.Size = new Size(41, 27);
             button3.TabIndex = 2;
             button3.Text = "X";
             button3.UseVisualStyleBackColor = false;
@@ -80,17 +79,17 @@
             // 
             // Welcome
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Snow;
             BackgroundImage = Properties.Resources.Welcome;
-            ClientSize = new Size(930, 519);
+            ClientSize = new Size(929, 523);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(4);
             Name = "Welcome";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Welcome";
             ResumeLayout(false);
         }

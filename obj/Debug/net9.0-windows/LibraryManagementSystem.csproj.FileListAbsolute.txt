@@ -619,3 +619,5 @@ D:\Iti\LibraryProject\obj\Debug\net9.0-windows\refint\LibraryManagementSystem.dl
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.pdb
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.genruntimeconfig.cache
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\ref\LibraryManagementSystem.dll
+D:\Iti\LibraryProject\bin\Debug\net9.0-windows\zxing.dll
+D:\Iti\LibraryProject\bin\Debug\net9.0-windows\ZXing.Windows.Compatibility.dll
