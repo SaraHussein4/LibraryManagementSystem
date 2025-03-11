@@ -245,6 +245,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(tabControl1);
             Name = "Member";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Member";
             tabControl1.ResumeLayout(false);
             ViewBooks.ResumeLayout(false);

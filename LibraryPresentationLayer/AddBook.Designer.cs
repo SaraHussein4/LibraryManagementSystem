@@ -37,7 +37,10 @@
             txtCategory = new TextBox();
             txtPublishedYear = new TextBox();
             txtQuantity = new TextBox();
+            pictureBoxQR = new PictureBox();
+            btnScanQR = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxQR).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -113,11 +116,31 @@
             txtQuantity.Size = new Size(125, 27);
             txtQuantity.TabIndex = 8;
             // 
+            // pictureBoxQR
+            // 
+            pictureBoxQR.Location = new Point(578, 135);
+            pictureBoxQR.Name = "pictureBoxQR";
+            pictureBoxQR.Size = new Size(143, 145);
+            pictureBoxQR.TabIndex = 9;
+            pictureBoxQR.TabStop = false;
+            // 
+            // btnScanQR
+            // 
+            btnScanQR.Location = new Point(415, 448);
+            btnScanQR.Name = "btnScanQR";
+            btnScanQR.Size = new Size(94, 29);
+            btnScanQR.TabIndex = 10;
+            btnScanQR.Text = "scan qr";
+            btnScanQR.UseVisualStyleBackColor = true;
+            btnScanQR.Click += btnScanQR_Click_1;
+            // 
             // AddBook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 521);
+            Controls.Add(btnScanQR);
+            Controls.Add(pictureBoxQR);
             Controls.Add(txtQuantity);
             Controls.Add(txtPublishedYear);
             Controls.Add(txtCategory);
@@ -131,6 +154,7 @@
             Text = "AddBook";
             Load += AddBook_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxQR).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -146,5 +170,7 @@
         private TextBox txtCategory;
         private TextBox txtPublishedYear;
         private TextBox txtQuantity;
+        private PictureBox pictureBoxQR;
+        private Button btnScanQR;
     }
 }

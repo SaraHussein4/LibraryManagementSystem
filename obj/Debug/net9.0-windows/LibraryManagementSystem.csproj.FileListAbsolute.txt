@@ -617,6 +617,7 @@ D:\Iti\LibraryProject\obj\Debug\net9.0-windows\refint\LibraryManagementSystem.dl
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.pdb
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.genruntimeconfig.cache
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\ref\LibraryManagementSystem.dll
+<<<<<<< HEAD
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\bin\Debug\net9.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\bin\Debug\net9.0-windows\EPPlus.dll
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\bin\Debug\net9.0-windows\EPPlus.Interfaces.dll
@@ -646,3 +647,7 @@ C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-wind
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.LibrarianForm.resources
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.MemberForm.resources
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.UC_ManageBooks.resources
+=======
+D:\Iti\LibraryProject\bin\Debug\net9.0-windows\zxing.dll
+D:\Iti\LibraryProject\bin\Debug\net9.0-windows\ZXing.Windows.Compatibility.dll
+>>>>>>> b905392e2a4da25f8ec379b4c2f43baf206df7d9
