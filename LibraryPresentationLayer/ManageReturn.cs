@@ -53,7 +53,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
                 foreach (var book in borrowedBooks)
                 {
-                    dgvBorrowedBooks.Rows.Add(book.Id, book.MemberId, book.Title, book.BorrowDate, book.DueDate, book.IsReturned ? "Yes" : "No");
+                    dgvBorrowedBooks.Rows.Add(book.Id, book.MemberId, book.Title, book.BorrowDate, book.DueDate, book.IsReturned ? "True" : "false");
                 }
             }
         }

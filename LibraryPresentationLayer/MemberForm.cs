@@ -93,5 +93,10 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         {
 
         }
+
+        private void MemberForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

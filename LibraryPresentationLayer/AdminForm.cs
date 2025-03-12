@@ -22,10 +22,135 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             context = new LibraryDBContext();
             GenerateBorrowedBooksReport();
         }
+        public void LoadBooks()
+        {
+            #region books
 
+            AllBooksPage.Controls.Clear();
+
+            FlowLayoutPanel flowPanel = new FlowLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                AutoScroll = true,
+                FlowDirection = FlowDirection.LeftToRight,
+                WrapContents = true,
+                Padding = new Padding(10)
+            };
+
+            Panel panelButton = new Panel
+            {
+                Width = 600,
+                Height = 50,
+                BackColor = System.Drawing.Color.White
+            };
+
+            Button btnAddBook = new Button
+            {
+                Text = "Add Books",
+                Width = 140,
+                Height = 40,
+                Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold),
+                BackColor = System.Drawing.Color.LightBlue,
+                ForeColor = System.Drawing.Color.Black
+            };
+
+            btnAddBook.Click += (object sender, EventArgs e) =>
+            {
+                AddBook addBook = new AddBook();
+                this.Hide();
+                addBook.ShowDialog();
+                this.Close();
+            };
+
+            panelButton.Controls.Add(btnAddBook);
+            flowPanel.Controls.Add(panelButton);
+
+            var Books = context.Books.ToList();
+
+            foreach (var book in Books)
+            {
+                Panel panel = new Panel
+                {
+                    Width = 150,
+                    Height = 260,
+                    BorderStyle = BorderStyle.FixedSingle,
+                    Margin = new Padding(10)
+                };
+
+                PictureBox pictureBox = new PictureBox
+                {
+                    Width = 130,
+                    Height = 150,
+                    Location = new Point(10, 10),
+                    SizeMode = PictureBoxSizeMode.StretchImage
+                };
+
+                if (book.Image != null && book.Image.Length > 0)
+                {
+                    using (MemoryStream ms = new MemoryStream(book.Image))
+                    {
+                        pictureBox.Image = System.Drawing.Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    pictureBox.Image = Properties.Resources.default_book_image;
+                }
+
+                Label lblTitle = new Label
+                {
+                    Text = book.Title,
+                    AutoSize = false,
+                    Width = 130,
+                    Height = 40,
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    Font = new System.Drawing.Font("Arial", 9, FontStyle.Bold),
+                    Location = new Point(10, 165)
+                };
+
+                Button btnManageBook = new Button
+                {
+                    Text = "Manage Books",
+                    Width = 130,
+                    Height = 30,
+                    Font = new System.Drawing.Font("Arial", 8, FontStyle.Bold),
+                    BackColor = System.Drawing.Color.LightGray,
+                    ForeColor = System.Drawing.Color.Black,
+                    Location = new Point(10, 210)
+                };
+
+                btnManageBook.Click += (object sender, EventArgs e) =>
+                {
+                    AddBook addBook = new AddBook(book.Id);
+                    this.Hide();
+                    addBook.ShowDialog();
+                    this.Close();
+
+
+
+
+
+
+                };
+
+                panel.Controls.Add(pictureBox);
+                panel.Controls.Add(lblTitle);
+                panel.Controls.Add(btnManageBook);
+                flowPanel.Controls.Add(panel);
+            }
+
+            AllBooksPage.Controls.Add(flowPanel);
+
+            #endregion
+        }
         private void AdminForm_Load(object sender, EventArgs e)
         {
+            ////Books
+            ///
+            LoadBooks();
+
             //Member
+
             dataGridView1.DataSource = context.Users
         .Select(u => new
         {
@@ -316,6 +441,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
         }
         int librianId;
+        private object flowLayoutPanelBooks;
+
         private void dgv_Librian_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             librianId = (int)dgv_Librian.SelectedRows[0].Cells[0].Value;
@@ -328,15 +455,6 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             LibrianPasswordLbl.Visible = false;
             LibrianUserName_txt.Enabled = false;
             LibrianAddBtn.Enabled = false;
-            /* if (Enum.TryParse(dataGridView1.SelectedRows[0].Cells[2].Value.ToString(), out Role userRole))
-             {
-                 MemberRole_cbox.SelectedItem = userRole;
-             }
-
-             if (Enum.TryParse(dataGridView1.SelectedRows[0].Cells[3].Value.ToString(), out MemberShipType membershipType))
-             {
-                 MemberShipType_cbox.SelectedItem = membershipType;
-             }*/
             MemberRole_cbox.Visible = true;
             MemberRolev2Lbl.Visible = true;
 
@@ -737,6 +855,19 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         private void button4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SginoutBtn_Click(object sender, EventArgs e)
+        {
+            Login Login = new Login();
+            this.Hide();
+            Login.ShowDialog();
+            this.Close();
         }
     }
 }

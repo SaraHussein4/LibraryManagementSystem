@@ -102,6 +102,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "MemberForm";
             Text = "MemberForm";
+            Load += MemberForm_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
