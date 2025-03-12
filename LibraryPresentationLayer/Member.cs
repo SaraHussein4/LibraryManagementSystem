@@ -23,6 +23,29 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 loggedInUser = Login.LoggedInUser;
             }
             LoadBooks();
+            CreateSearchPanel();
+        }
+
+        private void CreateSearchPanel()
+        {
+            Panel searchPanel = new Panel
+            {
+                Width = flowLayoutPanelBooks.Width,
+                Height = 50,
+                Dock = DockStyle.Top ,
+                
+            };
+
+            TextBox txtSearch = new TextBox
+            {
+                Width = 200,
+                Location = new Point(10, 10),
+                PlaceholderText = "Search..."
+            };
+            txtSearch.TextChanged += (sender, e) => LoadBooks(txtSearch.Text);
+
+            searchPanel.Controls.Add(txtSearch);
+            flowLayoutPanelBooks.Parent.Controls.Add(searchPanel);
         }
 
         private void BorrowBook(int bookId)
@@ -74,13 +97,20 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
         }
 
-        private void LoadBooks()
+
+
+
+        private void LoadBooks(string searchQuery = "")
         {
             flowLayoutPanelBooks.Controls.Clear();
 
             using (LibraryDBContext context = new LibraryDBContext())
             {
-                var books = context.Books.ToList();
+                var books = context.Books
+                    .Where(b => string.IsNullOrEmpty(searchQuery) ||
+                                b.Title.Contains(searchQuery) ||
+                                b.Category.Contains(searchQuery))
+                    .ToList();
 
                 foreach (var book in books)
                 {
@@ -140,18 +170,19 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         }
 
 
+
         private void LoadBorrowedBooks()
         {
-            dgvBorrowedBooks.Rows.Clear(); 
+            dgvBorrowedBooks.Rows.Clear();
 
             if (dgvBorrowedBooks.Columns.Count == 0)
             {
-                dgvBorrowedBooks.Columns.Add("ID", "ID");
+                //dgvBorrowedBooks.Columns.Add("ID", "ID");
                 dgvBorrowedBooks.Columns.Add("Title", "Title");
                 dgvBorrowedBooks.Columns.Add("BorrowDate", "Borrow Date");
                 dgvBorrowedBooks.Columns.Add("DueDate", "Due Date");
                 dgvBorrowedBooks.Columns.Add("DaysLeft", "Days Left");
-                dgvBorrowedBooks.Columns.Add("IsReturned", "Returned?");
+                //dgvBorrowedBooks.Columns.Add("IsReturned", "Returned?");
                 dgvBorrowedBooks.Columns.Add("Status", "Status");
             }
 
@@ -163,12 +194,12 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     .Where(b => b.MemberId == memberId && !b.IsReturned)
                     .Select(b => new
                     {
-                        b.Id,
+                        //b.Id,
                         Title = b.Book.Title,
                         BorrowDate = b.BorrowDate,
                         DueDate = b.DueDate,
                         DaysLeft = (b.DueDate - DateTime.Now).Days,
-                        IsReturned = b.IsReturned ? "Returned" : "Not Returned",
+                        //IsReturned = b.IsReturned ? "Returned" : "Not Returned",
                         b.Status
                     })
                     .ToList();
@@ -176,12 +207,12 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 foreach (var book in borrowedBooks)
                 {
                     dgvBorrowedBooks.Rows.Add(
-                        book.Id,
+                        //book.Id,
                         book.Title,
                         book.BorrowDate.ToShortDateString(),
                         book.DueDate.ToShortDateString(),
                         book.DaysLeft,
-                        book.IsReturned,
+                        //book.IsReturned,
                         book.Status
                     );
                 }
@@ -249,7 +280,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     return;
                 }
 
-          
+
                 if (!txtPhone.Text.All(char.IsDigit) || txtPhone.Text.Length < 10)
                 {
                     MessageBox.Show("Phone number must contain only digits and be at least 10 digits long.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -261,7 +292,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 loggedInUser.Email = txtEmail.Text.Trim();
                 loggedInUser.Phone = txtPhone.Text.Trim();
 
-                using (var context = new LibraryDBContext()) 
+                using (var context = new LibraryDBContext())
                 {
                     context.Users.Attach(loggedInUser);
                     context.Entry(loggedInUser).State = Microsoft.EntityFrameworkCore.EntityState.Modified;

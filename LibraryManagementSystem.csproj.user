@@ -28,11 +28,11 @@
     <Compile Update="LibraryPresentationLayer\Member.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="LibraryPresentationLayer\MemberForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="LibraryPresentationLayer\SignUp.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LibraryPresentationLayer\UC_ManageBooks.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="LibraryPresentationLayer\Welcome.cs">
       <SubType>Form</SubType>

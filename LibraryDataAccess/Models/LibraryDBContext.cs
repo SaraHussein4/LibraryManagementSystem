@@ -27,6 +27,8 @@ namespace LibraryManagementSystem.LibraryDataAccess.Models
 
             modelBuilder.Entity<User>().Property(u => u.MemberShipType).HasConversion<string>();
 
+         
+
             base.OnModelCreating(modelBuilder);
 
 

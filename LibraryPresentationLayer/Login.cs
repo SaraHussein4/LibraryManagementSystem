@@ -10,6 +10,10 @@ using System.Windows.Forms;
 using LibraryManagementSystem.LibraryDataAccess.Models;
 using LibraryManagementSystem.LibraryDataAccess.Service;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using LibraryManagementSystem.LibraryPresentationLayer;
+using Microsoft.VisualBasic.ApplicationServices;
+using User = LibraryManagementSystem.LibraryDataAccess.Models.User;
+
 
 namespace LibraryManagementSystem.LibraryPresentationLayer
 {
@@ -80,7 +84,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
             else if (userRole == Role.Librarian)
             {
-                nextForm = new LibrarianForm();
+                nextForm = new LibrarianForm(LoggedInUser.Id);
             }
             else if (userRole == Role.Member)
             {

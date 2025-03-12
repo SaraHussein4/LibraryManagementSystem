@@ -151,7 +151,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Nirmala UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
