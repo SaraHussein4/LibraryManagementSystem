@@ -5731,23 +5731,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mr\\.nuget\\packages\\": {},
+    "C:\\Users\\CM\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+      "projectUniqueName": "D:\\Iti\\LibraryProject\\LibraryManagementSystem.csproj",
       "projectName": "LibraryManagementSystem",
-      "projectPath": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\mr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\obj\\",
+      "projectPath": "D:\\Iti\\LibraryProject\\LibraryManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\CM\\.nuget\\packages\\",
+      "outputPath": "D:\\Iti\\LibraryProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5843,12 +5843,6 @@
     }
   },
   "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    },
     {
       "code": "NU1701",
       "level": "Warning",

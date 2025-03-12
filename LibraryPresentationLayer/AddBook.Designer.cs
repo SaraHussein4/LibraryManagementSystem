@@ -187,7 +187,7 @@
             UpdateBookBtn.TabIndex = 15;
             UpdateBookBtn.Text = "Update";
             UpdateBookBtn.UseVisualStyleBackColor = true;
-            UpdateBookBtn.Click += UpdateBookBtn_Click;
+            //UpdateBookBtn.Click += UpdateBookBtn_Click;
             // 
             // DeleteBookBtn
             // 
@@ -197,7 +197,7 @@
             DeleteBookBtn.TabIndex = 16;
             DeleteBookBtn.Text = "Delete";
             DeleteBookBtn.UseVisualStyleBackColor = true;
-            DeleteBookBtn.Click += DeleteBookBtn_Click;
+            //DeleteBookBtn.Click += DeleteBookBtn_Click;
             // 
             // txtQuantity
             // 
@@ -215,7 +215,7 @@
             Closebtn.Size = new Size(41, 36);
             Closebtn.TabIndex = 18;
             Closebtn.UseVisualStyleBackColor = true;
-            Closebtn.Click += Closebtn_Click;
+            //Closebtn.Click += Closebtn_Click;
             // 
             // AddBook
             // 
