@@ -173,8 +173,6 @@ C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-wind
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.pdb
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.genruntimeconfig.cache
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\ref\LibraryManagementSystem.dll
-C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AdminForm.resources
-C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.LibrarianForm.resources
 C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.MemberForm.resources
 D:\Iti\Project\bin\Debug\net9.0-windows\LibraryManagementSystem.exe
 D:\Iti\Project\bin\Debug\net9.0-windows\LibraryManagementSystem.dll.config
@@ -325,7 +323,6 @@ D:\Iti\Project\obj\Debug\net9.0-windows\refint\LibraryManagementSystem.dll
 D:\Iti\Project\obj\Debug\net9.0-windows\LibraryManagementSystem.pdb
 D:\Iti\Project\obj\Debug\net9.0-windows\LibraryManagementSystem.genruntimeconfig.cache
 D:\Iti\Project\obj\Debug\net9.0-windows\ref\LibraryManagementSystem.dll
-C:\Users\ascom\Desktop\ITI\AdoShafie\AdoDayTwoSh\Test\Sara\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AddBook.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\LibraryManagementSystem.exe
 C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\LibraryManagementSystem.dll.config
 C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\LibraryManagementSystem.deps.json
@@ -680,3 +677,8 @@ C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\Librar
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.ManageReturn.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Member.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Form4.resources
+D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Form4.resources
+D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.MemberForm.resources
+D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.UC_ManageBooks.resources
+D:\Iti\LibraryProject\bin\Debug\net9.0-windows\zxing.dll
+D:\Iti\LibraryProject\bin\Debug\net9.0-windows\ZXing.Windows.Compatibility.dll

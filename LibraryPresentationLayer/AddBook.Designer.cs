@@ -53,10 +53,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(5, 260);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(6, 347);
             button1.Name = "button1";
-            button1.Size = new Size(82, 34);
+            button1.Size = new Size(94, 45);
             button1.TabIndex = 0;
             button1.Text = "browse";
             button1.UseVisualStyleBackColor = true;
@@ -66,20 +65,18 @@
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Location = new Point(92, 224);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(105, 299);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(106, 108);
+            pictureBox1.Size = new Size(121, 143);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // btn_add
             // 
-            btn_add.Location = new Point(86, 347);
-            btn_add.Margin = new Padding(3, 2, 3, 2);
+            btn_add.Location = new Point(98, 463);
             btn_add.Name = "btn_add";
-            btn_add.Size = new Size(101, 33);
+            btn_add.Size = new Size(115, 44);
             btn_add.TabIndex = 2;
             btn_add.Text = "add";
             btn_add.UseVisualStyleBackColor = true;
@@ -87,141 +84,140 @@
             // 
             // txtTitle
             // 
-            txtTitle.Location = new Point(86, 27);
-            txtTitle.Margin = new Padding(3, 2, 3, 2);
+            txtTitle.Location = new Point(98, 36);
             txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(110, 23);
+            txtTitle.Size = new Size(125, 27);
             txtTitle.TabIndex = 3;
             // 
             // txtAuthor
             // 
-            txtAuthor.Location = new Point(87, 59);
-            txtAuthor.Margin = new Padding(3, 2, 3, 2);
+            txtAuthor.Location = new Point(99, 79);
             txtAuthor.Name = "txtAuthor";
-            txtAuthor.Size = new Size(110, 23);
+            txtAuthor.Size = new Size(125, 27);
             txtAuthor.TabIndex = 4;
             // 
             // txtISBN
             // 
-            txtISBN.Location = new Point(88, 94);
-            txtISBN.Margin = new Padding(3, 2, 3, 2);
+            txtISBN.Location = new Point(101, 125);
             txtISBN.Name = "txtISBN";
-            txtISBN.Size = new Size(110, 23);
+            txtISBN.Size = new Size(125, 27);
             txtISBN.TabIndex = 5;
             // 
             // txtCategory
             // 
-            txtCategory.Location = new Point(88, 127);
-            txtCategory.Margin = new Padding(3, 2, 3, 2);
+            txtCategory.Location = new Point(101, 169);
             txtCategory.Name = "txtCategory";
-            txtCategory.Size = new Size(110, 23);
+            txtCategory.Size = new Size(125, 27);
             txtCategory.TabIndex = 6;
             // 
             // txtPublishedYear
             // 
-            txtPublishedYear.Location = new Point(89, 190);
-            txtPublishedYear.Margin = new Padding(3, 2, 3, 2);
+            txtPublishedYear.Location = new Point(102, 253);
             txtPublishedYear.Name = "txtPublishedYear";
-            txtPublishedYear.Size = new Size(110, 23);
+            txtPublishedYear.Size = new Size(125, 27);
             txtPublishedYear.TabIndex = 7;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(32, 33);
+            label1.Location = new Point(37, 44);
             label1.Name = "label1";
-            label1.Size = new Size(29, 15);
+            label1.Size = new Size(38, 20);
             label1.TabIndex = 9;
             label1.Text = "Title";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(28, 100);
+            label2.Location = new Point(32, 133);
             label2.Name = "label2";
-            label2.Size = new Size(31, 15);
+            label2.Size = new Size(39, 20);
             label2.TabIndex = 10;
             label2.Text = "isbN";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(16, 131);
+            label3.Location = new Point(18, 175);
             label3.Name = "label3";
-            label3.Size = new Size(55, 15);
+            label3.Size = new Size(69, 20);
             label3.TabIndex = 11;
             label3.Text = "Category";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(21, 164);
+            label4.Location = new Point(24, 219);
             label4.Name = "label4";
-            label4.Size = new Size(51, 15);
+            label4.Size = new Size(63, 20);
             label4.TabIndex = 12;
             label4.Text = "quantity";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 193);
+            label5.Location = new Point(14, 257);
             label5.Name = "label5";
-            label5.Size = new Size(71, 15);
+            label5.Size = new Size(88, 20);
             label5.TabIndex = 13;
             label5.Text = "Publish year";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(26, 63);
+            label6.Location = new Point(30, 84);
             label6.Name = "label6";
-            label6.Size = new Size(44, 15);
+            label6.Size = new Size(54, 20);
             label6.TabIndex = 14;
             label6.Text = "Author";
             // 
             // UpdateBookBtn
             // 
-            UpdateBookBtn.Location = new Point(202, 347);
+            UpdateBookBtn.Location = new Point(231, 463);
+            UpdateBookBtn.Margin = new Padding(3, 4, 3, 4);
             UpdateBookBtn.Name = "UpdateBookBtn";
-            UpdateBookBtn.Size = new Size(91, 32);
+            UpdateBookBtn.Size = new Size(104, 43);
             UpdateBookBtn.TabIndex = 15;
             UpdateBookBtn.Text = "Update";
             UpdateBookBtn.UseVisualStyleBackColor = true;
-            //UpdateBookBtn.Click += UpdateBookBtn_Click;
+            UpdateBookBtn.Click += UpdateBookBtn_Click_1;
             // 
             // DeleteBookBtn
             // 
-            DeleteBookBtn.Location = new Point(305, 347);
+            DeleteBookBtn.Location = new Point(349, 463);
+            DeleteBookBtn.Margin = new Padding(3, 4, 3, 4);
             DeleteBookBtn.Name = "DeleteBookBtn";
-            DeleteBookBtn.Size = new Size(91, 32);
+            DeleteBookBtn.Size = new Size(104, 43);
             DeleteBookBtn.TabIndex = 16;
             DeleteBookBtn.Text = "Delete";
             DeleteBookBtn.UseVisualStyleBackColor = true;
-            //DeleteBookBtn.Click += DeleteBookBtn_Click;
+            DeleteBookBtn.Click += DeleteBookBtn_Click_1;
             // 
             // txtQuantity
             // 
-            txtQuantity.Location = new Point(86, 159);
+            txtQuantity.Location = new Point(98, 212);
+            txtQuantity.Margin = new Padding(3, 4, 3, 4);
             txtQuantity.Name = "txtQuantity";
-            txtQuantity.Size = new Size(113, 23);
+            txtQuantity.Size = new Size(129, 27);
             txtQuantity.TabIndex = 17;
             // 
             // Closebtn
             // 
             Closebtn.BackgroundImage = (Image)resources.GetObject("Closebtn.BackgroundImage");
             Closebtn.BackgroundImageLayout = ImageLayout.Zoom;
-            Closebtn.Location = new Point(647, 12);
+            Closebtn.Location = new Point(739, 16);
+            Closebtn.Margin = new Padding(3, 4, 3, 4);
             Closebtn.Name = "Closebtn";
-            Closebtn.Size = new Size(41, 36);
+            Closebtn.Size = new Size(47, 48);
             Closebtn.TabIndex = 18;
             Closebtn.UseVisualStyleBackColor = true;
-            //Closebtn.Click += Closebtn_Click;
+            Closebtn.Click += Closebtn_Click_1;
             // 
             // AddBook
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 391);
+            ClientSize = new Size(800, 521);
             Controls.Add(Closebtn);
             Controls.Add(txtQuantity);
             Controls.Add(DeleteBookBtn);
@@ -240,7 +236,6 @@
             Controls.Add(btn_add);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "AddBook";
             Text = "AddBook";
             Load += AddBook_Load;
