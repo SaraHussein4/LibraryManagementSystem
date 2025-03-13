@@ -35,14 +35,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
 
 
-
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Please Select a photo";
-            ofd.Filter = "JPG|.jpg|JPEG|.jpeg|PNG|.png|GIF|.gif";
+            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|PNG|*.png|GIF|*.gif";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
