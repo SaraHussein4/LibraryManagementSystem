@@ -119,12 +119,13 @@
             // 
             // dgvBooks
             // 
+            dgvBooks.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dgvBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvBooks.Location = new Point(0, 306);
             dgvBooks.Margin = new Padding(2);
             dgvBooks.Name = "dgvBooks";
             dgvBooks.RowHeadersWidth = 62;
-            dgvBooks.Size = new Size(1120, 570);
+            dgvBooks.Size = new Size(1113, 262);
             dgvBooks.TabIndex = 4;
             // 
             // lblTitle
@@ -320,7 +321,7 @@
             Controls.Add(btnBrowseImage);
             Margin = new Padding(2);
             Name = "UC_ManageBooks";
-            Size = new Size(1122, 878);
+            Size = new Size(1127, 570);
             Load += UC_ManageBooks_Load;
             ((System.ComponentModel.ISupportInitialize)dgvBooks).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbBookImage).EndInit();

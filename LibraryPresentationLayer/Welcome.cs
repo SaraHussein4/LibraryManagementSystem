@@ -12,10 +12,17 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 {
     public partial class Welcome : Form
     {
+        private static Welcome instance;
         public Welcome()
         {
             InitializeComponent();
+            instance = this;
         }
+        public static Welcome GetInstance()
+        {
+            return instance;
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {

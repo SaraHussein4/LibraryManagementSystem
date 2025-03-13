@@ -31,9 +31,10 @@
             // 
             tabSignOut.BackColor = Color.FloralWhite;
             tabSignOut.ForeColor = Color.SaddleBrown;
-            tabSignOut.Location = new Point(4, 36);
+            tabSignOut.Location = new Point(4, 31);
+            tabSignOut.Margin = new Padding(2, 2, 2, 2);
             tabSignOut.Name = "tabSignOut";
-            tabSignOut.Size = new Size(1213, 546);
+            tabSignOut.Size = new Size(969, 434);
             tabSignOut.TabIndex = 2;
             tabSignOut.Text = "LogOut";
             tabSignOut.Click += tabSignOut_Click;
@@ -43,20 +44,23 @@
             tabManageBooks.BackColor = Color.FloralWhite;
             tabManageBooks.Controls.Add(panelContainer);
             tabManageBooks.ForeColor = Color.SaddleBrown;
-            tabManageBooks.Location = new Point(4, 36);
+            tabManageBooks.Location = new Point(4, 31);
+            tabManageBooks.Margin = new Padding(2, 2, 2, 2);
             tabManageBooks.Name = "tabManageBooks";
-            tabManageBooks.Padding = new Padding(3);
-            tabManageBooks.Size = new Size(1213, 546);
+            tabManageBooks.Padding = new Padding(2, 2, 2, 2);
+            tabManageBooks.Size = new Size(969, 434);
             tabManageBooks.TabIndex = 0;
             tabManageBooks.Text = "Manage Books";
             tabManageBooks.Click += tabManageBooks_Click;
             // 
             // panelContainer
             // 
+            panelContainer.AutoScroll = true;
             panelContainer.Dock = DockStyle.Fill;
-            panelContainer.Location = new Point(3, 3);
+            panelContainer.Location = new Point(2, 2);
+            panelContainer.Margin = new Padding(2, 2, 2, 2);
             panelContainer.Name = "panelContainer";
-            panelContainer.Size = new Size(1207, 540);
+            panelContainer.Size = new Size(965, 430);
             panelContainer.TabIndex = 0;
             panelContainer.Paint += panelContainer_Paint_1;
             // 
@@ -67,20 +71,22 @@
             tabControlLibrarian.Dock = DockStyle.Fill;
             tabControlLibrarian.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tabControlLibrarian.Location = new Point(0, 0);
+            tabControlLibrarian.Margin = new Padding(2, 2, 2, 2);
             tabControlLibrarian.Name = "tabControlLibrarian";
             tabControlLibrarian.Padding = new Point(7, 4);
             tabControlLibrarian.SelectedIndex = 0;
-            tabControlLibrarian.Size = new Size(1221, 586);
+            tabControlLibrarian.Size = new Size(977, 469);
             tabControlLibrarian.TabIndex = 0;
             tabControlLibrarian.SelectedIndexChanged += tabManageBooks_Click;
             tabControlLibrarian.Click += tabSignOut_Click;
             // 
             // LibrarianForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1221, 586);
+            ClientSize = new Size(977, 469);
             Controls.Add(tabControlLibrarian);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "LibrarianForm";
             Text = "LibrarianForm";
             Load += LibrarianForm_Load;

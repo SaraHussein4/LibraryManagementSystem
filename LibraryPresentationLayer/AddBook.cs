@@ -11,7 +11,8 @@ using System.IO;
 using ZXing;
 using LibraryManagementSystem.LibraryDataAccess.Models;
 using ZXing.QrCode;
-using ZXing.Windows.Compatibility; 
+using ZXing.Windows.Compatibility;
+using System.Drawing;
 
 namespace LibraryManagementSystem.LibraryPresentationLayer
 {
@@ -81,6 +82,13 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 context.Books.Add(book);
                 context.SaveChanges();
                 MessageBox.Show("Book added successfully!");
+                txtTitle.Text = "";
+                txtAuthor.Text = "";
+                txtISBN.Text = "";
+                txtCategory.Text = "";
+                txtQuantity.Text = "";
+                txtPublishedYear.Text = "";
+                pictureBox1.Image = null;
 
             }
             catch (Exception ex)
@@ -120,7 +128,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     }
                     else
                     {
-                        pictureBox1.Image = Properties.Resources.default_book_image;
+                        pictureBox1.Image = Properties.Resources.DeWatermark_ai_1741085488178;
                     }
 
 

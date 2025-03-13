@@ -40,6 +40,8 @@
             cb_membershipType = new ComboBox();
             label2 = new Label();
             btn_login = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // tb_name
@@ -116,7 +118,7 @@
             checkbxShowPass.Cursor = Cursors.Hand;
             checkbxShowPass.FlatStyle = FlatStyle.Flat;
             checkbxShowPass.Location = new Point(191, 378);
-            checkbxShowPass.Margin = new Padding(2, 2, 2, 2);
+            checkbxShowPass.Margin = new Padding(2);
             checkbxShowPass.Name = "checkbxShowPass";
             checkbxShowPass.Size = new Size(128, 24);
             checkbxShowPass.TabIndex = 10;
@@ -137,7 +139,7 @@
             // 
             cb_membershipType.FormattingEnabled = true;
             cb_membershipType.Location = new Point(19, 182);
-            cb_membershipType.Margin = new Padding(2, 2, 2, 2);
+            cb_membershipType.Margin = new Padding(2);
             cb_membershipType.Name = "cb_membershipType";
             cb_membershipType.Size = new Size(300, 28);
             cb_membershipType.TabIndex = 12;
@@ -161,7 +163,7 @@
             btn_login.FlatStyle = FlatStyle.Flat;
             btn_login.ForeColor = Color.Tan;
             btn_login.Location = new Point(214, 462);
-            btn_login.Margin = new Padding(2, 2, 2, 2);
+            btn_login.Margin = new Padding(2);
             btn_login.Name = "btn_login";
             btn_login.Size = new Size(90, 27);
             btn_login.TabIndex = 13;
@@ -169,12 +171,25 @@
             btn_login.UseVisualStyleBackColor = false;
             btn_login.Click += btn_login_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = Properties.Resources._736f16a5248246f5f648146c4305134b_removebg_preview;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(798, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(46, 43);
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Welcome__1_;
             ClientSize = new Size(929, 523);
+            Controls.Add(pictureBox1);
             Controls.Add(btn_login);
             Controls.Add(cb_membershipType);
             Controls.Add(tb_email);
@@ -192,6 +207,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SignUp";
             Load += SignUp_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -210,5 +226,6 @@
         private ComboBox cb_membershipType;
         private Label label2;
         private Button btn_login;
+        private PictureBox pictureBox1;
     }
 }

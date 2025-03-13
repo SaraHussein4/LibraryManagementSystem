@@ -74,7 +74,13 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     var record = context.BorrowingRecords.FirstOrDefault(r => r.Id == borrowId);
                     if (record != null)
                     {
-                        record.IsReturned = true; 
+                        record.IsReturned = true;
+                        var book = context.Books.FirstOrDefault(b => b.Id == record.BookId);
+                        if (book != null)
+                        {
+                            book.Quantity += 1;  
+                        }
+
                         context.SaveChanges();
 
                         MessageBox.Show("Book marked as returned successfully.");
