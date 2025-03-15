@@ -208,5 +208,14 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             this.Close();
         }
 
+        private void txtQuantity_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAuthor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

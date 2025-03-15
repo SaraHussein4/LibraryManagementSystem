@@ -20,8 +20,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         {
             InitializeComponent();
             context = new LibraryDBContext();
-            GenerateBorrowedBooksReport();
-        }
+            LoadLogsIntoGridView();        }
         public void LoadBooks()
         {
             #region books
@@ -39,7 +38,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
             Panel panelButton = new Panel
             {
-                Width = 600,
+                Width = 700,
                 Height = 50,
                 BackColor = System.Drawing.Color.White
             };
@@ -50,8 +49,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 Width = 140,
                 Height = 40,
                 Font = new System.Drawing.Font("Arial", 10, FontStyle.Bold),
-                BackColor = System.Drawing.Color.LightBlue,
-                ForeColor = System.Drawing.Color.Black
+                BackColor = System.Drawing.Color.Tan,
+                ForeColor = System.Drawing.Color.FloralWhite
             };
 
             btnAddBook.Click += (object sender, EventArgs e) =>
@@ -114,8 +113,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     Width = 130,
                     Height = 30,
                     Font = new System.Drawing.Font("Arial", 8, FontStyle.Bold),
-                    BackColor = System.Drawing.Color.LightGray,
-                    ForeColor = System.Drawing.Color.Black,
+                    BackColor = System.Drawing.Color.Tan,
+                    ForeColor = System.Drawing.Color.FloralWhite,
                     Location = new Point(10, 210)
                 };
 
@@ -514,175 +513,6 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
         }
 
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -695,13 +525,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             {
                 ExcelWorksheet worksheet = excel.Workbook.Worksheets.Add("Report");
 
-                // Header
                 for (int i = 1; i <= dgv.Columns.Count; i++)
                 {
                     worksheet.Cells[1, i].Value = dgv.Columns[i - 1].HeaderText;
                 }
 
-                // Data
                 for (int i = 0; i < dgv.Rows.Count; i++)
                 {
                     for (int j = 0; j < dgv.Columns.Count; j++)
@@ -710,7 +538,6 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     }
                 }
 
-                // Save to file
                 SaveFileDialog saveFileDialog = new SaveFileDialog
                 {
                     Filter = "Excel Files|*.xlsx",
@@ -750,7 +577,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 PdfPTable table = new PdfPTable(dgv.Columns.Count);
                 table.WidthPercentage = 100;
 
-                // Header
+
                 foreach (DataGridViewColumn column in dgv.Columns)
                 {
                     PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
@@ -758,7 +585,6 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     table.AddCell(cell);
                 }
 
-                // Data
                 foreach (DataGridViewRow row in dgv.Rows)
                 {
                     foreach (DataGridViewCell cell in row.Cells)
@@ -774,13 +600,21 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         }
 
 
+        private void LoadLogsIntoGridView()
+        {
+            var logData = context.Logs.Select(log => new { MemberName = log.Member.Name, BookTitle = log.Book.Title, log.ActionType, log.ActionDate }).ToList();
+            dgv_Report.DataSource = logData;
+            dgv_Report.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+        }
+
 
 
 
         private void GenerateBorrowedBooksReport()
         {
             var borrowedBooks = context.BorrowingRecords
-                .Where(b => b.ReturnDate == null) // Books not returned yet
+                .Where(b => b.ReturnDate == null)
                 .Select(b => new
                 {
                     b.Id,
@@ -791,12 +625,14 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 }).ToList();
 
             dgv_Report.DataSource = borrowedBooks;
+            dgv_Report.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
         }
 
         private void GenerateAvailableBooksReport()
         {
             var availableBooks = context.Books
-                .Where(b => b.Quantity > 0) // Books in stock
+                .Where(b => b.Quantity > 0)
                 .Select(b => new
                 {
                     b.Id,
@@ -808,6 +644,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 }).ToList();
 
             dgv_Report.DataSource = availableBooks;
+            dgv_Report.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
         }
 
 
@@ -815,7 +653,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         private void GenerateOverdueBooksReport()
         {
             var overdueBooks = context.BorrowingRecords
-                .Where(b => b.DueDate < DateTime.Now && b.ReturnDate == null) // Overdue and not returned
+                .Where(b => b.DueDate < DateTime.Now && b.ReturnDate == null)
                 .Select(b => new
                 {
                     b.Id,
@@ -826,6 +664,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 }).ToList();
 
             dgv_Report.DataSource = overdueBooks;
+            dgv_Report.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
         }
 
         private void ExcelExport_Click(object sender, EventArgs e)
@@ -848,7 +688,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             GenerateBorrowedBooksReport();
         }
 
-       
+
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -881,13 +721,58 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 this.Close();
 
             }
-            else if (Members.SelectedTab.Name == "RequestsPage")
+            if (Members.SelectedTab.Name == "RequestsPage")
             {
 
                 AdminRequest AdminRequest = new AdminRequest();
                 this.Hide();
                 AdminRequest.ShowDialog();
                 this.Close();
+            }
+            if (Members.SelectedTab == SignoutPage)
+            {
+                LogginOut();
+            }
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            LoadLogsIntoGridView();
+        }
+
+        private void LibrianUserNameLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LibrianName_txt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ReportsPage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void LogginOut()
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+           
+
+                this.Close();
+
+                Login login = new Login();
+                login.Show();
             }
         }
     }

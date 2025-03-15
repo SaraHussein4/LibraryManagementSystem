@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -92,7 +93,18 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 book.Quantity -= 1;
                 context.SaveChanges();
 
-                MessageBox.Show($"You have successfully borrowed {book.Title}.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                var logEntry = new Log
+                {
+                    ActionType = "Borrow Requested",
+                    ActionDate = DateTime.Now,
+                    MemberId = loggedInUser.Id,
+                    BookId = book.Id
+                };
+
+                context.Logs.Add(logEntry);
+                context.SaveChanges();
+
+                MessageBox.Show($"You have successfully requested to borrow {book.Title}.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadBooks();
             }
         }
@@ -310,7 +322,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
         }
 
-       
+
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
         {
@@ -321,5 +333,6 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
 
         }
+
     }
 }

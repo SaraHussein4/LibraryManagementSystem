@@ -66,26 +66,31 @@
             tabControl1.Controls.Add(MyBorrowingBooks);
             tabControl1.Controls.Add(UpdateProfile);
             tabControl1.Controls.Add(LogOut);
-            tabControl1.Font = new Font("Segoe UI Historic", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            tabControl1.Location = new Point(-1, 2);
+            tabControl1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tabControl1.Location = new Point(2, 2);
+            tabControl1.Margin = new Padding(10, 3, 3, 3);
             tabControl1.Name = "tabControl1";
+            tabControl1.Padding = new Point(16, 10);
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(802, 448);
+            tabControl1.Size = new Size(798, 448);
             tabControl1.TabIndex = 0;
             tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             // 
             // ViewBooks
             // 
             ViewBooks.AutoScroll = true;
+            ViewBooks.BackColor = Color.Tan;
+            ViewBooks.BackgroundImageLayout = ImageLayout.Stretch;
             ViewBooks.BorderStyle = BorderStyle.FixedSingle;
             ViewBooks.Controls.Add(flowLayoutPanelBooks);
-            ViewBooks.Location = new Point(4, 32);
+            ViewBooks.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ViewBooks.Location = new Point(4, 45);
+            ViewBooks.Margin = new Padding(10);
             ViewBooks.Name = "ViewBooks";
             ViewBooks.Padding = new Padding(3);
-            ViewBooks.Size = new Size(794, 412);
+            ViewBooks.Size = new Size(790, 399);
             ViewBooks.TabIndex = 0;
             ViewBooks.Text = "Available Books";
-            ViewBooks.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanelBooks
             // 
@@ -94,19 +99,22 @@
             flowLayoutPanelBooks.Dock = DockStyle.Fill;
             flowLayoutPanelBooks.Location = new Point(3, 3);
             flowLayoutPanelBooks.Name = "flowLayoutPanelBooks";
-            flowLayoutPanelBooks.Size = new Size(786, 404);
+            flowLayoutPanelBooks.Size = new Size(782, 391);
             flowLayoutPanelBooks.TabIndex = 0;
             // 
             // MyBorrowingBooks
             // 
+            MyBorrowingBooks.BackgroundImageLayout = ImageLayout.Stretch;
             MyBorrowingBooks.Controls.Add(label5);
             MyBorrowingBooks.Controls.Add(label4);
             MyBorrowingBooks.Controls.Add(dgvBorrowedBooks);
             MyBorrowingBooks.Controls.Add(pictureBox2);
-            MyBorrowingBooks.Location = new Point(4, 32);
+            MyBorrowingBooks.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MyBorrowingBooks.Location = new Point(4, 45);
+            MyBorrowingBooks.Margin = new Padding(10);
             MyBorrowingBooks.Name = "MyBorrowingBooks";
             MyBorrowingBooks.Padding = new Padding(3);
-            MyBorrowingBooks.Size = new Size(794, 412);
+            MyBorrowingBooks.Size = new Size(790, 399);
             MyBorrowingBooks.TabIndex = 1;
             MyBorrowingBooks.Text = "Borrowed Books";
             MyBorrowingBooks.UseVisualStyleBackColor = true;
@@ -143,7 +151,7 @@
             dgvBorrowedBooks.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = Color.FromArgb(20, 25, 70);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI Historic", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle2.ForeColor = SystemColors.Window;
             dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -152,7 +160,7 @@
             dgvBorrowedBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = SystemColors.Window;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI Historic", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle3.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = Color.PeachPuff;
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
@@ -164,7 +172,7 @@
             dgvBorrowedBooks.ReadOnly = true;
             dgvBorrowedBooks.RowHeadersWidth = 51;
             dgvBorrowedBooks.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvBorrowedBooks.Size = new Size(788, 366);
+            dgvBorrowedBooks.Size = new Size(785, 353);
             dgvBorrowedBooks.TabIndex = 0;
             // 
             // pictureBox2
@@ -180,6 +188,8 @@
             // 
             // UpdateProfile
             // 
+            UpdateProfile.BackColor = Color.FloralWhite;
+            UpdateProfile.BackgroundImageLayout = ImageLayout.Stretch;
             UpdateProfile.Controls.Add(btnSave);
             UpdateProfile.Controls.Add(label3);
             UpdateProfile.Controls.Add(txtEma);
@@ -190,14 +200,15 @@
             UpdateProfile.Controls.Add(txtEmail);
             UpdateProfile.Controls.Add(txtName);
             UpdateProfile.Controls.Add(txtUsername);
+            UpdateProfile.Font = new Font("Times New Roman", 10.8F);
             UpdateProfile.ForeColor = Color.Tan;
-            UpdateProfile.Location = new Point(4, 32);
+            UpdateProfile.Location = new Point(4, 45);
+            UpdateProfile.Margin = new Padding(10);
             UpdateProfile.Name = "UpdateProfile";
             UpdateProfile.Padding = new Padding(3);
-            UpdateProfile.Size = new Size(794, 412);
+            UpdateProfile.Size = new Size(790, 399);
             UpdateProfile.TabIndex = 2;
             UpdateProfile.Text = "Update Profile";
-            UpdateProfile.UseVisualStyleBackColor = true;
             // 
             // btnSave
             // 
@@ -267,39 +278,43 @@
             // 
             txtPhone.Location = new Point(135, 227);
             txtPhone.Name = "txtPhone";
-            txtPhone.Size = new Size(222, 30);
+            txtPhone.Size = new Size(222, 28);
             txtPhone.TabIndex = 3;
             // 
             // txtEmail
             // 
             txtEmail.Location = new Point(139, 164);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(218, 30);
+            txtEmail.Size = new Size(218, 28);
             txtEmail.TabIndex = 2;
             // 
             // txtName
             // 
             txtName.Location = new Point(140, 102);
             txtName.Name = "txtName";
-            txtName.Size = new Size(217, 30);
+            txtName.Size = new Size(217, 28);
             txtName.TabIndex = 1;
             // 
             // txtUsername
             // 
             txtUsername.Location = new Point(138, 43);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(219, 30);
+            txtUsername.Size = new Size(219, 28);
             txtUsername.TabIndex = 0;
             // 
             // LogOut
             // 
             LogOut.BackColor = Color.Tan;
-            LogOut.Location = new Point(4, 32);
+            LogOut.BackgroundImage = Properties.Resources._0b54e106ca533b44d972e4f1cf52fb0c_removebg_preview__1_;
+            LogOut.BackgroundImageLayout = ImageLayout.Stretch;
+            LogOut.Font = new Font("Times New Roman", 10.8F);
+            LogOut.Location = new Point(4, 45);
+            LogOut.Margin = new Padding(10);
             LogOut.Name = "LogOut";
             LogOut.Padding = new Padding(3);
-            LogOut.Size = new Size(794, 412);
+            LogOut.Size = new Size(790, 399);
             LogOut.TabIndex = 3;
-            LogOut.Text = "LogOut";
+            LogOut.Text = "Log Out";
             // 
             // Member
             // 
@@ -307,6 +322,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(tabControl1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Member";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Member";

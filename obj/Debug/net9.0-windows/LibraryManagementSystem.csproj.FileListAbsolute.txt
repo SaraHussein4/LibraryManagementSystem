@@ -487,9 +487,6 @@ D:\Iti\LibraryProject\bin\Debug\net9.0-windows\EPPlus.Interfaces.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\EPPlus.System.Drawing.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Humanizer.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\itextsharp.dll
-D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Build.Locator.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.CodeAnalysis.dll
@@ -516,8 +513,6 @@ D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.DependencyMo
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
-D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.Identity.Core.dll
-D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.Identity.Stores.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\Microsoft.Extensions.Options.dll
@@ -676,7 +671,6 @@ C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\runtim
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AdminRequest.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.ManageReturn.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Member.resources
-D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.MemberForm.resources
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.UC_ManageBooks.resources
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\zxing.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\ZXing.Windows.Compatibility.dll

@@ -105,7 +105,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft YaHei", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(19, 465);
+            label1.Location = new Point(19, 469);
             label1.Name = "label1";
             label1.Size = new Size(197, 20);
             label1.TabIndex = 8;
@@ -162,7 +162,7 @@
             btn_login.FlatAppearance.BorderSize = 0;
             btn_login.FlatStyle = FlatStyle.Flat;
             btn_login.ForeColor = Color.Tan;
-            btn_login.Location = new Point(214, 462);
+            btn_login.Location = new Point(214, 466);
             btn_login.Margin = new Padding(2);
             btn_login.Name = "btn_login";
             btn_login.Size = new Size(90, 27);
@@ -176,7 +176,7 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources._736f16a5248246f5f648146c4305134b_removebg_preview;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(798, 12);
+            pictureBox1.Location = new Point(871, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(46, 43);
             pictureBox1.TabIndex = 14;

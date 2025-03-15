@@ -74,6 +74,15 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                             {
                                 book.Quantity -= 1;
                                 MessageBox.Show("Request approved.");
+                                var logEntry = new Log
+                                {
+                                    ActionType = "Borrow Approved",
+                                    ActionDate = DateTime.Now,
+                                    MemberId = request.MemberId,
+                                    BookId = request.BookId
+                                };
+
+                                context.Logs.Add(logEntry);
                             }
                             else
                             {
@@ -85,6 +94,15 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         {
                             request.Status = "Rejected";
                             MessageBox.Show("Request rejected.");
+                            var logEntry = new Log
+                            {
+                                ActionType = "Borrow Rejected",
+                                ActionDate = DateTime.Now,
+                                MemberId = request.MemberId,
+                                BookId = request.BookId
+                            };
+
+                            context.Logs.Add(logEntry);
                         }
 
                         context.SaveChanges();
