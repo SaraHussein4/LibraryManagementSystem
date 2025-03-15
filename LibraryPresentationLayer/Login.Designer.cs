@@ -42,7 +42,7 @@
             // label1
             // 
             label1.ForeColor = Color.SaddleBrown;
-            label1.Location = new Point(44, 109);
+            label1.Location = new Point(44, 78);
             label1.Name = "label1";
             label1.Size = new Size(171, 38);
             label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // label2
             // 
             label2.ForeColor = Color.SaddleBrown;
-            label2.Location = new Point(44, 224);
+            label2.Location = new Point(44, 197);
             label2.Name = "label2";
             label2.Size = new Size(171, 38);
             label2.TabIndex = 1;
@@ -60,14 +60,14 @@
             // 
             // txt_userName
             // 
-            txt_userName.Location = new Point(44, 161);
+            txt_userName.Location = new Point(44, 133);
             txt_userName.Name = "txt_userName";
             txt_userName.Size = new Size(318, 34);
             txt_userName.TabIndex = 2;
             // 
             // txt_password
             // 
-            txt_password.Location = new Point(44, 282);
+            txt_password.Location = new Point(44, 251);
             txt_password.Name = "txt_password";
             txt_password.Size = new Size(318, 34);
             txt_password.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             chkShowPassword.AutoSize = true;
             chkShowPassword.ForeColor = Color.SaddleBrown;
-            chkShowPassword.Location = new Point(179, 342);
+            chkShowPassword.Location = new Point(179, 311);
             chkShowPassword.Name = "chkShowPassword";
             chkShowPassword.Size = new Size(183, 32);
             chkShowPassword.TabIndex = 4;
@@ -87,12 +87,12 @@
             // 
             // btn_logIn
             // 
-            btn_logIn.BackColor = Color.Tan;
+            btn_logIn.BackColor = Color.SaddleBrown;
             btn_logIn.Cursor = Cursors.Hand;
             btn_logIn.ForeColor = Color.FloralWhite;
-            btn_logIn.Location = new Point(44, 405);
+            btn_logIn.Location = new Point(44, 371);
             btn_logIn.Name = "btn_logIn";
-            btn_logIn.Size = new Size(318, 51);
+            btn_logIn.Size = new Size(318, 56);
             btn_logIn.TabIndex = 5;
             btn_logIn.Text = "LOGIN";
             btn_logIn.UseVisualStyleBackColor = false;
@@ -102,10 +102,11 @@
             // 
             textBox3.BackColor = Color.FloralWhite;
             textBox3.BorderStyle = BorderStyle.None;
-            textBox3.ForeColor = Color.Tan;
-            textBox3.Location = new Point(81, 483);
+            textBox3.Font = new Font("Nirmala UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox3.ForeColor = Color.SaddleBrown;
+            textBox3.Location = new Point(78, 447);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(249, 27);
+            textBox3.Size = new Size(249, 22);
             textBox3.TabIndex = 6;
             textBox3.Text = "Don't have an account?";
             textBox3.TextAlign = HorizontalAlignment.Center;
@@ -121,17 +122,17 @@
             // 
             // btn_create
             // 
-            btn_create.BackColor = Color.FloralWhite;
+            btn_create.BackColor = Color.White;
             btn_create.Cursor = Cursors.Hand;
-            btn_create.FlatAppearance.BorderColor = Color.Tan;
+            btn_create.FlatAppearance.BorderColor = Color.SaddleBrown;
             btn_create.FlatStyle = FlatStyle.Flat;
-            btn_create.ForeColor = Color.Tan;
-            btn_create.Location = new Point(81, 516);
+            btn_create.Font = new Font("Nirmala UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn_create.ForeColor = Color.SaddleBrown;
+            btn_create.Location = new Point(44, 490);
             btn_create.Name = "btn_create";
-            btn_create.Size = new Size(249, 40);
+            btn_create.Size = new Size(318, 51);
             btn_create.TabIndex = 9;
             btn_create.Text = "Create an account";
-            btn_create.TextAlign = ContentAlignment.TopCenter;
             btn_create.UseVisualStyleBackColor = false;
             btn_create.Click += btn_create_Click;
             // 
