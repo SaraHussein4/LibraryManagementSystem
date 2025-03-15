@@ -29,34 +29,54 @@
         private void InitializeComponent()
         {
             dgvBorrowedBooks = new DataGridView();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvBorrowedBooks).BeginInit();
             SuspendLayout();
             // 
             // dgvBorrowedBooks
             // 
+            dgvBorrowedBooks.BackgroundColor = Color.White;
             dgvBorrowedBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBorrowedBooks.Location = new Point(26, 12);
+            dgvBorrowedBooks.Location = new Point(23, 9);
+            dgvBorrowedBooks.Margin = new Padding(3, 2, 3, 2);
             dgvBorrowedBooks.Name = "dgvBorrowedBooks";
             dgvBorrowedBooks.RowHeadersWidth = 51;
-            dgvBorrowedBooks.Size = new Size(727, 407);
+            dgvBorrowedBooks.Size = new Size(636, 305);
             dgvBorrowedBooks.TabIndex = 0;
             dgvBorrowedBooks.CellClick += dgvBorrowedBooks_CellClick;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.ForeColor = Color.Tan;
+            label1.Location = new Point(644, 318);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Go back";
+            label1.MouseClick += label1_MouseClick;
+            // 
             // ManageReturn
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Tan;
+            ClientSize = new Size(700, 338);
+            Controls.Add(label1);
             Controls.Add(dgvBorrowedBooks);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ManageReturn";
             Text = "ManageReturn";
             Load += ManageReturn_Load;
             ((System.ComponentModel.ISupportInitialize)dgvBorrowedBooks).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private DataGridView dgvBorrowedBooks;
+        private Label label1;
     }
 }

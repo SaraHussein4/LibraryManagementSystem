@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using ZXing;
 using LibraryManagementSystem.LibraryDataAccess.Models;
-using iTextSharp.text;
+using ZXing.QrCode;
+using ZXing.Windows.Compatibility; 
 
 namespace LibraryManagementSystem.LibraryPresentationLayer
 {
@@ -21,8 +23,9 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         public AddBook()
         {
             InitializeComponent();
-            context = new LibraryDBContext();
         }
+
+
         public AddBook(int _id)
         {
             this.BookSid = _id;
@@ -81,6 +84,14 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 context.Books.Add(book);
                 context.SaveChanges();
                 MessageBox.Show("Book added successfully!");
+                txtTitle.Text = "";
+                txtAuthor.Text = "";
+                txtISBN.Text = "";
+                txtCategory.Text = "";
+                txtQuantity.Text = "";
+                txtPublishedYear.Text = "";
+                pictureBox1.Image = null;
+
 
             }
             catch (Exception ex)
@@ -138,7 +149,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
 
 
-        private void UpdateBookBtn_Click(object sender, EventArgs e)
+        private void UpdateBookBtn_Click_1(object sender, EventArgs e)
         {
             var book = context?.Books?.FirstOrDefault(n => n.Id == BookSid.Value);
             if (book != null)
@@ -165,8 +176,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         }
 
 
-
-        private void DeleteBookBtn_Click(object sender, EventArgs e)
+        private void DeleteBookBtn_Click_1(object sender, EventArgs e)
         {
             var book = context?.Books?.FirstOrDefault(n => n.Id == BookSid.Value);
             if (book != null)
@@ -190,12 +200,14 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
         }
 
-        private void Closebtn_Click(object sender, EventArgs e)
+
+        private void Closebtn_Click_1(object sender, EventArgs e)
         {
             AdminForm adminForm = new AdminForm();
             this.Hide();
             adminForm.ShowDialog();
             this.Close();
         }
+
     }
 }

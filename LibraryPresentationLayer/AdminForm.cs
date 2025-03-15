@@ -514,6 +514,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
         }
 
+     
 
 
 
@@ -868,6 +869,28 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             this.Hide();
             Login.ShowDialog();
             this.Close();
+        }
+
+        private void Members_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (Members.SelectedTab.Name == "ReturnSTimePage")
+            {
+
+                ManageReturn ManageReturn = new ManageReturn();
+
+                this.Hide();
+                ManageReturn.ShowDialog();
+                this.Close();
+
+            }
+            else if (Members.SelectedTab.Name == "RequestsPage")
+            {
+
+                AdminRequest AdminRequest = new AdminRequest();
+                this.Hide();
+                AdminRequest.ShowDialog();
+                this.Close();
+            }
         }
     }
 }

@@ -28,37 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             dgvRequests = new DataGridView();
+            gobackinARequest = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvRequests).BeginInit();
             SuspendLayout();
             // 
             // dgvRequests
             // 
+            dgvRequests.BackgroundColor = Color.White;
             dgvRequests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRequests.Location = new Point(12, 12);
+            dgvRequests.Location = new Point(10, 9);
+            dgvRequests.Margin = new Padding(3, 2, 3, 2);
             dgvRequests.Name = "dgvRequests";
             dgvRequests.ReadOnly = true;
             dgvRequests.RowHeadersWidth = 51;
             dgvRequests.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvRequests.Size = new Size(776, 426);
+            dgvRequests.Size = new Size(679, 300);
             dgvRequests.TabIndex = 0;
             dgvRequests.CellClick += dgvRequests_CellClick;
             // 
+            // gobackinARequest
+            // 
+            gobackinARequest.AutoSize = true;
+            gobackinARequest.BackColor = Color.White;
+            gobackinARequest.ForeColor = Color.Tan;
+            gobackinARequest.Location = new Point(639, 316);
+            gobackinARequest.Name = "gobackinARequest";
+            gobackinARequest.Size = new Size(49, 15);
+            gobackinARequest.TabIndex = 1;
+            gobackinARequest.Text = "go back";
+            gobackinARequest.MouseDoubleClick += gobackinARequest_MouseDoubleClick;
+            // 
             // AdminRequest
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Tan;
+            ClientSize = new Size(700, 338);
+            Controls.Add(gobackinARequest);
             Controls.Add(dgvRequests);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AdminRequest";
             Text = "AdminRequest";
             ((System.ComponentModel.ISupportInitialize)dgvRequests).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private DataGridView dgvRequests;
+        private Label gobackinARequest;
     }
 }

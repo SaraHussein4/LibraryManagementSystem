@@ -31,9 +31,8 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             SignoutPage = new TabPage();
-            EditProfilePage = new TabPage();
+            SginoutBtn = new Button();
             ReportsPage = new TabPage();
             button4 = new Button();
             button3 = new Button();
@@ -43,7 +42,6 @@
             dgv_Report = new DataGridView();
             RequestsPage = new TabPage();
             ReturnSTimePage = new TabPage();
-            BorrowsBookPage = new TabPage();
             AllBooksPage = new TabPage();
             StaffPage = new TabPage();
             LibrianDeleteBtn = new Button();
@@ -91,8 +89,6 @@
             MemberShipTypeLbl = new Label();
             MemberNameLbl = new Label();
             dataGridView1 = new DataGridView();
-            pictureBox1 = new PictureBox();
-            SginoutBtn = new Button();
             SignoutPage.SuspendLayout();
             ReportsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Report).BeginInit();
@@ -101,28 +97,30 @@
             Members.SuspendLayout();
             MembersPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // SignoutPage
             // 
-            SignoutPage.BackColor = Color.White;
+            SignoutPage.BackColor = Color.Tan;
             SignoutPage.Controls.Add(SginoutBtn);
-            SignoutPage.Controls.Add(pictureBox1);
             SignoutPage.Location = new Point(4, 24);
             SignoutPage.Name = "SignoutPage";
             SignoutPage.Size = new Size(793, 419);
             SignoutPage.TabIndex = 9;
             SignoutPage.Text = "Sign out";
             // 
-            // EditProfilePage
+            // SginoutBtn
             // 
-            EditProfilePage.Location = new Point(4, 24);
-            EditProfilePage.Name = "EditProfilePage";
-            EditProfilePage.Size = new Size(793, 419);
-            EditProfilePage.TabIndex = 8;
-            EditProfilePage.Text = "Edit Profile";
-            EditProfilePage.UseVisualStyleBackColor = true;
+            SginoutBtn.BackColor = Color.White;
+            SginoutBtn.Font = new Font("Segoe UI", 15F);
+            SginoutBtn.ForeColor = Color.Tan;
+            SginoutBtn.Location = new Point(288, 156);
+            SginoutBtn.Name = "SginoutBtn";
+            SginoutBtn.Size = new Size(216, 81);
+            SginoutBtn.TabIndex = 1;
+            SginoutBtn.Text = "Sgin out";
+            SginoutBtn.UseVisualStyleBackColor = false;
+            SginoutBtn.Click += SginoutBtn_Click;
             // 
             // ReportsPage
             // 
@@ -223,15 +221,6 @@
             ReturnSTimePage.Text = "Confirm Return Books";
             ReturnSTimePage.UseVisualStyleBackColor = true;
             // 
-            // BorrowsBookPage
-            // 
-            BorrowsBookPage.Location = new Point(4, 24);
-            BorrowsBookPage.Name = "BorrowsBookPage";
-            BorrowsBookPage.Size = new Size(793, 419);
-            BorrowsBookPage.TabIndex = 3;
-            BorrowsBookPage.Text = "Borrows Book";
-            BorrowsBookPage.UseVisualStyleBackColor = true;
-            // 
             // AllBooksPage
             // 
             AllBooksPage.Location = new Point(4, 24);
@@ -243,6 +232,7 @@
             // 
             // StaffPage
             // 
+            StaffPage.BackColor = Color.Tan;
             StaffPage.Controls.Add(LibrianDeleteBtn);
             StaffPage.Controls.Add(LibrianUpdateBtn);
             StaffPage.Controls.Add(LibrianAddBtn);
@@ -268,7 +258,6 @@
             StaffPage.Size = new Size(793, 419);
             StaffPage.TabIndex = 1;
             StaffPage.Text = "Staff";
-            StaffPage.UseVisualStyleBackColor = true;
             // 
             // LibrianDeleteBtn
             // 
@@ -432,20 +421,20 @@
             Members.Controls.Add(MembersPage);
             Members.Controls.Add(StaffPage);
             Members.Controls.Add(AllBooksPage);
-            Members.Controls.Add(BorrowsBookPage);
             Members.Controls.Add(ReturnSTimePage);
             Members.Controls.Add(RequestsPage);
             Members.Controls.Add(ReportsPage);
-            Members.Controls.Add(EditProfilePage);
             Members.Controls.Add(SignoutPage);
             Members.Location = new Point(-1, 3);
             Members.Name = "Members";
             Members.SelectedIndex = 0;
             Members.Size = new Size(801, 447);
             Members.TabIndex = 0;
+            Members.SelectedIndexChanged += Members_SelectedIndexChanged_1;
             // 
             // MembersPage
             // 
+            MembersPage.BackColor = Color.Tan;
             MembersPage.Controls.Add(MemberRolev2Lbl);
             MembersPage.Controls.Add(label6);
             MembersPage.Controls.Add(MemberPasswordv2Lbl);
@@ -478,7 +467,6 @@
             MembersPage.Size = new Size(793, 419);
             MembersPage.TabIndex = 0;
             MembersPage.Text = "Members";
-            MembersPage.UseVisualStyleBackColor = true;
             // 
             // MemberRolev2Lbl
             // 
@@ -715,30 +703,6 @@
             dataGridView1.TabIndex = 0;
             dataGridView1.RowHeaderMouseDoubleClick += dataGridView1_RowHeaderMouseDoubleClick;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Location = new Point(9, 17);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(596, 394);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // SginoutBtn
-            // 
-            SginoutBtn.BackColor = Color.FromArgb(192, 0, 0);
-            SginoutBtn.Font = new Font("Segoe UI", 15F);
-            SginoutBtn.ForeColor = Color.White;
-            SginoutBtn.Location = new Point(611, 365);
-            SginoutBtn.Name = "SginoutBtn";
-            SginoutBtn.Size = new Size(168, 46);
-            SginoutBtn.TabIndex = 1;
-            SginoutBtn.Text = "Sgin out";
-            SginoutBtn.UseVisualStyleBackColor = false;
-            SginoutBtn.Click += SginoutBtn_Click;
-            // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -758,18 +722,15 @@
             MembersPage.ResumeLayout(false);
             MembersPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private TabPage SignoutPage;
-        private TabPage EditProfilePage;
         private TabPage ReportsPage;
         private TabPage RequestsPage;
         private TabPage ReturnSTimePage;
-        private TabPage BorrowsBookPage;
         private TabPage AllBooksPage;
         private TabPage StaffPage;
         private Button LibrianDeleteBtn;
@@ -823,7 +784,6 @@
         private Button button4;
         private Button button3;
         private Button button2;
-        private PictureBox pictureBox1;
         private Button SginoutBtn;
         //private Button ExportToExcel;
     }
