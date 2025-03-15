@@ -17,9 +17,9 @@ namespace LibraryManagementSystem
            // Application.Run(new Welcome());
             //Application.Run(new AddBook());
             //Application.Run(new MemberForm());
-            //Application.Run(new Login());
 
             //Application.Run(new SignUp());
+            //Application.Run(new AdminRequest());
 
             Application.Run(new AdminForm());
             //Application.Run(new LibrarianForm(Login.LoggedInUser.Id));

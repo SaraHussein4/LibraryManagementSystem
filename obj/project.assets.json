@@ -5731,23 +5731,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mr\\.nuget\\packages\\": {},
+    "C:\\Users\\ascom\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryManagementSystem.csproj",
       "projectName": "LibraryManagementSystem",
-      "projectPath": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\mr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mr\\Source\\Repos\\LibraryManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\LibraryManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\ascom\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ascom\\Desktop\\ITI\\AdoShafie\\AdoDayTwoSh\\Test\\Sara\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ascom\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5838,7 +5838,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

@@ -125,7 +125,7 @@
             dgvBooks.Margin = new Padding(2);
             dgvBooks.Name = "dgvBooks";
             dgvBooks.RowHeadersWidth = 62;
-            dgvBooks.Size = new Size(1113, 262);
+            dgvBooks.Size = new Size(1298, 713);
             dgvBooks.TabIndex = 4;
             // 
             // lblTitle
@@ -190,8 +190,9 @@
             // 
             // pbBookImage
             // 
-            pbBookImage.Location = new Point(894, 54);
-            pbBookImage.Margin = new Padding(2);
+            pbBookImage.BackColor = SystemColors.InactiveBorder;
+            pbBookImage.BorderStyle = BorderStyle.FixedSingle;
+            pbBookImage.Location = new Point(1126, 68);
             pbBookImage.Name = "pbBookImage";
             pbBookImage.Size = new Size(121, 144);
             pbBookImage.TabIndex = 10;
@@ -321,7 +322,7 @@
             Controls.Add(btnBrowseImage);
             Margin = new Padding(2);
             Name = "UC_ManageBooks";
-            Size = new Size(1127, 570);
+            Size = new Size(1301, 1099);
             Load += UC_ManageBooks_Load;
             ((System.ComponentModel.ISupportInitialize)dgvBooks).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbBookImage).EndInit();
