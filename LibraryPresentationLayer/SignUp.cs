@@ -113,6 +113,20 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             loginForm.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Welcome welcome = Welcome.GetInstance();
+
+            if (welcome != null && !welcome.IsDisposed)
+            {
+                welcome.WindowState = FormWindowState.Normal;
+                welcome.Show();
+                welcome.BringToFront();
+            }
+
+            this.Close();
+        }
     }
 
 }

@@ -32,8 +32,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             {
                 Width = flowLayoutPanelBooks.Width,
                 Height = 50,
-                Dock = DockStyle.Top ,
-                
+                Dock = DockStyle.Top,
+
             };
 
             TextBox txtSearch = new TextBox
@@ -187,6 +187,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
 
             int memberId = loggedInUser.Id;
+            bool isDueToday = false;
 
             using (var context = new LibraryDBContext())
             {
@@ -199,6 +200,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         BorrowDate = b.BorrowDate,
                         DueDate = b.DueDate,
                         DaysLeft = (b.DueDate - DateTime.Now).Days,
+                        //DaysLeft = 0,
                         //IsReturned = b.IsReturned ? "Returned" : "Not Returned",
                         b.Status
                     })
@@ -215,8 +217,13 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         //book.IsReturned,
                         book.Status
                     );
+                    if (book.DaysLeft == 0)
+                    {
+                        isDueToday = true;
+                    }
                 }
             }
+            label5.Text = isDueToday ? "1" : "0";
         }
 
 
@@ -301,6 +308,18 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
                 MessageBox.Show("Profile updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+       
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            if (label5.Text == "1")
+            {
+                MessageBox.Show("You Should Return The Book!!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                label5.Text = "0";
+            }
+
         }
     }
 }

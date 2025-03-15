@@ -11,7 +11,8 @@ using System.IO;
 using ZXing;
 using LibraryManagementSystem.LibraryDataAccess.Models;
 using ZXing.QrCode;
-using ZXing.Windows.Compatibility; 
+using ZXing.Windows.Compatibility;
+using System.Drawing;
 
 namespace LibraryManagementSystem.LibraryPresentationLayer
 {
@@ -35,13 +36,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
 
 
-
-
-
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Please Select a photo";
+            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|PNG|*.png|GIF|*.gif";
             ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|PNG|*.png|GIF|*.gif";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -131,7 +130,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     }
                     else
                     {
-                        pictureBox1.Image = Properties.Resources.default_book_image;
+                        pictureBox1.Image = Properties.Resources.DeWatermark_ai_1741085488178;
                     }
 
 

@@ -94,7 +94,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 }
                 else
                 {
-                    pictureBox.Image = Properties.Resources.default_book_image;
+                    pictureBox.Image = Properties.Resources.DeWatermark_ai_1741085488178;
                 }
 
                 Label lblTitle = new Label
@@ -848,13 +848,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             GenerateBorrowedBooksReport();
         }
 
-        private void ReportsPage_Click(object sender, EventArgs e)
-        {
-            GenerateAvailableBooksReport();
-        }
+       
 
         private void button4_Click(object sender, EventArgs e)
         {
+            GenerateAvailableBooksReport();
 
         }
 

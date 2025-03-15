@@ -35,8 +35,10 @@
             ViewBooks = new TabPage();
             flowLayoutPanelBooks = new FlowLayoutPanel();
             MyBorrowingBooks = new TabPage();
+            label5 = new Label();
             label4 = new Label();
             dgvBorrowedBooks = new DataGridView();
+            pictureBox2 = new PictureBox();
             UpdateProfile = new TabPage();
             btnSave = new Button();
             label3 = new Label();
@@ -53,6 +55,7 @@
             ViewBooks.SuspendLayout();
             MyBorrowingBooks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvBorrowedBooks).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             UpdateProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -96,8 +99,10 @@
             // 
             // MyBorrowingBooks
             // 
+            MyBorrowingBooks.Controls.Add(label5);
             MyBorrowingBooks.Controls.Add(label4);
             MyBorrowingBooks.Controls.Add(dgvBorrowedBooks);
+            MyBorrowingBooks.Controls.Add(pictureBox2);
             MyBorrowingBooks.Location = new Point(4, 32);
             MyBorrowingBooks.Name = "MyBorrowingBooks";
             MyBorrowingBooks.Padding = new Padding(3);
@@ -105,6 +110,17 @@
             MyBorrowingBooks.TabIndex = 1;
             MyBorrowingBooks.Text = "Borrowed Books";
             MyBorrowingBooks.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Historic", 7.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.IndianRed;
+            label5.Location = new Point(766, 5);
+            label5.Name = "label5";
+            label5.Size = new Size(15, 17);
+            label5.TabIndex = 3;
+            label5.Text = "0";
             // 
             // label4
             // 
@@ -150,6 +166,17 @@
             dgvBorrowedBooks.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvBorrowedBooks.Size = new Size(788, 366);
             dgvBorrowedBooks.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = Properties.Resources.f0781482305fe0c5e9f3f57f0c109dfc_removebg_preview;
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(746, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(39, 39);
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click_1;
             // 
             // UpdateProfile
             // 
@@ -288,6 +315,7 @@
             MyBorrowingBooks.ResumeLayout(false);
             MyBorrowingBooks.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvBorrowedBooks).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             UpdateProfile.ResumeLayout(false);
             UpdateProfile.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -314,5 +342,7 @@
         private Button btnSave;
         private Label label3;
         private Label label4;
+        private PictureBox pictureBox2;
+        private Label label5;
     }
 }
