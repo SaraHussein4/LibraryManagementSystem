@@ -676,8 +676,10 @@ C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\runtim
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.AdminRequest.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.ManageReturn.resources
 C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Member.resources
-C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.Form4.resources
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.MemberForm.resources
 D:\Iti\LibraryProject\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.UC_ManageBooks.resources
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\zxing.dll
 D:\Iti\LibraryProject\bin\Debug\net9.0-windows\ZXing.Windows.Compatibility.dll
+C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\zxing.dll
+C:\Users\mr\Source\Repos\LibraryManagementSystem\bin\Debug\net9.0-windows\ZXing.Windows.Compatibility.dll
+C:\Users\mr\Source\Repos\LibraryManagementSystem\obj\Debug\net9.0-windows\LibraryManagementSystem.LibraryPresentationLayer.UC_ManageBooks.resources

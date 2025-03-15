@@ -34,7 +34,6 @@
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             SignoutPage = new TabPage();
             SginoutBtn = new Button();
-            pictureBox1 = new PictureBox();
             ReportsPage = new TabPage();
             button4 = new Button();
             button3 = new Button();
@@ -92,7 +91,7 @@
             MemberNameLbl = new Label();
             dataGridView1 = new DataGridView();
             SignoutPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+          //  ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ReportsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Report).BeginInit();
             StaffPage.SuspendLayout();
@@ -104,11 +103,9 @@
             // 
             // SignoutPage
             // 
-            SignoutPage.BackColor = Color.White;
+            SignoutPage.BackColor = Color.Tan;
             SignoutPage.Controls.Add(SginoutBtn);
-            SignoutPage.Controls.Add(pictureBox1);
-            SignoutPage.Location = new Point(4, 29);
-            SignoutPage.Margin = new Padding(3, 4, 3, 4);
+            SignoutPage.Location = new Point(4, 24);
             SignoutPage.Name = "SignoutPage";
             SignoutPage.Size = new Size(907, 563);
             SignoutPage.TabIndex = 9;
@@ -116,29 +113,16 @@
             // 
             // SginoutBtn
             // 
-            SginoutBtn.BackColor = Color.FromArgb(192, 0, 0);
+            SginoutBtn.BackColor = Color.White;
             SginoutBtn.Font = new Font("Segoe UI", 15F);
-            SginoutBtn.ForeColor = Color.White;
-            SginoutBtn.Location = new Point(698, 487);
-            SginoutBtn.Margin = new Padding(3, 4, 3, 4);
+            SginoutBtn.ForeColor = Color.Tan;
+            SginoutBtn.Location = new Point(288, 156);
             SginoutBtn.Name = "SginoutBtn";
-            SginoutBtn.Size = new Size(192, 61);
+            SginoutBtn.Size = new Size(216, 81);
             SginoutBtn.TabIndex = 1;
             SginoutBtn.Text = "Sgin out";
             SginoutBtn.UseVisualStyleBackColor = false;
             SginoutBtn.Click += SginoutBtn_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Location = new Point(10, 23);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(681, 525);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // ReportsPage
             // 
@@ -247,6 +231,7 @@
             // 
             // StaffPage
             // 
+            StaffPage.BackColor = Color.Tan;
             StaffPage.Controls.Add(LibrianDeleteBtn);
             StaffPage.Controls.Add(LibrianUpdateBtn);
             StaffPage.Controls.Add(LibrianAddBtn);
@@ -273,7 +258,6 @@
             StaffPage.Size = new Size(907, 563);
             StaffPage.TabIndex = 1;
             StaffPage.Text = "Staff";
-            StaffPage.UseVisualStyleBackColor = true;
             // 
             // LibrianDeleteBtn
             // 
@@ -458,9 +442,11 @@
             Members.SelectedIndex = 0;
             Members.Size = new Size(915, 596);
             Members.TabIndex = 0;
+            Members.SelectedIndexChanged += Members_SelectedIndexChanged_1;
             // 
             // MembersPage
             // 
+            MembersPage.BackColor = Color.Tan;
             MembersPage.Controls.Add(MemberRolev2Lbl);
             MembersPage.Controls.Add(label6);
             MembersPage.Controls.Add(MemberPasswordv2Lbl);
@@ -494,7 +480,6 @@
             MembersPage.Size = new Size(907, 563);
             MembersPage.TabIndex = 0;
             MembersPage.Text = "Members";
-            MembersPage.UseVisualStyleBackColor = true;
             // 
             // MemberRolev2Lbl
             // 
@@ -753,7 +738,7 @@
             Text = "AdminForm";
             Load += AdminForm_Load;
             SignoutPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+         //   ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ReportsPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_Report).EndInit();
             StaffPage.ResumeLayout(false);
@@ -825,7 +810,6 @@
         private Button button4;
         private Button button3;
         private Button button2;
-        private PictureBox pictureBox1;
         private Button SginoutBtn;
         //private Button ExportToExcel;
     }

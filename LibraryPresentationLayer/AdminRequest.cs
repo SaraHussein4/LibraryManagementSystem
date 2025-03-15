@@ -37,7 +37,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             using (var context = new LibraryDBContext())
             {
                 var requests = context.BorrowingRecords
-                    .Where(r => r.Status == "Pending") 
+                    .Where(r => r.Status == "Pending")
                     .Select(r => new
                     {
                         r.Id,
@@ -67,12 +67,12 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         if (e.ColumnIndex == dgvRequests.Columns["Accept"].Index)
                         {
                             request.Status = "Approved";
-                            request.DueDate = DateTime.Now.AddDays(14); 
+                            request.DueDate = DateTime.Now.AddDays(14);
 
                             var book = context.Books.FirstOrDefault(b => b.Id == request.BookId);
                             if (book != null && book.Quantity > 0)
                             {
-                                book.Quantity -= 1; 
+                                book.Quantity -= 1;
                                 MessageBox.Show("Request approved.");
                             }
                             else
@@ -88,10 +88,18 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         }
 
                         context.SaveChanges();
-                        LoadPendingRequests(); 
+                        LoadPendingRequests();
                     }
                 }
             }
+        }
+
+        private void gobackinARequest_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            AdminForm AdminForm = new AdminForm();
+            this.Hide();
+            AdminForm.ShowDialog();
+            this.Close();
         }
     }
 }

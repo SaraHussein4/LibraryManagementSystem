@@ -41,6 +41,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Please Select a photo";
             ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|PNG|*.png|GIF|*.gif";
+            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|PNG|*.png|GIF|*.gif";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -89,6 +90,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 txtQuantity.Text = "";
                 txtPublishedYear.Text = "";
                 pictureBox1.Image = null;
+
 
             }
             catch (Exception ex)

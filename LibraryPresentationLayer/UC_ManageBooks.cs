@@ -19,16 +19,19 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             InitializeComponent();
             this.dgvBooks.CellFormatting += new DataGridViewCellFormattingEventHandler(this.dgvBooks_CellFormatting);
             this.dgvBooks.CellDoubleClick += new DataGridViewCellEventHandler(this.dgvBooks_CellDoubleClick);
+            this.dgvBooks.MouseClick += new MouseEventHandler(this.dgvBooks_MouseClick);
+
 
         }
 
         private void UC_ManageBooks_Load(object sender, EventArgs e)
         {
             LoadBooks();
+            LoadBooks();
         }
 
 
-       
+      
         private void LoadBooks()
         {
             using (var context = new LibraryDBContext())
@@ -103,6 +106,18 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
         }
 
+          private void ClearFields()
+        {
+            txtTitle.Text = "";
+            txtAuthor.Text = "";
+            txtISBN.Text = "";
+            txtCategory.Text = "";
+            txtQuantity.Text = "";
+            txtPublishedYear.Text = "";
+            pbBookImage.Image = null;
+            imagePath = "";
+        }
+
 
 
 
@@ -157,8 +172,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     context.SaveChanges();
                     MessageBox.Show("Book added successfully!");
                     LoadBooks();
-
-
+  ClearFields();
                 }
             }
             catch (Exception ex)
@@ -240,7 +254,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
                         MessageBox.Show("Book updated successfully!");
                         LoadBooks();
-
+ ClearFields();
 
                     }
                 }
@@ -271,7 +285,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                             context.SaveChanges();
                             MessageBox.Show("Book deleted successfully!");
                             LoadBooks();
-
+      ClearFields();
 
                         }
                     }
@@ -330,5 +344,16 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+        private void dgvBooks_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (dgvBooks.HitTest(e.X, e.Y).RowIndex == -1)
+            {
+                ClearFields(); 
+            }
+        }
+
+
+
+
     }
 }
