@@ -199,8 +199,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         Title = b.Book.Title,
                         BorrowDate = b.BorrowDate,
                         DueDate = b.DueDate,
-                        //DaysLeft = (b.DueDate - DateTime.Now).Days,
-                        DaysLeft = 0,
+                        DaysLeft = (b.DueDate - DateTime.Now).Days,
+                        //DaysLeft = 0,
                         //IsReturned = b.IsReturned ? "Returned" : "Not Returned",
                         b.Status
                     })

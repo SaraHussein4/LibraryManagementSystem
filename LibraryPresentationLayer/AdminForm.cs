@@ -847,13 +847,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             GenerateBorrowedBooksReport();
         }
 
-        private void ReportsPage_Click(object sender, EventArgs e)
-        {
-            GenerateAvailableBooksReport();
-        }
+       
 
         private void button4_Click(object sender, EventArgs e)
         {
+            GenerateAvailableBooksReport();
 
         }
 
