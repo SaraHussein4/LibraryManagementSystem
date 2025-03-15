@@ -91,7 +91,7 @@
             MemberNameLbl = new Label();
             dataGridView1 = new DataGridView();
             SignoutPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+          //  ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ReportsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Report).BeginInit();
             StaffPage.SuspendLayout();
@@ -738,7 +738,7 @@
             Text = "AdminForm";
             Load += AdminForm_Load;
             SignoutPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+         //   ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ReportsPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_Report).EndInit();
             StaffPage.ResumeLayout(false);
