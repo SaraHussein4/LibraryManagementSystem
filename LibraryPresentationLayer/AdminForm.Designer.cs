@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             SignoutPage = new TabPage();
-            EditProfilePage = new TabPage();
+            SginoutBtn = new Button();
             ReportsPage = new TabPage();
             button4 = new Button();
             button3 = new Button();
@@ -42,7 +43,6 @@
             dgv_Report = new DataGridView();
             RequestsPage = new TabPage();
             ReturnSTimePage = new TabPage();
-            BorrowsBookPage = new TabPage();
             AllBooksPage = new TabPage();
             StaffPage = new TabPage();
             LibrianDeleteBtn = new Button();
@@ -90,6 +90,8 @@
             MemberShipTypeLbl = new Label();
             MemberNameLbl = new Label();
             dataGridView1 = new DataGridView();
+            SignoutPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ReportsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgv_Report).BeginInit();
             StaffPage.SuspendLayout();
@@ -101,23 +103,26 @@
             // 
             // SignoutPage
             // 
-            SignoutPage.Location = new Point(4, 29);
-            SignoutPage.Margin = new Padding(3, 4, 3, 4);
+            SignoutPage.BackColor = Color.Tan;
+            SignoutPage.Controls.Add(SginoutBtn);
+            SignoutPage.Location = new Point(4, 24);
             SignoutPage.Name = "SignoutPage";
             SignoutPage.Size = new Size(907, 563);
             SignoutPage.TabIndex = 9;
             SignoutPage.Text = "Sign out";
-            SignoutPage.UseVisualStyleBackColor = true;
             // 
-            // EditProfilePage
+            // SginoutBtn
             // 
-            EditProfilePage.Location = new Point(4, 29);
-            EditProfilePage.Margin = new Padding(3, 4, 3, 4);
-            EditProfilePage.Name = "EditProfilePage";
-            EditProfilePage.Size = new Size(907, 563);
-            EditProfilePage.TabIndex = 8;
-            EditProfilePage.Text = "Edit Profile";
-            EditProfilePage.UseVisualStyleBackColor = true;
+            SginoutBtn.BackColor = Color.White;
+            SginoutBtn.Font = new Font("Segoe UI", 15F);
+            SginoutBtn.ForeColor = Color.Tan;
+            SginoutBtn.Location = new Point(288, 156);
+            SginoutBtn.Name = "SginoutBtn";
+            SginoutBtn.Size = new Size(216, 81);
+            SginoutBtn.TabIndex = 1;
+            SginoutBtn.Text = "Sgin out";
+            SginoutBtn.UseVisualStyleBackColor = false;
+            SginoutBtn.Click += SginoutBtn_Click;
             // 
             // ReportsPage
             // 
@@ -134,7 +139,6 @@
             ReportsPage.TabIndex = 7;
             ReportsPage.Text = "Reports";
             ReportsPage.UseVisualStyleBackColor = true;
-            ReportsPage.Click += ReportsPage_Click;
             // 
             // button4
             // 
@@ -160,7 +164,7 @@
             // 
             button2.Location = new Point(41, 23);
             button2.Name = "button2";
-            button2.Size = new Size(228, 29);
+            button2.Size = new Size(229, 29);
             button2.TabIndex = 3;
             button2.Text = "View Overdue Books ";
             button2.UseVisualStyleBackColor = true;
@@ -168,7 +172,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(276, 78);
+            button1.Location = new Point(277, 77);
             button1.Name = "button1";
             button1.Size = new Size(161, 29);
             button1.TabIndex = 2;
@@ -178,7 +182,7 @@
             // 
             // ExcelExport
             // 
-            ExcelExport.Location = new Point(41, 78);
+            ExcelExport.Location = new Point(41, 77);
             ExcelExport.Name = "ExcelExport";
             ExcelExport.Size = new Size(161, 29);
             ExcelExport.TabIndex = 1;
@@ -215,16 +219,6 @@
             ReturnSTimePage.Text = "Confirm Return Books";
             ReturnSTimePage.UseVisualStyleBackColor = true;
             // 
-            // BorrowsBookPage
-            // 
-            BorrowsBookPage.Location = new Point(4, 29);
-            BorrowsBookPage.Margin = new Padding(3, 4, 3, 4);
-            BorrowsBookPage.Name = "BorrowsBookPage";
-            BorrowsBookPage.Size = new Size(907, 563);
-            BorrowsBookPage.TabIndex = 3;
-            BorrowsBookPage.Text = "Borrows Book";
-            BorrowsBookPage.UseVisualStyleBackColor = true;
-            // 
             // AllBooksPage
             // 
             AllBooksPage.Location = new Point(4, 29);
@@ -237,6 +231,7 @@
             // 
             // StaffPage
             // 
+            StaffPage.BackColor = Color.Tan;
             StaffPage.Controls.Add(LibrianDeleteBtn);
             StaffPage.Controls.Add(LibrianUpdateBtn);
             StaffPage.Controls.Add(LibrianAddBtn);
@@ -263,7 +258,6 @@
             StaffPage.Size = new Size(907, 563);
             StaffPage.TabIndex = 1;
             StaffPage.Text = "Staff";
-            StaffPage.UseVisualStyleBackColor = true;
             // 
             // LibrianDeleteBtn
             // 
@@ -438,11 +432,9 @@
             Members.Controls.Add(MembersPage);
             Members.Controls.Add(StaffPage);
             Members.Controls.Add(AllBooksPage);
-            Members.Controls.Add(BorrowsBookPage);
             Members.Controls.Add(ReturnSTimePage);
             Members.Controls.Add(RequestsPage);
             Members.Controls.Add(ReportsPage);
-            Members.Controls.Add(EditProfilePage);
             Members.Controls.Add(SignoutPage);
             Members.Location = new Point(-1, 4);
             Members.Margin = new Padding(3, 4, 3, 4);
@@ -450,9 +442,11 @@
             Members.SelectedIndex = 0;
             Members.Size = new Size(915, 596);
             Members.TabIndex = 0;
+            Members.SelectedIndexChanged += Members_SelectedIndexChanged_1;
             // 
             // MembersPage
             // 
+            MembersPage.BackColor = Color.Tan;
             MembersPage.Controls.Add(MemberRolev2Lbl);
             MembersPage.Controls.Add(label6);
             MembersPage.Controls.Add(MemberPasswordv2Lbl);
@@ -486,7 +480,6 @@
             MembersPage.Size = new Size(907, 563);
             MembersPage.TabIndex = 0;
             MembersPage.Text = "Members";
-            MembersPage.UseVisualStyleBackColor = true;
             // 
             // MemberRolev2Lbl
             // 
@@ -701,34 +694,34 @@
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = Color.White;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Control;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 11F);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = SystemColors.Window;
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 11F);
-            dataGridViewCellStyle5.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.Location = new Point(3, 317);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = SystemColors.Control;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 11F);
-            dataGridViewCellStyle6.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(897, 231);
             dataGridView1.TabIndex = 0;
@@ -738,12 +731,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(928, 600);
+            ClientSize = new Size(1043, 638);
             Controls.Add(Members);
             Margin = new Padding(3, 4, 3, 4);
             Name = "AdminForm";
             Text = "AdminForm";
             Load += AdminForm_Load;
+            SignoutPage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ReportsPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_Report).EndInit();
             StaffPage.ResumeLayout(false);
@@ -759,11 +754,9 @@
         #endregion
 
         private TabPage SignoutPage;
-        private TabPage EditProfilePage;
         private TabPage ReportsPage;
         private TabPage RequestsPage;
         private TabPage ReturnSTimePage;
-        private TabPage BorrowsBookPage;
         private TabPage AllBooksPage;
         private TabPage StaffPage;
         private Button LibrianDeleteBtn;
@@ -817,6 +810,7 @@
         private Button button4;
         private Button button3;
         private Button button2;
+        private Button SginoutBtn;
         //private Button ExportToExcel;
     }
 }

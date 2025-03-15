@@ -37,6 +37,8 @@
             textBox3 = new TextBox();
             lblError = new Label();
             btn_create = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -62,14 +64,14 @@
             // 
             txt_userName.Location = new Point(44, 133);
             txt_userName.Name = "txt_userName";
-            txt_userName.Size = new Size(318, 34);
+            txt_userName.Size = new Size(318, 30);
             txt_userName.TabIndex = 2;
             // 
             // txt_password
             // 
             txt_password.Location = new Point(44, 251);
             txt_password.Name = "txt_password";
-            txt_password.Size = new Size(318, 34);
+            txt_password.Size = new Size(318, 30);
             txt_password.TabIndex = 3;
             // 
             // chkShowPassword
@@ -78,7 +80,7 @@
             chkShowPassword.ForeColor = Color.SaddleBrown;
             chkShowPassword.Location = new Point(179, 311);
             chkShowPassword.Name = "chkShowPassword";
-            chkShowPassword.Size = new Size(183, 32);
+            chkShowPassword.Size = new Size(155, 27);
             chkShowPassword.TabIndex = 4;
             chkShowPassword.Text = "Show Password";
             chkShowPassword.TextAlign = ContentAlignment.MiddleCenter;
@@ -106,7 +108,7 @@
             textBox3.ForeColor = Color.SaddleBrown;
             textBox3.Location = new Point(78, 447);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(249, 22);
+            textBox3.Size = new Size(249, 23);
             textBox3.TabIndex = 6;
             textBox3.Text = "Don't have an account?";
             textBox3.TextAlign = HorizontalAlignment.Center;
@@ -117,7 +119,7 @@
             lblError.AutoSize = true;
             lblError.Location = new Point(161, 251);
             lblError.Name = "lblError";
-            lblError.Size = new Size(0, 28);
+            lblError.Size = new Size(0, 23);
             lblError.TabIndex = 8;
             // 
             // btn_create
@@ -136,12 +138,24 @@
             btn_create.UseVisualStyleBackColor = false;
             btn_create.Click += btn_create_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources._736f16a5248246f5f648146c4305134b_removebg_preview;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(352, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(46, 43);
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(12F, 28F);
+            AutoScaleDimensions = new SizeF(10F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
             ClientSize = new Size(410, 594);
+            Controls.Add(pictureBox1);
             Controls.Add(btn_create);
             Controls.Add(lblError);
             Controls.Add(textBox3);
@@ -158,6 +172,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -173,5 +188,6 @@
         private TextBox textBox3;
         private Label lblError;
         private Button btn_create;
+        private PictureBox pictureBox1;
     }
 }

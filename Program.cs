@@ -12,15 +12,17 @@ namespace LibraryManagementSystem
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
+              ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
-            Application.Run(new Welcome());
+           // Application.Run(new Welcome());
             //Application.Run(new AddBook());
             //Application.Run(new MemberForm());
 
             //Application.Run(new SignUp());
             //Application.Run(new AdminRequest());
 
+            Application.Run(new AdminForm());
+            //Application.Run(new LibrarianForm(Login.LoggedInUser.Id));
 
 
 

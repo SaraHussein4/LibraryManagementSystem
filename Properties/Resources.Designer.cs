@@ -73,6 +73,16 @@ namespace LibraryManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _736f16a5248246f5f648146c4305134b_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("736f16a5248246f5f648146c4305134b-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap de69627fb0fba8b26db7dda3837ccb26 {
             get {
                 object obj = ResourceManager.GetObject("de69627fb0fba8b26db7dda3837ccb26", resourceCulture);
@@ -86,6 +96,16 @@ namespace LibraryManagementSystem.Properties {
         internal static System.Drawing.Bitmap DeWatermark_ai_1741085488178 {
             get {
                 object obj = ResourceManager.GetObject("DeWatermark.ai_1741085488178", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap f0781482305fe0c5e9f3f57f0c109dfc_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("f0781482305fe0c5e9f3f57f0c109dfc-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -49,10 +49,10 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             string password = txt_password.Text.Trim();
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-             
-                    MessageBox.Show("Please enter both username and password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-               
+
+                MessageBox.Show("Please enter both username and password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+
             }
 
 
@@ -69,8 +69,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
             else
             {
-                    MessageBox.Show("Invalid username or password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-          
+                MessageBox.Show("Invalid username or password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
 
@@ -123,6 +123,20 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         private void Logout()
         {
             LoggedInUser = null;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Welcome welcome = Welcome.GetInstance();
+
+            if (welcome != null && !welcome.IsDisposed)
+            {
+                welcome.WindowState = FormWindowState.Normal;
+                welcome.Show();
+                welcome.BringToFront();
+            }
+
+            this.Close();
         }
     }
 }

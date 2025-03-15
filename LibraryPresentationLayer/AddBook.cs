@@ -11,16 +11,27 @@ using System.IO;
 using ZXing;
 using LibraryManagementSystem.LibraryDataAccess.Models;
 using ZXing.QrCode;
-using ZXing.Windows.Compatibility; 
+using ZXing.Windows.Compatibility;
+using System.Drawing;
 
 namespace LibraryManagementSystem.LibraryPresentationLayer
 {
     public partial class AddBook : Form
     {
+        private readonly LibraryDBContext context;
         private string imagePath = "";
+        int? BookSid = null;
         public AddBook()
         {
             InitializeComponent();
+        }
+
+
+        public AddBook(int _id)
+        {
+            this.BookSid = _id;
+            InitializeComponent();
+            context = new LibraryDBContext();
         }
 
 
@@ -29,41 +40,13 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Please Select a photo";
-            ofd.Filter = "JPG|*.jpg|PNG|*.png|GIF|*gif";
+            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|PNG|*.png|GIF|*.gif";
+            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|PNG|*.png|GIF|*.gif";
             ofd.Multiselect = false;
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 this.pictureBox1.ImageLocation = ofd.FileName;
                 imagePath = ofd.FileName;
-            }
-        }
-
-
-      
-
-        private void PopulateFieldsFromQR(string qrData)
-        {
-            try
-            {
-                string[] bookDetails = qrData.Split('|'); // Assuming QR data is "Title|Author|ISBN|Category|Quantity|Year"
-
-                if (bookDetails.Length == 6)
-                {
-                    txtTitle.Text = bookDetails[0];
-                    txtAuthor.Text = bookDetails[1];
-                    txtISBN.Text = bookDetails[2];
-                    txtCategory.Text = bookDetails[3];
-                    txtQuantity.Text = bookDetails[4];
-                    txtPublishedYear.Text = bookDetails[5];
-                }
-                else
-                {
-                    MessageBox.Show("Invalid QR format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error processing QR data: " + ex.Message);
             }
         }
 
@@ -100,6 +83,14 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                 context.Books.Add(book);
                 context.SaveChanges();
                 MessageBox.Show("Book added successfully!");
+                txtTitle.Text = "";
+                txtAuthor.Text = "";
+                txtISBN.Text = "";
+                txtCategory.Text = "";
+                txtQuantity.Text = "";
+                txtPublishedYear.Text = "";
+                pictureBox1.Image = null;
+
 
             }
             catch (Exception ex)
@@ -110,55 +101,111 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
         private void AddBook_Load(object sender, EventArgs e)
         {
+            this.ControlBox = false;
 
-        }
-
-        private void btnScanQR_Click_1(object sender, EventArgs e)
-        {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Title = "Select QR Code Image";
-            ofd.Filter = "Image Files|*.jpg;*.png;*.bmp";
-            if (ofd.ShowDialog() == DialogResult.OK)
+            if (BookSid.HasValue)
             {
-                imagePath = ofd.FileName;
-                pictureBox1.ImageLocation = imagePath;
-                DecodeQRCode(imagePath);
-            }
-        }
+                //  MessageBox.Show("Editing Book ID: " + BookSid.Value);
+                btn_add.Visible = false;
+                var book = context?.Books?.FirstOrDefault(n => n.Id == BookSid.Value);
 
-        private void DecodeQRCode(string filePath)
-        {
-            try
-            {
-                Bitmap bitmap = new Bitmap(filePath);
-                BarcodeReader reader = new BarcodeReader();
-                var result = reader.Decode(bitmap);
-                if (result != null)
+                if (book == null)
                 {
-                    string[] bookDetails = result.Text.Split(';');
-                    if (bookDetails.Length == 6)
-                    {
-                        txtTitle.Text = bookDetails[0];
-                        txtAuthor.Text = bookDetails[1];
-                        txtISBN.Text = bookDetails[2];
-                        txtCategory.Text = bookDetails[3];
-                        txtQuantity.Text = bookDetails[4];
-                        txtPublishedYear.Text = bookDetails[5];
-                    }
-                    else
-                    {
-                        MessageBox.Show("Invalid QR Code Format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("QR Code could not be read.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtTitle.Text = book.Title;
+                    txtAuthor.Text = book.Author;
+                    txtISBN.Text = book.ISBN;
+                    txtCategory.Text = book.Category;
+                    txtQuantity.Value = book.Quantity;
+                    txtPublishedYear.Text = book.PublishedYear.ToString();
+                    if (book.Image != null && book.Image.Length > 0)
+                    {
+                        using (MemoryStream ms = new MemoryStream(book.Image))
+                        {
+                            pictureBox1.Image = System.Drawing.Image.FromStream(ms);
+                        }
+                    }
+                    else
+                    {
+                        pictureBox1.Image = Properties.Resources.DeWatermark_ai_1741085488178;
+                    }
+
+
+
+                }
+
+            }
+            else
+            {
+                UpdateBookBtn.Visible = false;
+                DeleteBookBtn.Visible = false;
+            }
+
+        }
+
+
+
+        private void UpdateBookBtn_Click_1(object sender, EventArgs e)
+        {
+            var book = context?.Books?.FirstOrDefault(n => n.Id == BookSid.Value);
+            if (book != null)
+            {
+                book.Title = txtTitle.Text;
+                book.Author = txtAuthor.Text;
+                book.ISBN = txtISBN.Text;
+                book.Category = txtCategory.Text;
+                book.Quantity = (int)txtQuantity.Value;
+                book.PublishedYear = int.Parse(txtPublishedYear.Text);
+                context.SaveChanges();
+                MessageBox.Show("Updated Successfully!");
+                txtTitle.Text = "";
+                txtAuthor.Text = "";
+                txtISBN.Text = "";
+                txtCategory.Text = "";
+                txtQuantity.Text = "";
+                txtPublishedYear.Text = "";
+                pictureBox1.Image = null;
+
+
+
+            }
+        }
+
+
+        private void DeleteBookBtn_Click_1(object sender, EventArgs e)
+        {
+            var book = context?.Books?.FirstOrDefault(n => n.Id == BookSid.Value);
+            if (book != null)
+            {
+                var confirm = MessageBox.Show("Are you sure you want to delete this book?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (confirm == DialogResult.Yes)
+                {
+                    context.Books.Remove(book);
+                    context.SaveChanges();
+                    MessageBox.Show("Deleted successfully!");
+
+                    txtTitle.Text = "";
+                    txtAuthor.Text = "";
+                    txtISBN.Text = "";
+                    txtCategory.Text = "";
+                    txtQuantity.Text = "";
+                    txtPublishedYear.Text = "";
+                    pictureBox1.Image = null;
+
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+        }
+
+
+        private void Closebtn_Click_1(object sender, EventArgs e)
+        {
+            AdminForm adminForm = new AdminForm();
+            this.Hide();
+            adminForm.ShowDialog();
+            this.Close();
         }
 
     }

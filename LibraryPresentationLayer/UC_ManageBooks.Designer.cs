@@ -47,6 +47,7 @@
             txtPublishedYear = new TextBox();
             lblBookImage = new Label();
             lblPublishedYear = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvBooks).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbBookImage).BeginInit();
             SuspendLayout();
@@ -58,9 +59,10 @@
             btnBrowseImage.FlatStyle = FlatStyle.Flat;
             btnBrowseImage.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBrowseImage.ForeColor = Color.FloralWhite;
-            btnBrowseImage.Location = new Point(1144, 307);
+            btnBrowseImage.Location = new Point(995, 246);
+            btnBrowseImage.Margin = new Padding(2);
             btnBrowseImage.Name = "btnBrowseImage";
-            btnBrowseImage.Size = new Size(112, 50);
+            btnBrowseImage.Size = new Size(90, 40);
             btnBrowseImage.TabIndex = 0;
             btnBrowseImage.Text = "Browse";
             btnBrowseImage.UseVisualStyleBackColor = false;
@@ -73,9 +75,10 @@
             btnAdd.FlatStyle = FlatStyle.Flat;
             btnAdd.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAdd.ForeColor = Color.FloralWhite;
-            btnAdd.Location = new Point(522, 307);
+            btnAdd.Location = new Point(418, 246);
+            btnAdd.Margin = new Padding(2);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(112, 50);
+            btnAdd.Size = new Size(90, 40);
             btnAdd.TabIndex = 1;
             btnAdd.Text = "Add";
             btnAdd.UseVisualStyleBackColor = false;
@@ -89,9 +92,10 @@
             btnUpdate.FlatStyle = FlatStyle.Flat;
             btnUpdate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnUpdate.ForeColor = Color.FloralWhite;
-            btnUpdate.Location = new Point(655, 307);
+            btnUpdate.Location = new Point(524, 246);
+            btnUpdate.Margin = new Padding(2);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(112, 50);
+            btnUpdate.Size = new Size(90, 40);
             btnUpdate.TabIndex = 2;
             btnUpdate.Text = "Update";
             btnUpdate.UseVisualStyleBackColor = false;
@@ -104,9 +108,10 @@
             btnDelete.FlatStyle = FlatStyle.Flat;
             btnDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDelete.ForeColor = Color.FloralWhite;
-            btnDelete.Location = new Point(787, 307);
+            btnDelete.Location = new Point(630, 246);
+            btnDelete.Margin = new Padding(2);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(112, 50);
+            btnDelete.Size = new Size(90, 40);
             btnDelete.TabIndex = 3;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
@@ -114,8 +119,10 @@
             // 
             // dgvBooks
             // 
+            dgvBooks.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dgvBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBooks.Location = new Point(0, 383);
+            dgvBooks.Location = new Point(0, 306);
+            dgvBooks.Margin = new Padding(2);
             dgvBooks.Name = "dgvBooks";
             dgvBooks.RowHeadersWidth = 62;
             dgvBooks.Size = new Size(1298, 713);
@@ -126,9 +133,10 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = Color.SaddleBrown;
-            lblTitle.Location = new Point(31, 55);
+            lblTitle.Location = new Point(25, 44);
+            lblTitle.Margin = new Padding(2, 0, 2, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(50, 25);
+            lblTitle.Size = new Size(40, 20);
             lblTitle.TabIndex = 5;
             lblTitle.Text = "Title";
             // 
@@ -137,9 +145,10 @@
             lblAuthor.AutoSize = true;
             lblAuthor.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAuthor.ForeColor = Color.SaddleBrown;
-            lblAuthor.Location = new Point(27, 99);
+            lblAuthor.Location = new Point(22, 79);
+            lblAuthor.Margin = new Padding(2, 0, 2, 0);
             lblAuthor.Name = "lblAuthor";
-            lblAuthor.Size = new Size(72, 25);
+            lblAuthor.Size = new Size(59, 20);
             lblAuthor.TabIndex = 6;
             lblAuthor.Text = "Author";
             // 
@@ -148,9 +157,10 @@
             lblISBN.AutoSize = true;
             lblISBN.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblISBN.ForeColor = Color.SaddleBrown;
-            lblISBN.Location = new Point(27, 150);
+            lblISBN.Location = new Point(22, 120);
+            lblISBN.Margin = new Padding(2, 0, 2, 0);
             lblISBN.Name = "lblISBN";
-            lblISBN.Size = new Size(54, 25);
+            lblISBN.Size = new Size(44, 20);
             lblISBN.TabIndex = 7;
             lblISBN.Text = "ISBN";
             // 
@@ -159,9 +169,10 @@
             lblCategory.AutoSize = true;
             lblCategory.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblCategory.ForeColor = Color.SaddleBrown;
-            lblCategory.Location = new Point(27, 192);
+            lblCategory.Location = new Point(22, 154);
+            lblCategory.Margin = new Padding(2, 0, 2, 0);
             lblCategory.Name = "lblCategory";
-            lblCategory.Size = new Size(90, 25);
+            lblCategory.Size = new Size(73, 20);
             lblCategory.TabIndex = 8;
             lblCategory.Text = "Category";
             // 
@@ -170,9 +181,10 @@
             lblQuantity.AutoSize = true;
             lblQuantity.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblQuantity.ForeColor = Color.SaddleBrown;
-            lblQuantity.Location = new Point(27, 238);
+            lblQuantity.Location = new Point(22, 190);
+            lblQuantity.Margin = new Padding(2, 0, 2, 0);
             lblQuantity.Name = "lblQuantity";
-            lblQuantity.Size = new Size(87, 25);
+            lblQuantity.Size = new Size(70, 20);
             lblQuantity.TabIndex = 9;
             lblQuantity.Text = "Quantity";
             // 
@@ -182,65 +194,72 @@
             pbBookImage.BorderStyle = BorderStyle.FixedSingle;
             pbBookImage.Location = new Point(1126, 68);
             pbBookImage.Name = "pbBookImage";
-            pbBookImage.Size = new Size(151, 180);
+            pbBookImage.Size = new Size(121, 144);
             pbBookImage.TabIndex = 10;
             pbBookImage.TabStop = false;
             // 
             // txtTitle
             // 
             txtTitle.BorderStyle = BorderStyle.FixedSingle;
-            txtTitle.Location = new Point(187, 49);
+            txtTitle.Location = new Point(150, 39);
+            txtTitle.Margin = new Padding(2);
             txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(261, 31);
+            txtTitle.Size = new Size(209, 27);
             txtTitle.TabIndex = 11;
             // 
             // txtAuthor
             // 
             txtAuthor.BorderStyle = BorderStyle.FixedSingle;
-            txtAuthor.Location = new Point(187, 93);
+            txtAuthor.Location = new Point(150, 74);
+            txtAuthor.Margin = new Padding(2);
             txtAuthor.Name = "txtAuthor";
-            txtAuthor.Size = new Size(261, 31);
+            txtAuthor.Size = new Size(209, 27);
             txtAuthor.TabIndex = 12;
             // 
             // txtISBN
             // 
             txtISBN.BorderStyle = BorderStyle.FixedSingle;
-            txtISBN.Location = new Point(187, 144);
+            txtISBN.Location = new Point(150, 115);
+            txtISBN.Margin = new Padding(2);
             txtISBN.Name = "txtISBN";
-            txtISBN.Size = new Size(261, 31);
+            txtISBN.Size = new Size(209, 27);
             txtISBN.TabIndex = 13;
             // 
             // txtCategory
             // 
             txtCategory.BorderStyle = BorderStyle.FixedSingle;
-            txtCategory.Location = new Point(187, 186);
+            txtCategory.Location = new Point(150, 149);
+            txtCategory.Margin = new Padding(2);
             txtCategory.Name = "txtCategory";
-            txtCategory.Size = new Size(261, 31);
+            txtCategory.Size = new Size(209, 27);
             txtCategory.TabIndex = 14;
             // 
             // txtQuantity
             // 
             txtQuantity.BorderStyle = BorderStyle.FixedSingle;
-            txtQuantity.Location = new Point(187, 232);
+            txtQuantity.Location = new Point(150, 186);
+            txtQuantity.Margin = new Padding(2);
             txtQuantity.Name = "txtQuantity";
-            txtQuantity.Size = new Size(261, 31);
+            txtQuantity.Size = new Size(209, 27);
             txtQuantity.TabIndex = 15;
             // 
             // txtPublishedYear
             // 
             txtPublishedYear.BorderStyle = BorderStyle.FixedSingle;
-            txtPublishedYear.Location = new Point(187, 279);
+            txtPublishedYear.Location = new Point(150, 223);
+            txtPublishedYear.Margin = new Padding(2);
             txtPublishedYear.Name = "txtPublishedYear";
-            txtPublishedYear.Size = new Size(261, 31);
+            txtPublishedYear.Size = new Size(209, 27);
             txtPublishedYear.TabIndex = 16;
             // 
             // lblBookImage
             // 
             lblBookImage.AutoSize = true;
             lblBookImage.ForeColor = Color.SaddleBrown;
-            lblBookImage.Location = new Point(1144, 263);
+            lblBookImage.Location = new Point(915, 210);
+            lblBookImage.Margin = new Padding(2, 0, 2, 0);
             lblBookImage.Name = "lblBookImage";
-            lblBookImage.Size = new Size(104, 25);
+            lblBookImage.Size = new Size(85, 20);
             lblBookImage.TabIndex = 17;
             lblBookImage.Text = "Book Cover";
             // 
@@ -249,21 +268,39 @@
             lblPublishedYear.AutoSize = true;
             lblPublishedYear.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPublishedYear.ForeColor = Color.SaddleBrown;
-            lblPublishedYear.Location = new Point(27, 285);
+            lblPublishedYear.Location = new Point(22, 228);
+            lblPublishedYear.Margin = new Padding(2, 0, 2, 0);
             lblPublishedYear.Name = "lblPublishedYear";
-            lblPublishedYear.Size = new Size(136, 25);
+            lblPublishedYear.Size = new Size(111, 20);
             lblPublishedYear.TabIndex = 18;
             lblPublishedYear.Text = "Published Year";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.SaddleBrown;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.FloralWhite;
+            button1.Location = new Point(867, 246);
+            button1.Margin = new Padding(2);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 40);
+            button1.TabIndex = 19;
+            button1.Text = "Qr Scan";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // UC_ManageBooks
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FloralWhite;
             BorderStyle = BorderStyle.FixedSingle;
+            Controls.Add(button1);
             Controls.Add(txtAuthor);
             Controls.Add(txtTitle);
             Controls.Add(lblTitle);
@@ -283,6 +320,7 @@
             Controls.Add(btnUpdate);
             Controls.Add(btnAdd);
             Controls.Add(btnBrowseImage);
+            Margin = new Padding(2);
             Name = "UC_ManageBooks";
             Size = new Size(1301, 1099);
             Load += UC_ManageBooks_Load;
@@ -313,5 +351,6 @@
         private TextBox txtPublishedYear;
         private Label lblBookImage;
         private Label lblPublishedYear;
+        private Button button1;
     }
 }

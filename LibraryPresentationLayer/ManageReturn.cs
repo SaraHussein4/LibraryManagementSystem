@@ -48,12 +48,12 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         Title = r.Book.Title,
                         r.BorrowDate,
                         r.DueDate,
-                        r.IsReturned  
+                        r.IsReturned
                     }).ToList();
 
                 foreach (var book in borrowedBooks)
                 {
-                    dgvBorrowedBooks.Rows.Add(book.Id, book.MemberId, book.Title, book.BorrowDate, book.DueDate, book.IsReturned ? "Yes" : "No");
+                    dgvBorrowedBooks.Rows.Add(book.Id, book.MemberId, book.Title, book.BorrowDate, book.DueDate, book.IsReturned ? "True" : "false");
                 }
             }
         }
@@ -74,14 +74,22 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     var record = context.BorrowingRecords.FirstOrDefault(r => r.Id == borrowId);
                     if (record != null)
                     {
-                        record.IsReturned = true; 
+                        record.IsReturned = true;
                         context.SaveChanges();
 
                         MessageBox.Show("Book marked as returned successfully.");
-                        LoadBorrowedBooks(); 
+                        LoadBorrowedBooks();
                     }
                 }
             }
+        }
+
+        private void label1_MouseClick(object sender, MouseEventArgs e)
+        {
+            AdminForm AdminForm = new AdminForm();
+            this.Hide();
+            AdminForm.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Windows.Forms;
 using LibraryManagementSystem.LibraryDataAccess.Models;
+using ZXing.Windows.Compatibility;
 
 namespace LibraryManagementSystem.LibraryPresentationLayer
 {
@@ -26,9 +27,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         private void UC_ManageBooks_Load(object sender, EventArgs e)
         {
             LoadBooks();
+            LoadBooks();
         }
 
 
+      
         private void LoadBooks()
         {
             using (var context = new LibraryDBContext())
@@ -166,7 +169,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     context.SaveChanges();
                     MessageBox.Show("Book added successfully!");
                     LoadBooks();
-                    ClearFields();
+  ClearFields();
                 }
             }
             catch (Exception ex)
@@ -175,11 +178,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
         }
 
-    
-       
+
+
         private void dgvBooks_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0) 
+            if (e.RowIndex >= 0)
             {
                 int bookId = Convert.ToInt32(dgvBooks.Rows[e.RowIndex].Cells["Id"].Value);
 
@@ -188,7 +191,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     var book = context.Books.Find(bookId);
                     if (book != null)
                     {
-                        
+
                         txtTitle.Text = book.Title;
                         txtAuthor.Text = book.Author;
                         txtISBN.Text = book.ISBN;
@@ -248,7 +251,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
                         MessageBox.Show("Book updated successfully!");
                         LoadBooks();
-                        ClearFields();
+ ClearFields();
 
                     }
                 }
@@ -279,7 +282,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                             context.SaveChanges();
                             MessageBox.Show("Book deleted successfully!");
                             LoadBooks();
-                            ClearFields();
+      ClearFields();
 
                         }
                     }
@@ -291,6 +294,53 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Select QR Code Image";
+            ofd.Filter = "Image Files|*.jpg;*.png;*.bmp";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                imagePath = ofd.FileName;
+                pbBookImage.ImageLocation = imagePath;
+                DecodeQRCode(imagePath);
+            }
+        }
+
+        private void DecodeQRCode(string filePath)
+        {
+            try
+            {
+                Bitmap bitmap = new Bitmap(filePath);
+                BarcodeReader reader = new BarcodeReader();
+                var result = reader.Decode(bitmap);
+                if (result != null)
+                {
+                    string[] bookDetails = result.Text.Split(';');
+                    if (bookDetails.Length == 6)
+                    {
+                        txtTitle.Text = bookDetails[0];
+                        txtAuthor.Text = bookDetails[1];
+                        txtISBN.Text = bookDetails[2];
+                        txtCategory.Text = bookDetails[3];
+                        txtQuantity.Text = bookDetails[4];
+                        txtPublishedYear.Text = bookDetails[5];
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid QR Code Format!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("QR Code could not be read.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
         private void dgvBooks_MouseClick(object sender, MouseEventArgs e)
         {
             if (dgvBooks.HitTest(e.X, e.Y).RowIndex == -1)
