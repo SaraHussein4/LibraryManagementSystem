@@ -17,6 +17,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         {
             InitializeComponent();
             LoadPendingRequests();
+            this.dgvRequests.CellClick -= new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRequests_CellClick);
             this.dgvRequests.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRequests_CellClick);
 
         }
@@ -27,7 +28,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             dgvRequests.Columns.Clear();
 
             dgvRequests.Columns.Add("ID", "Request ID");
-            dgvRequests.Columns.Add("MemberID", "Member ID");
+            dgvRequests.Columns["ID"].Visible = false;
+            dgvRequests.Columns.Add("MemberName", "Member Name");
             dgvRequests.Columns.Add("Title", "Book Title");
             dgvRequests.Columns.Add("RequestDate", "Request Date");
 
@@ -41,14 +43,14 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     .Select(r => new
                     {
                         r.Id,
-                        r.MemberId,
+                        r.Member.Name,
                         Title = r.Book.Title,
                         RequestDate = r.BorrowDate
                     }).ToList();
 
                 foreach (var request in requests)
                 {
-                    dgvRequests.Rows.Add(request.Id, request.MemberId, request.Title, request.RequestDate);
+                    dgvRequests.Rows.Add(request.Id,request.Name, request.Title, request.RequestDate);
                 }
             }
         }
@@ -106,7 +108,10 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                         }
 
                         context.SaveChanges();
+                       
+               
                         LoadPendingRequests();
+                        
                     }
                 }
             }
@@ -118,6 +123,15 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             this.Hide();
             AdminForm.ShowDialog();
             this.Close();
+        }
+
+        private void dgvRequests_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dgvRequests.Columns[0].Width = 200;
+            dgvRequests.Columns[1].Width = 200;
+            dgvRequests.Columns[2].Width = 200;
+            dgvRequests.Columns[3].Width = 200;
+            dgvRequests.Columns[4].Width = 200;
         }
     }
 }

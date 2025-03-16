@@ -170,9 +170,9 @@
             dgvBorrowedBooks.Location = new Point(3, 43);
             dgvBorrowedBooks.Name = "dgvBorrowedBooks";
             dgvBorrowedBooks.ReadOnly = true;
-            dgvBorrowedBooks.RowHeadersWidth = 51;
+            dgvBorrowedBooks.RowHeadersWidth = 100;
             dgvBorrowedBooks.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvBorrowedBooks.Size = new Size(785, 353);
+            dgvBorrowedBooks.Size = new Size(784, 353);
             dgvBorrowedBooks.TabIndex = 0;
             // 
             // pictureBox2

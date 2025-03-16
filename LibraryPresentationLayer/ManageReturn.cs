@@ -24,7 +24,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             dgvBorrowedBooks.Columns.Clear();
 
             dgvBorrowedBooks.Columns.Add("ID", "Borrow ID");
-            dgvBorrowedBooks.Columns.Add("MemberID", "Member ID");
+            dgvBorrowedBooks.Columns["ID"].Visible = false;
+            dgvBorrowedBooks.Columns.Add("MemberName", "Member Name");
             dgvBorrowedBooks.Columns.Add("Title", "Book Title");
             dgvBorrowedBooks.Columns.Add("BorrowDate", "Borrow Date");
             dgvBorrowedBooks.Columns.Add("DueDate", "Due Date");
@@ -44,7 +45,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
                     .Select(r => new
                     {
                         r.Id,
-                        r.MemberId,
+                        r.Member.Name,
                         Title = r.Book.Title,
                         r.BorrowDate,
                         r.DueDate,
@@ -53,7 +54,7 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
                 foreach (var book in borrowedBooks)
                 {
-                    dgvBorrowedBooks.Rows.Add(book.Id, book.MemberId, book.Title, book.BorrowDate, book.DueDate, book.IsReturned ? "True" : "false");
+                    dgvBorrowedBooks.Rows.Add( book.Id,book.Name, book.Title, book.BorrowDate, book.DueDate, book.IsReturned ? "True" : "false");
                 }
             }
         }
@@ -90,6 +91,11 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             this.Hide();
             AdminForm.ShowDialog();
             this.Close();
+        }
+
+        private void dgvBorrowedBooks_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dgvBorrowedBooks.Columns[5].Width = 300;
         }
     }
 }

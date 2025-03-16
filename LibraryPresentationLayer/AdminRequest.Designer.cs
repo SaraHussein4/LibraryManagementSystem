@@ -65,6 +65,7 @@
             dgvRequests.Size = new Size(883, 391);
             dgvRequests.TabIndex = 0;
             dgvRequests.CellClick += dgvRequests_CellClick;
+            dgvRequests.DataBindingComplete += dgvRequests_DataBindingComplete;
             // 
             // gobackinARequest
             // 

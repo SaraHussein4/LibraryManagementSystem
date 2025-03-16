@@ -20,7 +20,8 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
         {
             InitializeComponent();
             context = new LibraryDBContext();
-            LoadLogsIntoGridView();        }
+            LoadLogsIntoGridView();
+        }
         public void LoadBooks()
         {
             #region books
@@ -320,16 +321,16 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
             MemberUserName_txt.Enabled = true;
             MessageBox.Show(" updated", "sucsses", MessageBoxButtons.OK, MessageBoxIcon.Information);
             dataGridView1.DataSource = context.Users
-          .Select(u => new
-          {
-              u.Id,
-              u.Username,
-              u.Role,
-              u.MemberShipType,
-              u.Name,
-              u.Email,
-              u.Phone
-          }).Where(u => u.Role == Role.Member).ToList();
+            .Select(u => new
+             {
+                 u.Id,
+                 u.Username,
+                 u.Role,
+                 u.MemberShipType,
+                 u.Name,
+                 u.Email,
+                 u.Phone
+             }).Where(u => u.Role == Role.Member).ToList();
         }
 
         private void DeleteMemberBtn_Click(object sender, EventArgs e)
@@ -767,13 +768,21 @@ namespace LibraryManagementSystem.LibraryPresentationLayer
 
             if (result == DialogResult.Yes)
             {
-           
+
 
                 this.Close();
 
                 Login login = new Login();
                 login.Show();
             }
+        }
+
+        private void dgv_Report_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dgv_Report.Columns[0].Width = 200;
+            dgv_Report.Columns[1].Width = 200;
+            dgv_Report.Columns[2].Width = 200;
+            dgv_Report.Columns[3].Width = 200;
         }
     }
 }

@@ -246,6 +246,7 @@
             dgv_Report.RowHeadersWidth = 51;
             dgv_Report.Size = new Size(907, 354);
             dgv_Report.TabIndex = 0;
+            dgv_Report.DataBindingComplete += dgv_Report_DataBindingComplete;
             // 
             // RequestsPage
             // 
@@ -845,11 +846,12 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(912, 595);
+            ControlBox = false;
             Controls.Add(Members);
             Margin = new Padding(3, 4, 3, 4);
             Name = "AdminForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "AdminForm";
+            Text = "Admin Dashboard";
             Load += AdminForm_Load;
             ReportsPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgv_Report).EndInit();

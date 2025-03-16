@@ -62,6 +62,7 @@
             dgvBorrowedBooks.Size = new Size(883, 391);
             dgvBorrowedBooks.TabIndex = 0;
             dgvBorrowedBooks.CellClick += dgvBorrowedBooks_CellClick;
+            dgvBorrowedBooks.DataBindingComplete += dgvBorrowedBooks_DataBindingComplete;
             // 
             // label1
             // 

@@ -215,6 +215,7 @@
             pbBookImage.Location = new Point(583, 70);
             pbBookImage.Name = "pbBookImage";
             pbBookImage.Size = new Size(121, 144);
+            pbBookImage.SizeMode = PictureBoxSizeMode.StretchImage;
             pbBookImage.TabIndex = 10;
             pbBookImage.TabStop = false;
             // 
