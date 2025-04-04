@@ -1,6 +1,6 @@
 # 📚 Library Management System
 
-A desktop application designed to streamline library operations with role-based access for **Admin**, **Librarian**, and **User**. Built during the ITI Full Stack .NET Diploma under the guidance of **Eng. Mohamed Elshafei**.
+A desktop application designed to streamline library operations with role-based access for **Admin**, **Librarian**, and **User**. Built during the ITI Full Stack .
 
 ---
 
